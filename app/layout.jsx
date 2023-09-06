@@ -2,7 +2,7 @@ import "@styles/globals.css";
 
 export const metadata = {
   title: "SlidAgency",
-  description: "Welcome to MacPaw Bootcamp 2023",
+  description: "Currently is under development",
 };
 
 const RootLayout = ({ children }) => {
