@@ -12,7 +12,7 @@ const Home = () => {
       </div>
 
       <div className="flex flex-col justify-between w-screen h-screen">
-        <div className="text-[16px] lg:flex justify-between z-10 pt-[64px] pl-[60px] pr-[38px]">
+        <div className="text-[16px] lg:flex justify-between z-10 pt-[64px] pl-[32px] lg:pl-[60px] pr-[38px]">
           <Image
             src="/assets/images/logo.svg"
             alt="logo"
