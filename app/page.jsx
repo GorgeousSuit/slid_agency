@@ -7,12 +7,12 @@ const fixelFont = Fixel({ src: "../fonts/FixelDisplay-Medium.ttf" });
 const Home = () => {
   return (
     <section className="relative">
-      <div className="absolute top-0 left-0 w-full h-full z-[-1]">
+      <div className="absolute top-0 left-0 z-[-1]">
         <AnimationComponent />
       </div>
 
-      <div className="flex flex-col justify-between w-screen h-screen">
-        <div className="text-[16px] lg:flex justify-between z-10 pt-[64px] pl-[32px] lg:pl-[60px] pr-[38px]">
+      <div className="flex flex-col justify-between h-[90vh] lg:h-screen">
+        <div className="text-[16px] lg:flex justify-between z-10 mt-[40px] lg:mt-[64px] ml-[32px] lg:ml-[60px] mr-[38px]">
           <Image
             src="/assets/images/logo.svg"
             alt="logo"
@@ -40,9 +40,9 @@ const Home = () => {
         </div>
         <div
           style={fixelFont.style}
-          className="pb-[32px] lg:p-0 lg:flex items-center justify-between text-white"
+          className="fixed lg:relative bottom-0 left-0 mb-[32px] lg:mb-[53px] lg:flex items-end justify-between text-white"
         >
-          <div className="pl-[32px] lg:px-[72px] pb-[32px] lg:pb-[53px]">
+          <div className="ml-[32px] lg:px-[72px] mb-[32px] lg:mb-[0px]">
             <p className="text-20px lg:text-[24px] leading-[33.6px]">
               Зв’яжіться з нами
             </p>
