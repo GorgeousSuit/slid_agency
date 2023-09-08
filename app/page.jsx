@@ -1,15 +1,15 @@
-import Image from "next/image";
-import AnimationComponent from "../components/AnimationComponent";
-import Fixel from "next/font/local";
+import Image from 'next/image';
+import Header from '@components/Header';
+import Fixel from 'next/font/local';
 
-const fixelFont = Fixel({ src: "../fonts/FixelDisplay-Medium.ttf" });
+const fixelFont = Fixel({ src: '../fonts/FixelDisplay-Medium.ttf' });
 
 const Home = () => {
-  return (
-    <section className="relative">
-      
-    </section>
-  );
+    return (
+        <section className="">
+            <Header />
+        </section>
+    );
 };
 
 export default Home;
