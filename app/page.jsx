@@ -12,7 +12,7 @@ const Home = () => {
       </div>
 
       <div className="flex flex-col justify-between h-[90vh] lg:h-screen">
-        <div className="text-[16px] lg:flex justify-between z-10 mt-[40px] lg:mt-[64px] ml-[32px] lg:ml-[60px] mr-[38px]">
+        <div className="text-[16px] lg:flex justify-between z-10 mt-[40px] lg:mt-[64px] ml-[32px] lg:mx-[72px] mr-[38px]">
           <Image
             src="/assets/images/logo.svg"
             alt="logo"
@@ -42,7 +42,7 @@ const Home = () => {
           style={fixelFont.style}
           className="fixed lg:relative bottom-0 left-0 mb-[32px] lg:mb-[53px] lg:flex items-end justify-between text-white"
         >
-          <div className="ml-[32px] lg:px-[72px] mb-[32px] lg:mb-[0px]">
+          <div className=" lg:px-[72px] mb-[32px] lg:mb-[0px]">
             <p className="text-20px lg:text-[24px] leading-[33.6px]">
               Зв’яжіться з нами
             </p>
