@@ -1,18 +1,18 @@
 import '@styles/globals.css';
 import Fixel from 'next/font/local';
 
-const fixelFont = Fixel({ src: '../fonts/FixelDisplay-Medium.ttf' });
+const fixelFont = Fixel({ src: '../fonts/FixelVariable.ttf' });
 
 export const metadata = {
-    title: 'SlidAgency',
+    title: 'Slid Agency',
     description: 'Currently is under development'
 };
 
 const RootLayout = ({ children }) => {
     return (
-        <html lang="en">
-            <body style={fixelFont.style}>
-                <main className="">{children}</main>
+        <html lang="en" style={fixelFont.style} className="font-medium">
+            <body>
+                <main>{children}</main>
             </body>
         </html>
     );
