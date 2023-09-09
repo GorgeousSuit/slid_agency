@@ -4,6 +4,7 @@ import Fixel from 'next/font/local';
 import Showreel from '@components/Showreel';
 import Featured from '@components/Featured/Featured';
 import Surpass from '@components/Surpass';
+import Services from '@components/OurServices/Services';
 
 const fixelFont = Fixel({ src: '../fonts/FixelDisplay-Medium.ttf' });
 
@@ -14,6 +15,7 @@ const Home = () => {
             <Showreel />
             <Featured />
             <Surpass />
+            <Services />
         </section>
     );
 };

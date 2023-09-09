@@ -1,5 +1,6 @@
 import '@styles/globals.css';
 import Fixel from 'next/font/local';
+import Footer from '@components/Footer';
 
 const fixelFont = Fixel({ src: '../fonts/FixelVariable.ttf' });
 
@@ -13,6 +14,7 @@ const RootLayout = ({ children }) => {
         <html lang="en" style={fixelFont.style} className="font-medium">
             <body>
                 <main>{children}</main>
+                <Footer />
             </body>
         </html>
     );

@@ -4,10 +4,13 @@
 @tailwind components;
 @tailwind utilities;
 
-#__next-route-announcer__ {
-    display: flex;
+input {
+    background-color: rgba(0, 0, 0, 0);
+    border-bottom: 1px white solid;
 }
-
+input::placeholder {
+    color: white;
+}
 /* Tailwind Styles */
 
 .app {
