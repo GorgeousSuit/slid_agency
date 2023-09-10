@@ -42,7 +42,7 @@ const Home = () => {
           style={fixelFont.style}
           className="fixed lg:relative bottom-0 left-0 mb-[32px] lg:mb-[53px] lg:flex items-end justify-between text-white"
         >
-          <div className=" lg:px-[72px] mb-[32px] lg:mb-[0px]">
+          <div className=" lg:px-[72px] ml-[32px] lg:ml-[0] mb-[32px] lg:mb-[0px]">
             <p className="text-20px lg:text-[24px] leading-[33.6px]">
               Зв’яжіться з нами
             </p>
