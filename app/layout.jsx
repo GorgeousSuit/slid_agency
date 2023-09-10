@@ -1,7 +1,7 @@
 import "@styles/globals.css";
 
 export const metadata = {
-  title: "SlidAgency",
+  title: "slid | Креативна агенція",
   description: "Currently is under development",
 };
 
