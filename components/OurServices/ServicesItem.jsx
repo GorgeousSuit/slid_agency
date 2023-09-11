@@ -18,7 +18,7 @@ const ServicesItem = (props) => {
             <div className="mb-[64px]">
                 <button
                     onClick={() => updateOpen(!open)}
-                    className=" w-full justify-between flex items-end pb-[20px] border-b border-[#D2D2D2]"
+                    className=" w-full justify-between flex items-end pb-[20px] border-b border-[#D2D2D2] hover:border-[black]"
                 >
                     <div className="flex items-end">
                         <p className="h-[33px] text-[24px] leading-[28.8px] font-normal mr-[85px]">

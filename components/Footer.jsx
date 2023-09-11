@@ -37,7 +37,7 @@ const Footer = () => {
                         className="flex flex-col space-y-[64px]"
                     >
                         <input type="text" className="" placeholder="Name" />
-                        <input type="number" className="" placeholder="Phone" />
+                        <input type="tel" className="" placeholder="Phone" />
                         <input type="email" className="" placeholder="Email" />
                         <input
                             type="text"
@@ -46,7 +46,7 @@ const Footer = () => {
                         />
                         <button
                             type="submit"
-                            className="w-[177px] py-[12px] px-[24px] font-normal leading-[17.6px] border border-white rounded-[100px]"
+                            className="w-[177px] py-[12px] px-[24px] font-normal leading-[17.6px] border border-white rounded-[100px] btn"
                         >
                             Surpass yourself
                         </button>

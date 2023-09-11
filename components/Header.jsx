@@ -24,7 +24,7 @@ const Header = () => {
                         <p className="text-[24px] leading-[26.4px]">
                             +38 067 275 74 24
                         </p>
-                        <button className="border-white border-[1px] rounded-[100px] px-[24px] py-[12px] leading-[17.6px]">
+                        <button className="border-white border-[1px] rounded-[100px] px-[24px] py-[12px] leading-[17.6px] btn">
                             Get in touch
                         </button>
                     </div>

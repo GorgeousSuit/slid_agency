@@ -8,7 +8,7 @@ const Surpass = () => {
                     We are for businesses <br /> that are ready to outdo <br />{' '}
                     themselves
                 </h1>
-                <button className="rounded-[100px] border-[1px] border-[black] px-[24px] py-[12px] leading-[17.6px]">
+                <button className="btn rounded-[100px] border-[1px] border-[black] px-[24px] py-[12px] leading-[17.6px]">
                     Surpass yourself
                 </button>
             </div>
