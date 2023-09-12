@@ -11,6 +11,20 @@ input {
 input::placeholder {
     color: white;
 }
+/* Clamps for font-size */
+
+.clamp-24 {
+    font-size: clamp(1.25rem, 1vw + 1rem, 1.5rem);
+}
+.clamp-40 {
+    font-size: clamp(1.5rem, 2vw + 1rem, 2.5rem);
+}
+.clamp-56 {
+    font-size: clamp(2.25rem, 3vw + 1rem, 3.5rem);
+}
+.clamp-72 {
+    font-size: clamp(2.25rem, 1vw + 1rem, 4.5rem);
+}
 
 /* Tailwind Styles */
 .btn {
