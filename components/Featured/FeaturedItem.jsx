@@ -8,7 +8,7 @@ const FeaturedItem = (props) => {
                 alt="Case"
                 width={1920}
                 height={1080}
-                className=""
+                className="w-full"
             />
         </div>
     );

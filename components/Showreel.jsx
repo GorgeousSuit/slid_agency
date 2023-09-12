@@ -7,7 +7,7 @@ const Showreel = () => {
                 <Image
                     src="/assets/images/Cover 1-lg.png"
                     alt="Showreel-lg"
-                    className=""
+                    className="w-full"
                     width={1920}
                     height={1080}
                 />

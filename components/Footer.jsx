@@ -8,7 +8,7 @@ const Footer = () => {
             </h1>
             <div className="flex justify-between mt-[120px]">
                 <div className="">
-                    <div className="flex justify-between leading-[17.6px] gap-[32px] mb-[85px]">
+                    <div className="flex justify-between leading-[17.6px] gap-[32px] mb-[85px] hover:[&>*]:underline">
                         <a href="/" className="">
                             Instagram
                         </a>
