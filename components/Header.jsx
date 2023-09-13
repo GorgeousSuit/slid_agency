@@ -20,7 +20,7 @@ const Header = () => {
         <section>
             <div
                 className={`bg-black w-full h-[78vh] text-white relative ${
-                    open ? 'h-[100svh] flex flex-col' : ''
+                    open && 'svh'
                 }`}
             >
                 <button
@@ -71,7 +71,7 @@ const Header = () => {
                         <div className="flex items-center mb-[20px] sm:mb-[37px] gap-[66px]">
                             <p
                                 className={`text-[20px] sm:clamp24 leading-[22px] sm:leading-[26.4px] ${
-                                    open ? 'hidden' : ''
+                                    open ? 'text-red' : ''
                                 }`}
                             >
                                 +38 067 275 74 24
