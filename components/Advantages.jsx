@@ -1,23 +1,19 @@
-import React from 'react';
+import React from "react";
 
 const Advantages = () => {
     return (
         <section className="px-[32px] sm:px-[72px] mt-[96px] sm:mt-[128px]">
             <div className="max-sm:mx-auto max-sm:w-[fit-content]">
                 <h1 className="text-[36px] sm:text-[72px] font-normal leading-[43.2px] sm:leading-[86.4px]">
-                    We will help you
-                    <br /> become the best
-                    <br /> in your industry
+                    Допоможемо Вам <br /> стати кращими у <br /> своїй галузі
                 </h1>
 
                 <div className="flex sm:justify-end mt-[32px] sm:mt-[160px]">
                     <h2 className="text-[20px] sm:text-[24px] font-normal leading-[28px] sm:leading-[33.6px] text-[#545454]">
-                        We have extensive experience in
-                        <br className="sm:hidden" /> marketing
-                        <br className="hidden sm:block" /> and brand
-                        <br className="sm:hidden" />
-                        management. This allows us to <br /> create a
-                        result-oriented design.
+                        Ми маємо великий досвід у сфері
+                        <br /> маркетингу та бренд-менеджменту. Це
+                        <br /> дозволяє нам створювати дизайн,
+                        <br /> орієнтований на результат.
                     </h2>
                 </div>
             </div>
@@ -28,16 +24,14 @@ const Advantages = () => {
                             01
                         </p>
                         <p className="mb-[20px] sm:mb-[24px] font-normal text-[24px] sm:text-[40px] leading-[28.8px] sm:leading-[48px]">
-                            We work with goals
-                            <br className="hidden sm:block" /> and
-                            <br className="sm:hidden" /> challenges
+                            Ми працюємо з<br /> цілями та викликами
                         </p>
                         <p className="font-normal leading-[22.4px] text-[#545454]">
-                            If you have a goal, we will find ways to
-                            <br className="sm:hidden" /> help you{' '}
-                            <br className="hidden sm:block" />
-                            achieve it through digital
-                            <br className="sm:hidden" /> channels.
+                            Якщо у вас є мета, ми знайдемо
+                            <br className="sm:hidden" /> способи
+                            <br className="hidden sm:block" /> допомогти вам
+                            досягти її за допомогою цифрових
+                            <br className="hidden sm:block" /> каналів.
                         </p>
                     </div>
                     <div className="sm:flex sm:justify-end sm:mr-[220px] sm:max-xl:mt[15px] lg:mt-[-44px]">
@@ -46,21 +40,20 @@ const Advantages = () => {
                                 02
                             </p>
                             <p className="mb-[20px] sm:mb-[24px] font-normal text-[24px] sm:text-[40px] leading-[28.8px] sm:leading-[48px]">
-                                A comprehensive{' '}
-                                <br className="hidden sm:block" /> study of
-                                <br className="sm:hidden" /> your{' '}
-                                <br className="hidden sm:block" /> product
+                                Комплексне
+                                <br /> дослідження вашого
+                                <br /> продукту
                             </p>
                             <p className="font-normal leading-[22.4px] text-[#545454]">
-                                The better we know your product, its
-                                <br className="sm:hidden" /> benefits, and{' '}
-                                <br className="hidden sm:block" /> the customers
-                                who buy it,
-                                <br className="sm:hidden" /> the better we will
-                                build a <br className="hidden sm:block" />
-                                strategy for its
-                                <br className="sm:hidden" /> presentation in
-                                digital.
+                                Чим краще ми знаємо ваш продукт,
+                                <br className="sm:hidden" /> його переваги{" "}
+                                <br className="hidden sm:block" />
+                                та клієнтів, які його купують,
+                                <br className="sm:hidden" /> тим краще ми{" "}
+                                <br className="hidden sm:block" />
+                                побудуємо стратегію його представлення в{" "}
+                                <br className="hidden sm:block" />
+                                цифровому просторі.
                             </p>
                         </div>
                     </div>
@@ -69,21 +62,17 @@ const Advantages = () => {
                             03
                         </p>
                         <p className="mb-[20px] sm:mb-[24px] font-normal text-[24px] sm:text-[40px] leading-[28.8px] sm:leading-[48px]">
-                            Market and <br className="hidden sm:block" />{' '}
-                            competitor
-                            <br className="sm:hidden" />
-                            analysis
+                            Аналіз ринку та
+                            <br /> конкурентів
                         </p>
                         <p className="font-normal leading-[22.4px] text-[#545454]">
-                            We carefully study the market you operate
-                            <br className="sm:hidden" /> in and{' '}
-                            <br className="hidden sm:block" /> who you compete
-                            with. To offer
-                            <br className="sm:hidden" /> solutions that will{' '}
-                            <br className="hidden sm:block" /> make you better
-                            than
-                            <br className="sm:hidden" />
-                            the rest.
+                            Ми ретельно вивчаємо ринок,
+                            <br className="sm:hidden" /> на якому ви
+                            <br className="hidden sm:block" /> працюєте, і з ким
+                            конкуруєте. Щоб запропонувати
+                            <br className="hidden sm:block" /> рішення, які
+                            зроблять вас
+                            <br className="sm:hidden" /> кращими за інших.
                         </p>
                     </div>
                     <div className="sm:flex sm:justify-end sm:max-xl:mt[15px] lg:mt-[-66px]">
@@ -92,20 +81,20 @@ const Advantages = () => {
                                 04
                             </p>
                             <p className="mb-[20px] sm:mb-[24px] font-normal text-[24px] sm:text-[40px] leading-[28.8px] sm:leading-[48px]">
-                                We are partners for{' '}
-                                <br className="hidden sm:block" /> your
-                                <br className="sm:hidden" /> brand
+                                Ми — партнери для
+                                <br /> вашого бренду
                             </p>
                             <p className="font-normal leading-[22.4px] text-[#545454]">
-                                Having started working with your
-                                <br className="sm:hidden" /> company, we will{' '}
-                                <br className="hidden sm:block" /> always be
-                                interested in
-                                <br className="sm:hidden" /> its further
-                                development and{' '}
-                                <br className="hidden sm:block" /> will be happy
-                                <br className="sm:hidden" /> to share our
-                                expertise to help you grow.
+                                Розпочавши співпрацю з вашою
+                                <br className="sm:hidden" /> компанією, ми{" "}
+                                <br className="hidden sm:block" />
+                                завжди будемо
+                                <br className="sm:hidden" />
+                                зацікавлені в її подальшому{" "}
+                                <br className="hidden sm:block" />
+                                розвитку і будемо раді поділитися своєю{" "}
+                                <br className="hidden sm:block" />
+                                експертизою, щоб допомогти вам розвиватися.
                             </p>
                         </div>
                     </div>

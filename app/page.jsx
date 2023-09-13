@@ -19,7 +19,6 @@ const Home = () => {
             <Featured />
             <Surpass />
             <Services />
-            <AnimationComponent />
         </section>
     );
 };

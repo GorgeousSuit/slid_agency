@@ -51,7 +51,9 @@ const Header = () => {
                                     className="mt-[64px] sm:mt-[3.333vw] w-[17.19vw] h-[10.16vw] min-w-[153px] min-h-[91px]"
                                 />
                                 <div className="flex gap-4 py-1 hover:[&>*]:underline mt-[3.7559vh] mb-[12.5587vh] iphone7">
-                                    <Link href="/EN">Eng</Link>
+                                    <Link className="text-[#545454]" href="/EN">
+                                        Eng
+                                    </Link>
                                     <Link href="/UA">Ua</Link>
                                 </div>
                                 <Nav />
@@ -65,8 +67,10 @@ const Header = () => {
                     )}
                     <div className={`sm:pt-[40px] ${open ? 'hidden' : ''}`}>
                         <div className="hidden sm:flex gap-4 py-1 mb-[35px] hover:[&>*]:underline">
-                            <Link href="/EN">Eng</Link>
-                            <Link href="/UA">Ua</Link>
+                            <Link className="text-[#545454]" href="/en-US">
+                                Eng
+                            </Link>
+                            <Link href="/uk-UA">Ua</Link>
                         </div>
                         <div className="flex items-center mb-[20px] sm:mb-[37px] gap-[66px]">
                             <p
@@ -77,7 +81,7 @@ const Header = () => {
                                 +38 067 275 74 24
                             </p>
                             <button className="border-white border-[1px] rounded-[100px] px-[24px] py-[12px] leading-[17.6px] btn hidden sm:block">
-                                Get in touch
+                                Зв'яжіться з нами
                             </button>
                         </div>
                         <p
@@ -85,18 +89,16 @@ const Header = () => {
                                 open ? 'hidden' : ''
                             }`}
                         >
-                            We create the best design
-                            <br className="sm:hidden" /> solutions
-                            <br className="hidden sm:block" /> for your product
-                            in
-                            <br className="sm:hidden" /> digital
+                            Тільки сенси залишають слід в{' '}
+                            <br className="hidden sm:block" /> історії.
+                            <br className="sm:hidden" /> Ми створюємо сенси.
                         </p>
                         <button
                             className={`border-white border-[1px] rounded-[100px] px-[24px] py-[12px] leading-[17.6px] btn sm:hidden mb-[64px] mt-[72px] ${
                                 open ? 'hidden' : ''
                             }`}
                         >
-                            Get in touch
+                            Зв'яжіться з нами
                         </button>
                     </div>
                 </div>

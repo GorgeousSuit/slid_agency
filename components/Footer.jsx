@@ -1,10 +1,10 @@
-import Image from 'next/image';
+import Image from "next/image";
 
 const Footer = () => {
     return (
         <footer className="bg-black text-white px-[32px] sm:px-[72px] pt-[64px] sm:pt-[26px] pb-[32px] sm:pb-[59px] max-sm:space-y-[64px]">
             <h1 className="text-[36px] sm:text-[72px] font-normal leading-[43.2px] sm:leading-[86.4px] ">
-                Get in touch
+                Зв'яжіться з нами
             </h1>
             <div className="flex flex-col sm:flex-row-reverse justify-between sm:mt-[120px]">
                 <div className="sm:mr-[110px] w-full sm:w-[36.5%] max-sm:mb-[64px]">
@@ -13,19 +13,23 @@ const Footer = () => {
                         method="post"
                         className="flex flex-col space-y-[48px] sm:space-y-[64px]"
                     >
-                        <input type="text" className="" placeholder="Name" />
-                        <input type="tel" className="" placeholder="Phone" />
-                        <input type="email" className="" placeholder="Email" />
+                        <input type="text" className="" placeholder="Ім'я" />
+                        <input type="tel" className="" placeholder="Телефон" />
+                        <input
+                            type="email"
+                            className=""
+                            placeholder="Електронна пошта"
+                        />
                         <input
                             type="text"
                             className=""
-                            placeholder="Description"
+                            placeholder="Коментар"
                         />
                         <button
                             type="submit"
                             className="w-[177px] py-[12px] px-[24px] font-normal leading-[17.6px] border border-white rounded-[100px] btn"
                         >
-                            Surpass yourself
+                            Вийти за рамки
                         </button>
                     </form>
                 </div>
@@ -44,7 +48,7 @@ const Footer = () => {
                         </div>
                         <div className="font-normal space-y-[16px] mb-[64px] sm:mb-[121px]">
                             <p className="">
-                                10 Sichovyh Stryltsiv Street, Kyiv, Ukraine
+                                вул. Січових Стрільців, 10, Київ, Україна
                             </p>
                             <p className="leading-[17.6px]">
                                 +38 067 275 74 24
@@ -55,7 +59,7 @@ const Footer = () => {
                         </div>
                     </div>
                     <a href="/" className="underline">
-                        Our presentation
+                        Наша презентація
                     </a>
                 </div>
             </div>
