@@ -1,105 +1,105 @@
-"use client";
+'use client';
 
-import React, { useEffect, useRef } from "react";
-import * as THREE from "three";
+import React, { useEffect, useRef } from 'react';
+import * as THREE from 'three';
 
 export default function AnimationComponent() {
-  const sceneContainerRef = useRef(null);
-  const dots = [];
-  const maxDotsCount = 200;
-  const distance = 20;
+    const sceneContainerRef = useRef(null);
+    const dots = [];
+    const maxDotsCount = 200;
+    const distance = 20;
 
-  useEffect(() => {
-    const scene = new THREE.Scene();
-    const camera = new THREE.PerspectiveCamera(
-      75,
-      window.innerWidth / window.innerHeight,
-      0.1,
-      1000
-    );
-    camera.position.z = 5;
-    const renderer = new THREE.WebGLRenderer();
-    renderer.setSize(window.innerWidth, window.innerHeight);
-    sceneContainerRef.current.appendChild(renderer.domElement);
-
-    const light = new THREE.PointLight(0xffffff);
-    light.position.set(0, 0, 10);
-    scene.add(light);
-
-    for (let i = 0; i < maxDotsCount; i++) {
-      generateDot();
-    }
-
-    function generateDot() {
-      if (dots.length < maxDotsCount) {
-        const geometry = new THREE.SphereGeometry(0.05, 16, 16);
-        const material = new THREE.MeshBasicMaterial({
-          color: getRandomColor(),
-        });
-        const dot = new THREE.Mesh(geometry, material);
-        dot.position.set(
-          Math.random() * 10 - 5,
-          Math.random() * 10 - 5,
-          Math.random() * 10 - 5
+    useEffect(() => {
+        const scene = new THREE.Scene();
+        const camera = new THREE.PerspectiveCamera(
+            75,
+            window.innerWidth / window.innerHeight,
+            0.1,
+            1000
         );
-        scene.add(dot);
-        dots.push(dot);
-      }
-    }
+        camera.position.z = 5;
+        const renderer = new THREE.WebGLRenderer();
+        renderer.setSize(window.innerWidth, window.innerHeight);
+        sceneContainerRef.current.appendChild(renderer.domElement);
 
-    function getRandomColor() {
-      const color = new THREE.Color(
-        Math.random(),
-        Math.random(),
-        Math.random()
-      );
-      return color;
-    }
+        const light = new THREE.PointLight(0xffffff);
+        light.position.set(0, 0, 10);
+        scene.add(light);
 
-    const animate = () => {
-      requestAnimationFrame(animate);
-
-      dots.forEach((dot) => {
-        dot.rotation.x += 0.01;
-        dot.rotation.y += 0.01;
-        dot.position.z -= 0.1;
-
-        if (dot.position.z < -distance) {
-          scene.remove(dot);
-          dots.splice(dots.indexOf(dot), 1);
-          generateDot();
+        for (let i = 0; i < maxDotsCount; i++) {
+            generateDot();
         }
-      });
 
-      renderer.render(scene, camera);
-    };
+        function generateDot() {
+            if (dots.length < maxDotsCount) {
+                const geometry = new THREE.SphereGeometry(0.05, 16, 16);
+                const material = new THREE.MeshBasicMaterial({
+                    color: getRandomColor()
+                });
+                const dot = new THREE.Mesh(geometry, material);
+                dot.position.set(
+                    Math.random() * 10 - 5,
+                    Math.random() * 10 - 5,
+                    Math.random() * 10 - 5
+                );
+                scene.add(dot);
+                dots.push(dot);
+            }
+        }
 
-    animate();
+        function getRandomColor() {
+            const color = new THREE.Color(
+                Math.random(),
+                Math.random(),
+                Math.random()
+            );
+            return color;
+        }
 
-    const handleResize = () => {
-      const newWidth = window.innerWidth;
-      const newHeight = window.innerHeight;
+        const animate = () => {
+            requestAnimationFrame(animate);
 
-      camera.aspect = newWidth / newHeight;
-      camera.updateProjectionMatrix();
+            dots.forEach((dot) => {
+                dot.rotation.x += 0.01;
+                dot.rotation.y += 0.01;
+                dot.position.z -= 0.1;
 
-      renderer.setSize(newWidth, newHeight);
-    };
+                if (dot.position.z < -distance) {
+                    scene.remove(dot);
+                    dots.splice(dots.indexOf(dot), 1);
+                    generateDot();
+                }
+            });
 
-    window.addEventListener("resize", handleResize);
+            renderer.render(scene, camera);
+        };
 
-    return () => {
-      window.removeEventListener("resize", handleResize);
-    };
-  }, []);
+        animate();
 
-  return (
-    <div>
-      <div
-        id="scene-container"
-        ref={sceneContainerRef}
-        style={{ position: "absolute", top: 0, left: 0 }}
-      ></div>
-    </div>
-  );
+        const handleResize = () => {
+            const newWidth = window.innerWidth;
+            const newHeight = window.innerHeight;
+
+            camera.aspect = newWidth / newHeight;
+            camera.updateProjectionMatrix();
+
+            renderer.setSize(newWidth, newHeight);
+        };
+
+        window.addEventListener('resize', handleResize);
+
+        return () => {
+            window.removeEventListener('resize', handleResize);
+        };
+    }, []);
+
+    return (
+        <div>
+            <div
+                id="scene-container"
+                ref={sceneContainerRef}
+                className="mb-[-5px]"
+            ></div>
+        </div>
+    );
 }

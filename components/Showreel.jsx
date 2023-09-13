@@ -7,7 +7,7 @@ const Showreel = () => {
                 <Image
                     src="/assets/images/Cover 1-lg.png"
                     alt="Showreel-lg"
-                    className="w-full"
+                    className="h-[100vh] sm:h-auto sm:w-full object-cover"
                     width={1920}
                     height={1080}
                 />

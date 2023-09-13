@@ -45,12 +45,12 @@ const servicesData = [
 
 const Services = (props) => {
     return (
-        <section className="mx-[72px] mb-[128px]">
+        <section className="mx-[32px] sm:mx-[72px] mb-[96px] sm:mb-[128px]">
             <div className="">
-                <h1 className="text-[56px] leading-[67.2px] font-normal mb-[108px]">
+                <h1 className="text-[36px] sm:text-[56px] leading-[43.2px] sm:leading-[67.2px] font-normal mb-[64px] sm:mb-[108px]">
                     Our Services
                 </h1>
-                <div className="mt-[175px] flex flex-col items-end">
+                <div className="flex flex-col sm:items-end">
                     {servicesData.map((servicesData, index) => (
                         <ServicesItem
                             key={index}
