@@ -35,7 +35,7 @@ const Featured = (props) => {
                         />
                     </Link>
                 </div>
-                <div className="flex gap-[134px] ml-[72px] mt-[128px]">
+                <div className="flex gap-[6.979vw] ml-[3.75vw] mt-[128px]">
                     <div className="space-y-[24px]">
                         <h1 className="text-[72px] font-normal leading-[86.4px]">
                             8 years

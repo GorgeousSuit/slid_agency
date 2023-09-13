@@ -11,18 +11,24 @@ input {
 input::placeholder {
     color: white;
 }
+
+@media (max-height: 667px) {
+    .iphone7 {
+        margin-bottom: 20px;
+    }
+}
 /* Clamps for font-size */
 
-.clamp-24 {
+.clamp24 {
     font-size: clamp(1.25rem, 1vw + 1rem, 1.5rem);
 }
-.clamp-40 {
+.clamp40 {
     font-size: clamp(1.5rem, 2vw + 1rem, 2.5rem);
 }
-.clamp-56 {
+.clamp56 {
     font-size: clamp(2.25rem, 3vw + 1rem, 3.5rem);
 }
-.clamp-72 {
+.clamp72 {
     font-size: clamp(2.25rem, 1vw + 1rem, 4.5rem);
 }
 
