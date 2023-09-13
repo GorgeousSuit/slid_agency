@@ -1,11 +1,11 @@
-'use client';
+"use client";
 
-import Image from 'next/image';
-import Link from 'next/link';
-import Nav from './Nav';
-import { useState } from 'react';
-import BurgerButtonIcon from '/public/assets/images/burger.svg';
-import CrossButtonIcon from '/public/assets/images/cross.svg';
+import Image from "next/image";
+import Link from "next/link";
+import Nav from "../Nav";
+import { useState } from "react";
+import BurgerButtonIcon from "/public/assets/images/burger.svg";
+import CrossButtonIcon from "/public/assets/images/cross.svg";
 
 const Header = () => {
     const [open, updateOpen] = useState(false);
@@ -20,7 +20,7 @@ const Header = () => {
         <section>
             <div
                 className={`bg-black w-full h-[78vh] text-white relative ${
-                    open && 'svh'
+                    open && "svh"
                 }`}
             >
                 <button
@@ -37,7 +37,7 @@ const Header = () => {
                         width={330}
                         height={195}
                         className={`mt-[64px] sm:mt-[3.333vw] w-[17.19vw] h-[10.16vw] min-w-[153px] min-h-[91px] ${
-                            open ? 'hidden' : ''
+                            open ? "hidden" : ""
                         }`}
                     />
                     {open && (
@@ -65,7 +65,7 @@ const Header = () => {
                             </div>
                         </div>
                     )}
-                    <div className={`sm:pt-[40px] ${open ? 'hidden' : ''}`}>
+                    <div className={`sm:pt-[40px] ${open ? "hidden" : ""}`}>
                         <div className="hidden sm:flex gap-4 py-1 mb-[35px] hover:[&>*]:underline">
                             <Link className="text-[#545454]" href="/en-US">
                                 Eng
@@ -75,7 +75,7 @@ const Header = () => {
                         <div className="flex items-center mb-[20px] sm:mb-[37px] gap-[66px]">
                             <p
                                 className={`text-[20px] sm:clamp24 leading-[22px] sm:leading-[26.4px] ${
-                                    open ? 'text-red' : ''
+                                    open ? "text-red" : ""
                                 }`}
                             >
                                 +38 067 275 74 24
@@ -86,16 +86,16 @@ const Header = () => {
                         </div>
                         <p
                             className={`block text-[20px] sm:clamp24 leading-[22px] sm:leading-[26.4px] font-normal ${
-                                open ? 'hidden' : ''
+                                open ? "hidden" : ""
                             }`}
                         >
-                            Тільки сенси залишають слід в{' '}
+                            Тільки сенси залишають слід в{" "}
                             <br className="hidden sm:block" /> історії.
                             <br className="sm:hidden" /> Ми створюємо сенси.
                         </p>
                         <button
                             className={`border-white border-[1px] rounded-[100px] px-[24px] py-[12px] leading-[17.6px] btn sm:hidden mb-[64px] mt-[72px] ${
-                                open ? 'hidden' : ''
+                                open ? "hidden" : ""
                             }`}
                         >
                             Зв'яжіться з нами

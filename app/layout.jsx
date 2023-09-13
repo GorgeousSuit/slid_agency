@@ -1,13 +1,13 @@
-import '@styles/globals.css';
-import Head from 'next/head';
-import Fixel from 'next/font/local';
-import Footer from '@components/Footer';
+import "@styles/globals.css";
+import Head from "next/head";
+import Fixel from "next/font/local";
+import Footer from "@components/Footer";
 
-const fixelFont = Fixel({ src: '../fonts/FixelVariable.ttf' });
+const fixelFont = Fixel({ src: "../fonts/FixelVariable.ttf" });
 
 export const metadata = {
-    title: 'slid | Креативна агенція',
-    description: 'Currently is under development'
+    title: "slid | Креативна агенція",
+    description: "Currently is under development",
 };
 
 const RootLayout = ({ children }) => {
