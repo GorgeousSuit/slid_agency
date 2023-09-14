@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
 @tailwind base;
 @tailwind components;
@@ -17,9 +17,20 @@ input::placeholder {
         margin-bottom: 20px;
     }
 }
-
+.tooltip:hover::before,
+.tooltip:hover::after {
+    opacity: 1;
+    transform: translateY(-2px);
+}
 .svh {
     height: 100svh;
+}
+/* Animations */
+.scale-up {
+    @apply transition-transform ease-in-out duration-100 cursor-pointer;
+}
+.scale-up:hover {
+    transform: scale(1.1);
 }
 
 /* Clamps for font-size */
