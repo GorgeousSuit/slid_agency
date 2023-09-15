@@ -31,25 +31,29 @@ const Header = () => {
                 </button>
 
                 <div className="h-full flex flex-col sm:flex-row justify-between px-[32px] sm:px-[3.75vw]">
-                    <Image
-                        src="/assets/images/logo-lg.svg"
-                        alt="Logo-lg"
-                        width={330}
-                        height={195}
-                        className={`mt-[64px] sm:mt-[3.333vw] w-[17.19vw] h-[10.16vw] min-w-[153px] min-h-[91px] ${
-                            open ? "hidden" : ""
-                        }`}
-                    />
+                    <Link href="/">
+                        <Image
+                            src="/assets/images/logo-lg.svg"
+                            alt="Logo-lg"
+                            width={330}
+                            height={195}
+                            className={`mt-[64px] sm:mt-[3.333vw] w-[17.19vw] h-[10.16vw] min-w-[153px] min-h-[91px] ${
+                                open ? "hidden" : ""
+                            }`}
+                        />
+                    </Link>
                     {open && (
                         <div className="h-full flex flex-col justify-between">
                             <div className="">
-                                <Image
-                                    src="/assets/images/logo-lg.svg"
-                                    alt="Logo-lg"
-                                    width={330}
-                                    height={195}
-                                    className="mt-[64px] sm:mt-[3.333vw] w-[17.19vw] h-[10.16vw] min-w-[153px] min-h-[91px]"
-                                />
+                                <Link href="/">
+                                    <Image
+                                        src="/assets/images/logo-lg.svg"
+                                        alt="Logo-lg"
+                                        width={330}
+                                        height={195}
+                                        className="mt-[64px] sm:mt-[3.333vw] w-[17.19vw] h-[10.16vw] min-w-[153px] min-h-[91px]"
+                                    />
+                                </Link>
                                 <div className="flex gap-4 py-1 hover:[&>*]:underline mt-[3.7559vh] mb-[12.5587vh] iphone7">
                                     <Link className="text-[#545454]" href="/EN">
                                         Eng

@@ -7,7 +7,7 @@ import Nav from "@components/Nav";
 import BurgerButtonIcon from "/public/assets/images/burger.svg";
 import CrossButtonIcon from "/public/assets/images/cross.svg";
 
-const Header = () => {
+const Header = (props) => {
     const [open, updateOpen] = useState(false);
 
     const openIcon = open ? (
@@ -17,12 +17,21 @@ const Header = () => {
     );
 
     return (
-        <section>
+        <section className="">
             <div
-                className={`bg-black w-full h-[48vh] text-white relative sm:px-[72px] sm:pt-[64px] sm:pb-[55px] ${
-                    open && "svh"
+                className={`w-full h-[78vh] text-white relative sm:px-[72px] sm:pt-[64px] sm:pb-[55px] ${
+                    open && "svh bg-black"
                 }`}
             >
+                <Image
+                    src={props.mainCover}
+                    alt="Logo-lg"
+                    width={1920}
+                    height={1080}
+                    className={`w-full absolute top-[-20px] left-0 z-[-1] ${
+                        open && "hidden"
+                    }`}
+                />
                 <button
                     onClick={() => updateOpen(!open)}
                     className="absolute top-[64px] right-[72px]"
@@ -84,11 +93,11 @@ const Header = () => {
                         </div>
                     )}
                     <p
-                        className={`text-[72px] leading-[86.4px] ${
+                        className={`text-[168px] font-normal leading-[151.2px] ml-[-12px] ${
                             open && "hidden"
                         }`}
                     >
-                        Portfolio
+                        {props.mainTitle}
                     </p>
                 </div>
             </div>
