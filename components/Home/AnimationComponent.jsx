@@ -1,7 +1,7 @@
-'use client';
+"use client";
 
-import React, { useEffect, useRef } from 'react';
-import * as THREE from 'three';
+import React, { useEffect, useRef } from "react";
+import * as THREE from "three";
 
 export default function AnimationComponent() {
     const sceneContainerRef = useRef(null);
@@ -10,51 +10,56 @@ export default function AnimationComponent() {
     const distance = 20;
 
     useEffect(() => {
-        const scene = new THREE.Scene();
-        const camera = new THREE.PerspectiveCamera(
-            75,
-            window.innerWidth / window.innerHeight,
-            0.1,
-            1000
-        );
-        camera.position.z = 5;
-        const renderer = new THREE.WebGLRenderer();
-        renderer.setSize(window.innerWidth, window.innerHeight);
-        sceneContainerRef.current.appendChild(renderer.domElement);
+        let scene, camera, renderer;
 
-        const light = new THREE.PointLight(0xffffff);
-        light.position.set(0, 0, 10);
-        scene.add(light);
+        const init = () => {
+            scene = new THREE.Scene();
+            camera = new THREE.PerspectiveCamera(
+                75,
+                window.innerWidth / window.innerHeight,
+                0.1,
+                1000,
+            );
+            camera.position.z = 5;
 
-        for (let i = 0; i < maxDotsCount; i++) {
-            generateDot();
-        }
+            renderer = new THREE.WebGLRenderer();
+            renderer.setSize(window.innerWidth, window.innerHeight);
+            sceneContainerRef.current.appendChild(renderer.domElement);
 
-        function generateDot() {
+            const light = new THREE.PointLight(0xffffff);
+            light.position.set(0, 0, 10);
+            scene.add(light);
+
+            for (let i = 0; i < maxDotsCount; i++) {
+                generateDot();
+            }
+        };
+
+        const generateDot = () => {
             if (dots.length < maxDotsCount) {
                 const geometry = new THREE.SphereGeometry(0.05, 16, 16);
                 const material = new THREE.MeshBasicMaterial({
-                    color: getRandomColor()
+                    color: getRandomColor(),
                 });
                 const dot = new THREE.Mesh(geometry, material);
                 dot.position.set(
                     Math.random() * 10 - 5,
                     Math.random() * 10 - 5,
-                    Math.random() * 10 - 5
+                    Math.random() * 10 - 5,
                 );
                 scene.add(dot);
                 dots.push(dot);
             }
-        }
+        };
 
-        function getRandomColor() {
+        const getRandomColor = () => {
             const color = new THREE.Color(
                 Math.random(),
                 Math.random(),
-                Math.random()
+                Math.random(),
             );
             return color;
-        }
+        };
 
         const animate = () => {
             requestAnimationFrame(animate);
@@ -74,6 +79,7 @@ export default function AnimationComponent() {
             renderer.render(scene, camera);
         };
 
+        init();
         animate();
 
         const handleResize = () => {
@@ -86,19 +92,19 @@ export default function AnimationComponent() {
             renderer.setSize(newWidth, newHeight);
         };
 
-        window.addEventListener('resize', handleResize);
+        window.addEventListener("resize", handleResize);
 
         return () => {
-            window.removeEventListener('resize', handleResize);
+            window.removeEventListener("resize", handleResize);
         };
     }, []);
 
     return (
-        <div>
+        <div className="w-full h-screen">
             <div
                 id="scene-container"
                 ref={sceneContainerRef}
-                className="mb-[-5px]"
+                className="mb-[-5px] overflow-x-hidden"
             ></div>
         </div>
     );

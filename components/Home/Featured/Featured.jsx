@@ -13,7 +13,7 @@ const Featured = (props) => {
     return (
         <section>
             <div className="">
-                <div className="mx-[32px] sm:mx-[72px] gap-[16px] sm:gap-[8px] my-[56px]">
+                <div className="mx-[32px] sm:mx-[72px] space-y-[16px] sm:space-y-[8px] mb-[48px] sm:mb-[56px]">
                     <h1 className="text-[36px] sm:text-[56px] font-normal leading-[43.2px] sm:leading-[67.2px]">
                         Обрані роботи
                     </h1>
@@ -29,14 +29,14 @@ const Featured = (props) => {
                         <Image
                             src="/assets/images/Full portfolio-ua.svg"
                             alt="Full-Portfolio"
-                            width={200}
-                            height={200}
-                            className="rounded-[100%] absolute bottom-[-100px] right-[32px] sm:right-[72px] animate-spin-slow"
+                            width={150}
+                            height={150}
+                            className="sm:w-[200px] sm:h-[200px]rounded-[100%] absolute bottom-[-75px] sm:bottom-[-100px] right-[32px] sm:right-[72px] animate-spin-slow"
                         />
                     </Link>
                 </div>
-                <div className="flex flex-col sm:flex-row gap-[6.979vw] ml-[32px] sm:ml-[3.75vw] mt-[99px] sm:mt-[128px]">
-                    <div className="space-y-[24px]">
+                <div className="gap-[48px] sm:gap-[64px] flex flex-col sm:flex-row ml-[32px] sm:ml-[3.75vw] mt-[99px] sm:mt-[128px]">
+                    <div className="space-y-[16px] sm:space-y-[24px]">
                         <h1 className="text-[32px] sm:text-[72px] font-normal leading-[38.4px] sm:leading-[86.4px]">
                             8 років
                         </h1>
@@ -44,7 +44,7 @@ const Featured = (props) => {
                             досвіду перед <br /> відкриттям власної студії
                         </h2>
                     </div>
-                    <div className="space-y-[24px]">
+                    <div className="space-y-[16px] sm:space-y-[24px]">
                         <h1 className="text-[32px] sm:text-[72px] font-normal leading-[38.4px] sm:leading-[86.4px]">
                             50+
                         </h1>

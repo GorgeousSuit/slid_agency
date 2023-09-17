@@ -58,7 +58,7 @@ const Footer = () => {
                             </p>
                         </div>
                     </div>
-                    <a href="/" className="underline">
+                    <a href="/" className="underline hover:no-underline">
                         Наша презентація
                     </a>
                 </div>

@@ -6,7 +6,10 @@ const mainTitle = "Laser Time";
 const page = (props) => {
     return (
         <section>
-            <Header mainCover={mainCover} mainTitle={mainTitle} />
+            <Header
+                mainCover={"/assets/images/laser-time-cover.jpg"}
+                mainTitle={"Laser Time"}
+            />
         </section>
     );
 };
