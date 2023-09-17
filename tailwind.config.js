@@ -12,6 +12,7 @@ module.exports = {
                 inter: ["Inter", "sans-serif"],
             },
             animation: {
+                "pulse-fast": "pulse 1s infinite",
                 "spin-slow": "spin 8s linear infinite",
                 wiggle: "wiggle 1s ease-in-out infinite",
                 "scale-up": "scale-up 0.1s ease forwards",
