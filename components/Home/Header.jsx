@@ -28,7 +28,7 @@ const Header = () => {
                 {openIcon}
             </button>
 
-            <div className="h-full flex flex-col sm:flex-row justify-between px-[32px] sm:px-[3.75vw]">
+            <div className="h-full flex flex-col sm:flex-row justify-between px-[32px] sm:px-[4.79vw]">
                 <Link href="/">
                     <Image
                         src="/assets/images/logo-lg.svg"
@@ -80,9 +80,9 @@ const Header = () => {
                             open ? "hidden" : ""
                         }`}
                     >
-                        Тільки сенси залишають слід в{" "}
-                        <br className="hidden sm:block" /> історії.
-                        <br className="sm:hidden" /> Ми створюємо сенси.
+                        Тільки сенси залишають слід в історії.
+                        <br className="hidden sm:block" /> Ми креативна агенція
+                        яка ці сенси створює.
                     </p>
                     <button
                         className={`border-white border-[1px] rounded-[100px] px-[24px] py-[12px] leading-[17.6px] btn sm:hidden mb-[64px] mt-[72px] ${
