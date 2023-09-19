@@ -2,18 +2,21 @@ import React from "react";
 
 const Advantages = () => {
     return (
-        <section className="px-[32px] sm:px-[72px] mt-[96px] sm:mt-[128px]">
+        <section className="px-[32px] sm:px-[76px] 2xl:px-[92px] mt-[96px] sm:mt-[128px]">
             <div className="max-sm:mx-auto max-sm:w-[fit-content]">
                 <h1 className="text-[36px] sm:text-[72px] font-normal leading-[43.2px] sm:leading-[86.4px]">
-                    Допоможемо Вам <br /> стати кращими у <br /> своїй галузі
+                    Допомогаємо і <br /> надихаємо <br /> створювати бренди
                 </h1>
 
                 <div className="flex sm:justify-end mt-[32px] sm:mt-[160px]">
-                    <h2 className="text-[20px] sm:text-[24px] font-normal leading-[28px] sm:leading-[33.6px] text-[#545454]">
-                        Ми маємо великий досвід у сфері
-                        <br /> маркетингу та бренд-менеджменту. Це
-                        <br /> дозволяє нам створювати дизайн,
-                        <br /> орієнтований на результат.
+                    <h2 className="text-[20px] sm:text-[24px] font-normal leading-[28px] text-[#545454] 2xl:mr-[10.36vw]">
+                        Ми поєднуємо бренд-
+                        <br className="sm:hidden" />
+                        менеджмент, дизайн <br className="hidden sm:block" /> та
+                        <br className="sm:hidden" /> комунікації для створення
+                        <br className="sm:hidden" /> стратегій та
+                        <br className="hidden sm:block" /> рішень,
+                        <br className="sm:hidden" /> орієнтованих на результат.
                     </h2>
                 </div>
             </div>
@@ -24,14 +27,18 @@ const Advantages = () => {
                             01
                         </p>
                         <p className="mb-[20px] sm:mb-[24px] font-normal text-[24px] sm:text-[40px] leading-[28.8px] sm:leading-[48px]">
-                            Ми працюємо з<br /> цілями та викликами
+                            Ми працюємо з цілями
+                            <br /> та викликами
                         </p>
-                        <p className="font-normal leading-[22.4px] text-[#545454]">
-                            Якщо у вас є мета, ми знайдемо
-                            <br className="sm:hidden" /> способи
-                            <br className="hidden sm:block" /> допомогти вам
-                            досягти її за допомогою цифрових
-                            <br className="hidden sm:block" /> каналів.
+                        <p className="font-normal leading-[22.4px] sm:leading-[28px] text-[#545454]">
+                            Якщо у вас є мета, ми побудуємо
+                            <br className="sm:hidden" /> покроковий
+                            <br className="hidden sm:block" /> план її
+                            досягнення,
+                            <br className="sm:hidden" /> залучаючи всі необхідні
+                            <br className="hidden sm:block" /> для цього
+                            <br className="sm:hidden" />
+                            інструменти та ресурси.
                         </p>
                     </div>
                     <div className="sm:flex sm:justify-end sm:mr-[220px] sm:max-xl:mt[15px] lg:mt-[-44px]">
@@ -41,19 +48,18 @@ const Advantages = () => {
                             </p>
                             <p className="mb-[20px] sm:mb-[24px] font-normal text-[24px] sm:text-[40px] leading-[28.8px] sm:leading-[48px]">
                                 Комплексне
-                                <br /> дослідження вашого
-                                <br /> продукту
+                                <br />
+                                дослідження бізнесу
                             </p>
-                            <p className="font-normal leading-[22.4px] text-[#545454]">
-                                Чим краще ми знаємо ваш продукт,
-                                <br className="sm:hidden" /> його переваги{" "}
-                                <br className="hidden sm:block" />
-                                та клієнтів, які його купують,
-                                <br className="sm:hidden" /> тим краще ми{" "}
-                                <br className="hidden sm:block" />
-                                побудуємо стратегію його представлення в{" "}
-                                <br className="hidden sm:block" />
-                                цифровому просторі.
+                            <p className="font-normal leading-[22.4px] sm:leading-[28px] text-[#545454]">
+                                Чим краще ми знаємо ваш продукт, його
+                                <br className="sm:hidden" />
+                                <br className="hidden sm:block" /> переваги та
+                                тих, хто його купує, тим
+                                <br className="sm:hidden" /> легше
+                                <br className="hidden sm:block" /> нам будувати
+                                стратегію його
+                                <br className="sm:hidden" /> розвитку.
                             </p>
                         </div>
                     </div>
@@ -65,11 +71,13 @@ const Advantages = () => {
                             Аналіз ринку та
                             <br /> конкурентів
                         </p>
-                        <p className="font-normal leading-[22.4px] text-[#545454]">
+                        <p className="font-normal leading-[22.4px] sm:leading-[28px] text-[#545454]">
                             Ми ретельно вивчаємо ринок,
                             <br className="sm:hidden" /> на якому ви
                             <br className="hidden sm:block" /> працюєте, і з ким
+                            <br className="sm:hidden" />
                             конкуруєте. Щоб запропонувати
+                            <br className="sm:hidden" />
                             <br className="hidden sm:block" /> рішення, які
                             зроблять вас
                             <br className="sm:hidden" /> кращими за інших.
@@ -84,17 +92,14 @@ const Advantages = () => {
                                 Ми — партнери для
                                 <br /> вашого бренду
                             </p>
-                            <p className="font-normal leading-[22.4px] text-[#545454]">
-                                Розпочавши співпрацю з вашою
-                                <br className="sm:hidden" /> компанією, ми{" "}
-                                <br className="hidden sm:block" />
-                                завжди будемо
-                                <br className="sm:hidden" />
-                                зацікавлені в її подальшому{" "}
-                                <br className="hidden sm:block" />
-                                розвитку і будемо раді поділитися своєю{" "}
-                                <br className="hidden sm:block" />
-                                експертизою, щоб допомогти вам розвиватися.
+                            <p className="font-normal leading-[22.4px] sm:leading-[28px] text-[#545454]">
+                                Розпочавши з вами співпрацю, ми
+                                <br className="sm:hidden" /> постійно
+                                <br className="hidden sm:block" /> будемо
+                                сприяти формуванню
+                                <br className="sm:hidden" /> нових меж
+                                <br className="hidden sm:block" /> вашого
+                                розвитку.
                             </p>
                         </div>
                     </div>

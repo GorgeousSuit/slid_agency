@@ -1,10 +1,10 @@
-'use client';
+"use client";
 
-import { useState } from 'react';
-import MinusButtonIcon from '/public/assets/images/minus.svg';
-import PlusButtonIcon from '/public/assets/images/plus.svg';
-import MinusButtonIconSm from '/public/assets/images/plus-sm.svg';
-import PlusButtonIconSm from '/public/assets/images/plus-sm.svg';
+import { useState } from "react";
+import MinusButtonIcon from "/public/assets/images/minus.svg";
+import PlusButtonIcon from "/public/assets/images/plus.svg";
+import MinusButtonIconSm from "/public/assets/images/plus-sm.svg";
+import PlusButtonIconSm from "/public/assets/images/plus-sm.svg";
 
 const ServicesItem = (props) => {
     const [open, updateOpen] = useState(false);
@@ -31,12 +31,16 @@ const ServicesItem = (props) => {
                         <p className="h-[21px]sm:h-[33px] text-[16px] sm:text-[24px] leading-[23.5px] sm:leading-[28.8px] font-normal mr-[20px] sm:mr-[85px]">
                             {props.number}
                         </p>
-                        <p className="text-left text-[24px] sm:text-[40px] leading-[28.8px] sm:leading-[48px] font-normal w-[fit-content]">
+                        <p className="text-left text-[24px] sm:text-[40px] leading-[28.8px] sm:leading-[48px] font-normal">
                             {props.title}
                         </p>
                     </div>
-                    {openIcon}
-                    {openIconSm}
+                    <div className="h-full relative">
+                        <div className="absolute top-[-24px] sm:top-[-36px] right-0">
+                            {openIcon}
+                            {openIconSm}
+                        </div>
+                    </div>
                 </button>
                 {open && (
                     <div className="py-5">

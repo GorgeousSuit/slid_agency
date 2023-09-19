@@ -2,16 +2,16 @@ import Image from "next/image";
 
 const Footer = () => {
     return (
-        <footer className="bg-black text-white px-[32px] sm:px-[72px] pt-[64px] sm:pt-[26px] pb-[32px] sm:pb-[59px] max-sm:space-y-[64px]">
+        <footer className="bg-black text-white px-[32px] sm:px-[5vw] 2xl:px-[92px] pt-[64px] sm:pt-[26px] pb-[32px] sm:pb-[59px] max-sm:space-y-[64px]">
             <h1 className="text-[36px] sm:text-[72px] font-normal leading-[43.2px] sm:leading-[86.4px] ">
                 Зв'яжіться з нами
             </h1>
             <div className="flex flex-col sm:flex-row-reverse justify-between sm:mt-[120px]">
-                <div className="sm:mr-[110px] w-full sm:w-[36.5%] max-sm:mb-[64px]">
+                <div className="sm:mr-[110px] w-full sm:w-[32.5vw] 2xl:w-[38.33vw] max-sm:mb-[64px]">
                     <form
                         action="#"
                         method="post"
-                        className="flex flex-col space-y-[48px] sm:space-y-[64px]"
+                        className="flex flex-col space-y-[48px] sm:space-y-[64px] 2xl:mr-[100px]"
                     >
                         <input type="text" className="" placeholder="Ім'я" />
                         <input type="tel" className="" placeholder="Телефон" />
@@ -35,7 +35,7 @@ const Footer = () => {
                 </div>
                 <div className="">
                     <div className="flex flex-col-reverse sm:flex-col">
-                        <div className="flex justify-between leading-[17.6px] gap-[32px] mb-[64px] sm:mb-[85px] hover:[&>*]:underline">
+                        <div className="flex justify-between leading-[17.6px] sm:max-lg:pr-[20px] mb-[64px] sm:mb-[85px] hover:[&>*]:underline">
                             <a href="/" className="">
                                 Instagram
                             </a>

@@ -1,4 +1,4 @@
-import Image from 'next/image';
+import Image from "next/image";
 
 const FeaturedItem = (props) => {
     return (
@@ -7,7 +7,7 @@ const FeaturedItem = (props) => {
                 src={props.src}
                 alt="Case"
                 width={1920}
-                height={1080}
+                height={800}
                 className="w-full"
             />
         </div>

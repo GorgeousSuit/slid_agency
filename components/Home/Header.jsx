@@ -33,9 +33,9 @@ const Header = () => {
                     <Image
                         src="/assets/images/logo-lg.svg"
                         alt="Logo-lg"
-                        width={330}
-                        height={195}
-                        className={`mt-[64px] sm:mt-[3.333vw] w-[17.19vw] h-[10.16vw] min-w-[153px] min-h-[91px] ${
+                        width={328}
+                        height={194}
+                        className={`mt-[64px] sm:mt-[3.333vw] max-xl:w-[25.63vw] max-xl:h-[15.16vw] min-w-[153px] min-h-[91px] ${
                             open && ""
                         }`}
                     />
@@ -57,26 +57,32 @@ const Header = () => {
                     </div>
                 )}
                 <div className={`sm:pt-[40px] ${open ? "hidden" : ""}`}>
-                    <div className="hidden sm:flex gap-4 py-1 mb-[35px] hover:[&>*]:underline">
-                        <Link className="text-[#545454]" href="/en-US">
-                            Eng
-                        </Link>
-                        <Link href="/uk-UA">Ua</Link>
+                    <div className="hidden sm:flex justify-between  py-1 mb-[35px]">
+                        <div className="space-x-[16px]">
+                            <Link
+                                className="text-[#545454] hover:underline"
+                                href="/en-US"
+                            >
+                                Eng
+                            </Link>
+                            <Link href="/uk-UA">Ua</Link>
+                        </div>
+                        <p className="hidden sm:block font-normal">
+                            вул. Січових Стрільців, 10, Київ
+                        </p>
                     </div>
-                    <div className="flex items-center mb-[20px] sm:mb-[37px] gap-[66px]">
+                    <div className="flex items-center mb-[20px] sm:mb-[32px] gap-[37px]">
                         <p
-                            className={`text-[20px] sm:clamp24 leading-[22px] sm:leading-[26.4px] ${
-                                open ? "text-red" : ""
-                            }`}
+                            className={`text-[20px] sm:text-[28px] sm:clamp24 leading-[22px] sm:leading-[30.8px]}`}
                         >
                             +38 067 275 74 24
                         </p>
-                        <button className="border-white border-[1px] rounded-[100px] px-[24px] py-[12px] leading-[17.6px] btn hidden sm:block">
+                        <button className="border-white border-[1px] rounded-[100px] px-[24px] py-[12px] leading-[22px] btn hidden sm:block">
                             Зв'яжіться з нами
                         </button>
                     </div>
                     <p
-                        className={`block text-[20px] sm:clamp24 leading-[22px] sm:leading-[26.4px] font-normal ${
+                        className={`block text-[20px] sm:clamp24 leading-[22px] sm:leading-[27px] font-normal ${
                             open ? "hidden" : ""
                         }`}
                     >

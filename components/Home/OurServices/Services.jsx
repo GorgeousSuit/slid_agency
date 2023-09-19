@@ -8,44 +8,34 @@ const servicesData = [
     },
     {
         number: "02",
-        title: "Айдентика",
+        title: "Візуальна ідентичність",
         content: "Placeholder text. Wow! So informative!",
     },
     {
         number: "03",
-        title: "Дизайн веб-сайту",
+        title: "Дизайн та розробка сайтів",
         content: "Placeholder text. Wow! So informative!",
     },
     {
         number: "04",
-        title: "Креатив",
+        title: "Креативна реклама",
         content: "Placeholder text. Wow! So informative!",
     },
     {
         number: "05",
-        title: "Веб та мобільний додаток",
+        title: "UX та продуктовий дизайн",
         content: "Placeholder text. Wow! So informative!",
     },
     {
         number: "06",
-        title: "UX & Дизайн продукту",
-        content: "Placeholder text. Wow! So informative!",
-    },
-    {
-        number: "07",
         title: "Графічний дизайн",
-        content: "Placeholder text. Wow! So informative!",
-    },
-    {
-        number: "08",
-        title: "Дизайн соціальних мереж",
         content: "Placeholder text. Wow! So informative!",
     },
 ];
 
 const Services = (props) => {
     return (
-        <section className="mx-[32px] sm:mx-[72px] mb-[96px] sm:mb-[128px]">
+        <section className="mx-[32px] sm:mx-[72px] 2xl:mx-[92px] mb-[96px] sm:mb-[128px] 2xl:mb-[241px]">
             <div className="">
                 <h1 className="text-[36px] sm:text-[56px] leading-[43.2px] sm:leading-[67.2px] font-normal mb-[64px] sm:mb-[108px]">
                     Наші послуги
