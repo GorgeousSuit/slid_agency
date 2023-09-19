@@ -18,24 +18,24 @@ const Header = () => {
 
     return (
         <header
-            className={`bg-black w-full max-sm:h-[78vh] sm:h-[73.8vh] 2xl:h-[64.8vh] text-white relative`}
+            className={`bg-black w-full max-lg:h-[78vh] lg:h-[73.8vh] 2xl:h-[64.8vh] text-white relative`}
             style={{ height: open && "100svh" }}
         >
             <button
                 onClick={() => updateOpen(!open)}
-                className="pb-[70px] pl-[70px] sm:hidden absolute top-[64px] right-[32px]"
+                className="pb-[70px] pl-[70px] lg:hidden absolute top-[64px] right-[32px]"
             >
                 {openIcon}
             </button>
 
-            <div className="h-full flex flex-col sm:flex-row justify-between px-[32px] sm:px-[4.79vw]">
+            <div className="h-full flex flex-col lg:flex-row justify-between px-[32px] lg:px-[4.79vw]">
                 <Link href="/">
                     <Image
                         src="/assets/images/logo-lg.svg"
                         alt="Logo-lg"
                         width={328}
                         height={194}
-                        className={`mt-[64px] sm:mt-[3.333vw] max-xl:w-[25.63vw] max-xl:h-[15.16vw] min-w-[153px] min-h-[91px] ${
+                        className={`mt-[64px] lg:mt-[3.333vw] max-xl:w-[25.63vw] max-xl:h-[15.16vw] min-w-[153px] min-h-[91px] ${
                             open && ""
                         }`}
                     />
@@ -56,8 +56,8 @@ const Header = () => {
                         </div>
                     </div>
                 )}
-                <div className={`sm:pt-[40px] ${open ? "hidden" : ""}`}>
-                    <div className="hidden sm:flex justify-between  py-1 mb-[35px]">
+                <div className={`lg:pt-[40px] ${open ? "hidden" : ""}`}>
+                    <div className="hidden lg:flex justify-between  py-1 mb-[35px]">
                         <div className="space-x-[16px]">
                             <Link
                                 className="text-[#545454] hover:underline"
@@ -67,31 +67,31 @@ const Header = () => {
                             </Link>
                             <Link href="/uk-UA">Ua</Link>
                         </div>
-                        <p className="hidden sm:block font-normal">
+                        <p className="hidden lg:block font-normal">
                             вул. Січових Стрільців, 10, Київ
                         </p>
                     </div>
-                    <div className="flex items-center mb-[20px] sm:mb-[32px] gap-[37px]">
+                    <div className="flex items-center mb-[20px] lg:mb-[32px] gap-[37px]">
                         <p
-                            className={`text-[20px] sm:text-[28px] sm:clamp24 leading-[22px] sm:leading-[30.8px]}`}
+                            className={`text-[20px] lg:text-[28px] lg:clamp24 leading-[22px] lg:leading-[30.8px]}`}
                         >
                             +38 067 275 74 24
                         </p>
-                        <button className="border-white border-[1px] rounded-[100px] px-[24px] py-[12px] leading-[22px] btn hidden sm:block">
+                        <button className="border-white border-[1px] rounded-[100px] px-[24px] py-[12px] leading-[22px] btn hidden lg:block">
                             Зв'яжіться з нами
                         </button>
                     </div>
                     <p
-                        className={`block text-[20px] sm:clamp24 leading-[22px] sm:leading-[27px] font-normal ${
+                        className={`block text-[20px] lg:clamp24 leading-[22px] lg:leading-[27px] font-normal ${
                             open ? "hidden" : ""
                         }`}
                     >
                         Тільки сенси залишають слід в історії.
-                        <br className="hidden sm:block" /> Ми креативна агенція
+                        <br className="hidden lg:block" /> Ми креативна агенція
                         яка ці сенси створює.
                     </p>
                     <button
-                        className={`border-white border-[1px] rounded-[100px] px-[24px] py-[12px] leading-[17.6px] btn sm:hidden mb-[64px] mt-[72px] ${
+                        className={`border-white border-[1px] rounded-[100px] px-[24px] py-[12px] leading-[17.6px] btn lg:hidden mb-[64px] mt-[72px] ${
                             open ? "hidden" : ""
                         }`}
                     >
@@ -99,7 +99,7 @@ const Header = () => {
                     </button>
                 </div>
             </div>
-            <div className="hidden sm:block w-full absolute bottom-[100px]">
+            <div className="hidden lg:block w-full absolute bottom-[3.79vw]">
                 <Nav />
             </div>
         </header>

@@ -21,22 +21,22 @@ const ServicesItem = (props) => {
     );
 
     return (
-        <article className="w-full sm:w-[57.6%] ">
-            <div className="mb-[48px] sm:mb-[64px]">
+        <article className="w-full lg:w-[57.6%] ">
+            <div className="mb-[48px] lg:mb-[64px]">
                 <button
                     onClick={() => updateOpen(!open)}
-                    className=" w-full justify-between flex items-end pb-[16px] sm:pb-[20px] border-b border-[#D2D2D2] hover:border-[black]"
+                    className=" w-full justify-between flex items-end pb-[16px] lg:pb-[20px] border-b border-[#D2D2D2] hover:border-[black]"
                 >
                     <div className="flex items-end">
-                        <p className="h-[21px]sm:h-[33px] text-[16px] sm:text-[24px] leading-[23.5px] sm:leading-[28.8px] font-normal mr-[20px] sm:mr-[85px]">
+                        <p className="h-[21px]lg:h-[33px] text-[16px] lg:text-[24px] leading-[23.5px] lg:leading-[28.8px] font-normal mr-[20px] lg:mr-[85px]">
                             {props.number}
                         </p>
-                        <p className="text-left text-[24px] sm:text-[40px] leading-[28.8px] sm:leading-[48px] font-normal">
+                        <p className="text-left text-[24px] lg:text-[40px] leading-[28.8px] lg:leading-[48px] font-normal">
                             {props.title}
                         </p>
                     </div>
                     <div className="h-full relative">
-                        <div className="absolute top-[-24px] sm:top-[-36px] right-0">
+                        <div className="absolute top-[-24px] lg:top-[-36px] right-0">
                             {openIcon}
                             {openIconSm}
                         </div>

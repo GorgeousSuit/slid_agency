@@ -35,12 +35,12 @@ const servicesData = [
 
 const Services = (props) => {
     return (
-        <section className="mx-[32px] sm:mx-[72px] 2xl:mx-[92px] mb-[96px] sm:mb-[128px] 2xl:mb-[241px]">
+        <section className="mx-[32px] lg:mx-[72px] 2xl:mx-[92px] mb-[96px] lg:mb-[128px] 2xl:mb-[241px]">
             <div className="">
-                <h1 className="text-[36px] sm:text-[56px] leading-[43.2px] sm:leading-[67.2px] font-normal mb-[64px] sm:mb-[108px]">
+                <h1 className="text-[36px] lg:text-[56px] leading-[43.2px] lg:leading-[67.2px] font-normal mb-[64px] lg:mb-[108px]">
                     Наші послуги
                 </h1>
-                <div className="flex flex-col sm:items-end">
+                <div className="flex flex-col lg:items-end">
                     {servicesData.map((servicesData, index) => (
                         <ServicesItem
                             key={index}
