@@ -3,7 +3,7 @@
 import { useState } from "react";
 import MinusButtonIcon from "/public/assets/images/minus.svg";
 import PlusButtonIcon from "/public/assets/images/plus.svg";
-import MinusButtonIconSm from "/public/assets/images/plus-sm.svg";
+import MinusButtonIconSm from "/public/assets/images/minus-sm.svg";
 import PlusButtonIconSm from "/public/assets/images/plus-sm.svg";
 
 const ServicesItem = (props) => {

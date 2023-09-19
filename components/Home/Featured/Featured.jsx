@@ -41,7 +41,7 @@ const Featured = (props) => {
                     </h1>
                     <h2 className="text-[20px] sm:text-[24px] font-normal leading-[28px] sm:leading-[33.6px] text-[#545454]">
                         досвіду перед відкриттям
-                        <br /> власної студії
+                        <br /> власної агенції
                     </h2>
                 </div>
                 <div className="space-y-[16px] sm:space-y-[24px]">

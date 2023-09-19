@@ -3,7 +3,7 @@ import React from "react";
 const Advantages = () => {
     return (
         <section className="px-[32px] sm:px-[76px] 2xl:px-[92px] mt-[96px] sm:mt-[128px]">
-            <div className="max-sm:mx-auto max-sm:w-[fit-content]">
+            <div className="max-sm:w-[fit-content]">
                 <h1 className="text-[36px] sm:text-[72px] font-normal leading-[43.2px] sm:leading-[86.4px]">
                     Допомогаємо і <br /> надихаємо <br /> створювати бренди
                 </h1>
