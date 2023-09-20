@@ -11,14 +11,29 @@ const Header = () => {
     const [open, updateOpen] = useState(false);
 
     useEffect(() => {
-        // Check if we are on the client-side before accessing the document object
+        const disableScroll = (e) => {
+            if (open) {
+                e.preventDefault();
+            }
+        };
+
         if (typeof window !== "undefined") {
             if (open) {
-                document.body.classList.add("overflow-y-hidden");
+                document.body.style.overflow = "hidden";
+                document.addEventListener("touchmove", disableScroll, {
+                    passive: false,
+                });
             } else {
-                document.body.classList.remove("overflow-y-hidden");
+                document.body.style.overflow = "auto";
+                document.removeEventListener("touchmove", disableScroll);
             }
         }
+        return () => {
+            if (typeof window !== "undefined") {
+                document.body.style.overflow = "auto";
+                document.removeEventListener("touchmove", disableScroll);
+            }
+        };
     }, [open]);
 
     const openIcon = open ? (
