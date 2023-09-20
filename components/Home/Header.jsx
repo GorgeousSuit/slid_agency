@@ -3,12 +3,23 @@
 import Image from "next/image";
 import Link from "next/link";
 import Nav from "../Nav";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import BurgerButtonIcon from "/public/assets/images/burger.svg";
 import CrossButtonIcon from "/public/assets/images/cross.svg";
 
 const Header = () => {
     const [open, updateOpen] = useState(false);
+
+    useEffect(() => {
+        // Check if we are on the client-side before accessing the document object
+        if (typeof window !== "undefined") {
+            if (open) {
+                document.body.classList.add("overflow-y-hidden");
+            } else {
+                document.body.classList.remove("overflow-y-hidden");
+            }
+        }
+    }, [open]);
 
     const openIcon = open ? (
         <CrossButtonIcon className="h-[30px] w-[30px]" />

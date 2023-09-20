@@ -48,7 +48,7 @@ const Featured = (props) => {
                     <h1 className="text-[32px] sm:text-[72px] font-normal leading-[38.4px] sm:leading-[86.4px]">
                         50+
                     </h1>
-                    <h2 className="text-[20px] sm:text-[24px] font-normal leading-[28px] sm:leading-[33.6px text-[#545454]">
+                    <h2 className="text-[20px] sm:text-[24px] font-normal leading-[28px] sm:leading-[33.6px] text-[#545454]">
                         реалізованих проектів від
                         <br /> логотипу до дизайну продукту
                     </h2>

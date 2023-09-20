@@ -48,9 +48,9 @@ const Advantages = () => {
                                 02
                             </p>
                             <p className="mb-[20px] lg:mb-[24px] font-normal text-[24px] lg:text-[40px] leading-[28.8px] lg:leading-[48px]">
-                                Комплексне
+                                Комплексно
                                 <br />
-                                дослідження бізнесу
+                                досліджуємо бізнес
                             </p>
                             <p className="font-normal leading-[22.4px] lg:leading-[28px] text-[#545454]">
                                 Чим краще ми знаємо ваш продукт, його
@@ -69,7 +69,7 @@ const Advantages = () => {
                             03
                         </p>
                         <p className="mb-[20px] lg:mb-[24px] font-normal text-[24px] lg:text-[40px] leading-[28.8px] lg:leading-[48px]">
-                            Аналіз ринку та
+                            Аналізуємо ринок та
                             <br /> конкурентів
                         </p>
                         <p className="font-normal leading-[22.4px] lg:leading-[28px] text-[#545454]">

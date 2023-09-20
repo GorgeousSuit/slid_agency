@@ -28,14 +28,14 @@ const ServicesItem = (props) => {
                     className=" w-full justify-between flex items-end pb-[16px] lg:pb-[20px] border-b border-[#D2D2D2] hover:border-[black]"
                 >
                     <div className="flex items-end">
-                        <p className="h-[21px]lg:h-[33px] text-[16px] lg:text-[24px] leading-[23.5px] lg:leading-[28.8px] font-normal mr-[20px] lg:mr-[85px]">
+                        <p className="text-[16px] lg:text-[24px] leading-[23.5px] lg:leading-[28.8px] font-normal mr-[20px] lg:mr-[85px]">
                             {props.number}
                         </p>
                         <p className="text-left text-[24px] lg:text-[40px] leading-[28.8px] lg:leading-[48px] font-normal">
                             {props.title}
                         </p>
                     </div>
-                    <div className="h-full relative">
+                    <div className="w-[40px] h-full relative">
                         <div className="absolute top-[-24px] lg:top-[-36px] right-0">
                             {openIcon}
                             {openIconSm}

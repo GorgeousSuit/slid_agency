@@ -100,7 +100,7 @@ export default function AnimationComponent() {
     }, []);
 
     return (
-        <div className="w-full h-screen">
+        <div className="bg-black w-full h-full sm:hidden">
             <div
                 id="scene-container"
                 ref={sceneContainerRef}
