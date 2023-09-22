@@ -17,26 +17,22 @@ const Header = (props) => {
     );
 
     return (
-        <section className="">
+        <section
+            className="bg-cover bg-center"
+            style={{
+                backgroundImage: `url(${props.mainCover})`,
+            }}
+        >
             <div
-                className={`w-full h-[73vh] text-white relative px-[92px] pt-[80px] pb-[85px] ${
+                className={`w-full h-[73vh] text-white relative px-[32px] sm:px-[92px] pt-[64px] sm:pt-[80px] pb-[85px] ${
                     open &&
                     "bg-black w-full lg:h-[73.8vh] 2xl:h-[64.8vh] text-white max-lg:h-[100svh]"
                 }`}
                 style={{ padding: open && "0px" }}
             >
-                <Image
-                    src={props.mainCover}
-                    alt="Logo-lg"
-                    width={1920}
-                    height={790}
-                    className={`w-full absolute top-[-20px] left-0 z-[-1] ${
-                        open && "hidden"
-                    }`}
-                />
                 <button
                     onClick={() => updateOpen(!open)}
-                    className="pb-[70px] pl-[70px] absolute top-[47px] right-[32px]"
+                    className="py-[32px] px-[32px] absolute top-[32px] right-0 sm:top-[48px]"
                 >
                     {openIcon}
                 </button>

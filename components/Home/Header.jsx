@@ -49,7 +49,7 @@ const Header = () => {
         >
             <button
                 onClick={() => updateOpen(!open)}
-                className="pb-[70px] pl-[70px] lg:hidden absolute top-[64px] right-[32px]"
+                className="py-[64px] px-[32px] lg:hidden absolute top-0 right-0"
             >
                 {openIcon}
             </button>

@@ -1,15 +1,9 @@
-import Image from "next/image";
+import Loading from "@components/Loading";
 
 const loading = () => {
     return (
-        <section className="bg-black w-[100vw] h-[100vh] flex-center">
-            <Image
-                src="/assets/images/logo-lg.svg"
-                alt="Logo-lg"
-                width={330}
-                height={195}
-                className="animate-pulse-fast"
-            />
+        <section className="">
+            <Loading />
         </section>
     );
 };
