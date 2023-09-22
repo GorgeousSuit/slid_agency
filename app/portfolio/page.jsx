@@ -5,26 +5,38 @@ const srcData = [
     {
         src: "/assets/images/portfolio-card-1.png",
         href: "/laser-time",
+        hoverTitle: "Laser Time",
+        hoverText: "Identity + Branding",
     },
     {
         src: "/assets/images/portfolio-card-2.png",
         href: "/",
+        hoverTitle: "Laser Time",
+        hoverText: "Identity + Branding",
     },
     {
         src: "/assets/images/portfolio-card-3.png",
         href: "/",
+        hoverTitle: "Laser Time",
+        hoverText: "Identity + Branding",
     },
     {
         src: "/assets/images/portfolio-card-4.png",
         href: "/",
+        hoverTitle: "Laser Time",
+        hoverText: "Identity + Branding",
     },
     {
         src: "/assets/images/portfolio-card-5.png",
         href: "/",
+        hoverTitle: "Laser Time",
+        hoverText: "Identity + Branding",
     },
     {
         src: "/assets/images/portfolio-card-6.png",
         href: "/",
+        hoverTitle: "Laser Time",
+        hoverText: "Identity + Branding",
     },
 ];
 
@@ -38,6 +50,8 @@ const page = () => {
                         key={srcData}
                         src={srcData.src}
                         href={srcData.href}
+                        hoverTitle={srcData.hoverTitle}
+                        hoverText={srcData.hoverText}
                     />
                 ))}
             </div>

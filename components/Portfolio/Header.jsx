@@ -17,82 +17,115 @@ const Header = () => {
     );
 
     return (
-        <section>
+        <header
+            className={`bg-black relative h-[51.4vh] pt-[64px] px-[72px] pb-[55px] text-white ${
+                open &&
+                "max-lg:h-[100svh] lg:h-[73.8vh] 2xl:h-[64.8vh] pt-[0px] px-[0px] pb-[0px]"
+            }`}
+        >
+            <button
+                onClick={() => updateOpen(!open)}
+                className="pb-[70px] pl-[70px] absolute top-[47px] right-[32px]"
+            >
+                {openIcon}
+            </button>
             <div
-                className={`bg-black w-full h-[48vh] text-white relative sm:px-[72px] sm:pt-[64px] sm:pb-[55px] ${
-                    open && "svh"
+                className={`h-full flex flex-col justify-between ${
+                    open && "hidden"
                 }`}
             >
-                <button
-                    onClick={() => updateOpen(!open)}
-                    className="absolute top-[64px] right-[72px]"
-                >
-                    {openIcon}
-                </button>
-
-                <div className="flex flex-col items-start justify-between h-full">
-                    <Link href="/">
-                        <Image
-                            src="/assets/images/logo-lg.svg"
-                            alt="Logo-lg"
-                            width={98}
-                            height={58}
-                            className=""
-                        />
-                    </Link>
-                    {open && (
-                        <div className="">
-                            <div
-                                className={`sm:pt-[40px] flex flex-col absolute top-[0px] right-[100px]`}
-                            >
-                                <div className="hidden sm:flex gap-4 py-1 mb-[35px] hover:[&>*]:underline">
+                <Link href="/">
+                    <Image
+                        src="/assets/images/logo-lg.svg"
+                        alt="Logo-lg"
+                        width={98}
+                        height={58}
+                        className={``}
+                    />
+                </Link>
+                <p className={`text-[72px] font-normal leading-[86.4px]`}>
+                    Портфоліо
+                </p>
+            </div>
+            {open && (
+                <section className="bg-black w-full lg:h-[73.8vh] 2xl:h-[64.8vh] text-white max-lg:h-[100svh]">
+                    <div className="h-full flex flex-col lg:flex-row justify-between px-[32px] lg:px-[4.79vw]">
+                        <div className="space-y-[20px]">
+                            <Link href="/">
+                                <Image
+                                    src="/assets/images/logo-lg.svg"
+                                    alt="Logo-lg"
+                                    width={328}
+                                    height={194}
+                                    className={`max-lg:mt-[64px] lg:pt-[3.333vw] max-xl:w-[25.63vw] max-xl:h-[15.16vw] min-w-[153px] min-h-[91px] ${
+                                        open && ""
+                                    }`}
+                                />
+                            </Link>
+                            <div className="flex lg:hidden justify-between  py-1 mb-[35px] lg:pr-[25px]">
+                                <div className="space-x-[16px]">
                                     <Link
-                                        className="text-[#545454]"
+                                        className="text-[#545454] hover:underline"
                                         href="/en-US"
                                     >
                                         Eng
                                     </Link>
                                     <Link href="/uk-UA">Ua</Link>
                                 </div>
-                                <div className="flex items-center mb-[20px] sm:mb-[37px] gap-[66px]">
-                                    <p
-                                        className={`text-[20px] sm:clamp24 leading-[22px] sm:leading-[26.4px] `}
-                                    >
-                                        +38 067 275 74 24
-                                    </p>
-                                    <button className="border-white border-[1px] rounded-[100px] px-[24px] py-[12px] leading-[17.6px] btn hidden sm:block">
-                                        Зв'яжіться з нами
-                                    </button>
-                                </div>
-                                <p
-                                    className={`block text-[20px] sm:clamp24 leading-[22px] sm:leading-[26.4px] font-normal `}
-                                >
-                                    Тільки сенси залишають слід в{" "}
-                                    <br className="hidden sm:block" /> історії.
-                                    <br className="sm:hidden" /> Ми створюємо
-                                    сенси.
+                                <p className="font-normal">
+                                    вул. Січових Стрільців, 10, Київ
                                 </p>
-                                <button
-                                    className={`border-white border-[1px] rounded-[100px] px-[24px] py-[12px] leading-[17.6px] btn sm:hidden mb-[64px] mt-[72px]`}
+                            </div>
+                        </div>
+                        <div className="lg:hidden">
+                            <Nav />
+                        </div>
+                        <div className={`pt-[47px] lg:pt-[64px]`}>
+                            <div className="hidden lg:flex justify-between  py-1 mb-[35px] lg:pr-[25px]">
+                                <div className="space-x-[16px]">
+                                    <Link
+                                        className="text-[#545454] hover:underline"
+                                        href="/en-US"
+                                    >
+                                        Eng
+                                    </Link>
+                                    <Link href="/uk-UA">Ua</Link>
+                                </div>
+                                <p className="font-normal">
+                                    вул. Січових Стрільців, 10, Київ
+                                </p>
+                            </div>
+
+                            <div className="flex items-center mb-[20px] lg:mb-[32px] gap-[37px]">
+                                <p
+                                    className={`text-[20px] lg:text-[28px] lg:clamp24 leading-[22px] lg:leading-[30.8px]}`}
                                 >
+                                    +38 067 275 74 24
+                                </p>
+                                <button className="border-white border-[1px] rounded-[100px] px-[24px] py-[12px] leading-[22px] btn hidden lg:block">
                                     Зв'яжіться з нами
                                 </button>
                             </div>
-                            <div className="hidden sm:block w-full absolute bottom-[100px] left-[0]">
-                                <Nav />
-                            </div>
+                            <p
+                                className={`block text-[20px] lg:clamp24 leading-[22px] lg:leading-[27px] font-normal`}
+                            >
+                                Тільки сенси залишають слід в історії.
+                                <br className="hidden lg:block" /> Ми креативна
+                                агенція яка ці сенси створює.
+                            </p>
+                            <button
+                                className={`border-white border-[1px] rounded-[100px] px-[24px] py-[12px] leading-[17.6px] btn lg:hidden mb-[64px] mt-[50px]`}
+                            >
+                                Зв'яжіться з нами
+                            </button>
                         </div>
-                    )}
-                    <p
-                        className={`text-[72px] leading-[86.4px] ${
-                            open && "hidden"
-                        }`}
-                    >
-                        Portfolio
-                    </p>
-                </div>
-            </div>
-        </section>
+                    </div>
+                    <div className="hidden lg:block w-full absolute bottom-[3.79vw]">
+                        <Nav />
+                    </div>
+                </section>
+            )}
+        </header>
     );
 };
 

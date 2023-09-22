@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const FeaturedItem = (props) => {
     return (
-        <div className="max-sm:w-full max-sm:h-[370px]">
+        <div className="max-sm:w-full max-sm:h-[370px] mb-[-2px]">
             <Image
                 src={props.src}
                 alt="Case"

@@ -54,7 +54,7 @@ input::placeholder {
 
 /* Tailwind Styles */
 .btn {
-    @apply hover:bg-[#FF4A1C] hover:border-[#FF4A1C] hover:text-white active:text-[#FF4A1C] active:bg-black active:border-[#FF4A1C] disabled:text-[#8C8C8C] disabled:border-[#8C8C8C];
+    @apply hover:bg-[#FF4A1C] hover:border-[#FF4A1C] hover:text-white active:text-[#FF4A1C] active:bg-black active:border-[#FF4A1C] disabled:text-[#8C8C8C] disabled:border-[#8C8C8C] transition ease-out duration-150 hover:scale-110;
 }
 
 .flex-center {
