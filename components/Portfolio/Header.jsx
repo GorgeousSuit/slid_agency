@@ -18,10 +18,10 @@ const Header = () => {
 
     return (
         <header
-            className={`bg-black relative h-[51.4vh] pt-[64px] px-[72px] pb-[55px] text-white ${
-                open &&
-                "max-lg:h-[100svh] lg:h-[73.8vh] 2xl:h-[64.8vh] pt-[0px] px-[0px] pb-[0px]"
+            className={`bg-black relative h-[51.4vh] pt-[64px] px-[32px] sm:px-[72px] pb-[55px] text-white ${
+                open && "max-lg:h-[100svh] lg:h-[73.8vh] 2xl:h-[64.8vh]"
             }`}
+            style={{ padding: open && "0px" }}
         >
             <button
                 onClick={() => updateOpen(!open)}
@@ -43,7 +43,9 @@ const Header = () => {
                         className={``}
                     />
                 </Link>
-                <p className={`text-[72px] font-normal leading-[86.4px]`}>
+                <p
+                    className={`text-[48px] sm:text-[72px] font-normal leading-[43.2px] sm:leading-[86.4px]`}
+                >
                     Портфоліо
                 </p>
             </div>

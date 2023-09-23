@@ -4,6 +4,8 @@ import Image from "next/image";
 import { useEffect } from "react";
 
 const Loading = () => {
+    const open = true;
+
     useEffect(() => {
         const disableScroll = (e) => {
             if (open) {
