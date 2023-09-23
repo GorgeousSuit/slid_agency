@@ -24,7 +24,7 @@ const Header = (props) => {
             }}
         >
             <div
-                className={`w-full h-[73vh] text-white relative px-[32px] sm:px-[92px] pt-[64px] sm:pt-[80px] pb-[85px] ${
+                className={`w-full h-[73vh] text-white relative px-[32px] sm:px-[92px] pt-[64px] sm:pt-[80px] pb-[32px] sm:pb-[4.43vw] ${
                     open &&
                     "bg-black w-full lg:h-[73.8vh] 2xl:h-[64.8vh] text-white max-lg:h-[100svh]"
                 }`}
@@ -128,7 +128,7 @@ const Header = (props) => {
                         </section>
                     )}
                     <p
-                        className={`text-[48px] sm:text-[168px] font-normal leading-[43.2px] sm:leading-[151.2px] ml-[-12px] ${
+                        className={`text-[48px] sm:text-[8.75vw] font-normal leading-[43.2px] sm:leading-[7.87vw] ml-[-12px] ${
                             open && "hidden"
                         }`}
                     >

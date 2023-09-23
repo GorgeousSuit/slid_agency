@@ -51,6 +51,9 @@ input::placeholder {
 .clamp72 {
     font-size: clamp(2.25rem, 1vw + 1rem, 4.5rem);
 }
+.clamp168 {
+    font-size: clamp(3rem, 5vw + 1rem, 168px);
+}
 
 /* Tailwind Styles */
 .btn {
