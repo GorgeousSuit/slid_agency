@@ -5,6 +5,8 @@ import Article1_2 from "@components/Case/Article1_2";
 import ImageText from "@components/Case/ImageText";
 import PurImage from "@components/Case/PurImage";
 import TwoImageText from "@components/Case/TwoImageText";
+import TwoImage from "../../../components/Case/TwoImage";
+import TwoPurImage from "../../../components/Case/TwoPurImage";
 
 const page = (props) => {
     return (
@@ -61,7 +63,23 @@ const page = (props) => {
             <TwoImageText
                 src1="/assets/images/pur-image-3.jpg"
                 src2="/assets/images/pur-image-4.jpg"
+                title="Сторінка товару"
+                text="Сторінку товару ми зробили з фотографією на весь екран, для можливості краще роздивлятись хутро з різних ракурсів."
             />
+            <div className="space-y-[64px] lg:space-y-[160px]">
+                <PurImage src="/assets/images/pur-image-5.jpg" />
+                <PurImage src="/assets/images/pur-image-6.jpg" />
+            </div>
+            <TwoImage
+                src1="/assets/images/PuriPhone.jpg"
+                src1Style="w-[15.73vw] h-[32.19vw] lg:ml-[11.46vw]"
+                src2="/assets/images/pur-image-7.jpg"
+            />
+            <TwoPurImage
+                src1="/assets/images/pur-image-8.jpg"
+                src2="/assets/images/pur-image-9.jpg"
+            />
+            <PurImage src="/assets/images/pur-image-10.jpg" />
         </section>
     );
 };
