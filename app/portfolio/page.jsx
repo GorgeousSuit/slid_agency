@@ -44,7 +44,7 @@ const page = () => {
     return (
         <section>
             <Header />
-            <div className="mx-auto grid grid-cols-1 sm:grid-cols-2 2xl:grid-cols-3 grid-rows-2">
+            <div className="mx-auto grid grid-cols-1 sm:grid-cols-2 2xl:grid-cols-3 grid-rows-3">
                 {srcData.map((srcData) => (
                     <PortfolioItem
                         key={srcData}

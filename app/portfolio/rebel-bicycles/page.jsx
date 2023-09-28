@@ -19,7 +19,10 @@ const page = (props) => {
                 />
                 <Article1
                     articleTitle={
-                        <>Айдентика для магазину велосипедів у Лос-Анджелесі</>
+                        <>
+                            Айдентика для <br /> магазину велосипедів у <br />{" "}
+                            Лос-Анджелесі
+                        </>
                     }
                     articleText={
                         <>
@@ -34,7 +37,8 @@ const page = (props) => {
                             <br />І ми це зробили.
                         </>
                     }
-                    articleSrc="/assets/images/laser-image-1.jpg"
+                    articleSrc="/"
+                    imageStyle="hidden"
                 />
                 <Article1_2
                     articleTitle="Дослідження"

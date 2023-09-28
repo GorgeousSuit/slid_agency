@@ -2,8 +2,50 @@ import Article1 from "@components/Case/Article1";
 import Header from "@components/Case/Header";
 import KeyPoints from "@components/Case/KeyPoints";
 import Article1_2 from "@components/Case/Article1_2";
+import Image from "next/image";
+import Grid from "@components/Case/Grid";
 
 const page = (props) => {
+    const gridData1 = [
+        {
+            src: "/assets/images/laser-grid-1.png",
+            w: "948",
+            h: "948",
+            style: "",
+            imgStyle: "",
+        },
+        {
+            src: "/assets/images/laser-grid-2.png",
+            w: "948",
+            h: "948",
+            style: "",
+            imgStyle: "",
+        },
+        {
+            src: "/assets/images/laser-grid-3.png",
+            w: "1920",
+            h: "1000",
+            style: "col-span-2",
+            imgStyle: "",
+        },
+    ];
+    const gridData2 = [
+        {
+            src: "/assets/images/laser-grid-4.png",
+            w: "728",
+            h: "1000",
+            style: "col-span-1",
+            imgStyle: "",
+        },
+        {
+            src: "/assets/images/laser-grid-5.png",
+            w: "1168",
+            h: "1000",
+            style: "col-span-2",
+            imgStyle: "",
+        },
+    ];
+
     return (
         <section className="font-normal">
             <Header
@@ -20,7 +62,7 @@ const page = (props) => {
                 <Article1
                     articleTitle={
                         <>
-                            Створили айдентику та комунікацію так, щоб
+                            Створили айдентику та <br /> комунікацію так, щоб
                             <br /> нічого зайвого.
                         </>
                     }
@@ -68,6 +110,13 @@ const page = (props) => {
                         </>
                     }
                 />
+                <Image
+                    src="/assets/images/laser-image-2.jpg"
+                    alt="Image"
+                    width={1920}
+                    height={1080}
+                    className="w-[329px] h-[220px] lg:w-[856px] lg:h-[560px] my-[64px] lg:my-[160px] lg:ml-[11.46vw]"
+                />
                 <Article1_2
                     articleTitle="Нічого зайвого"
                     articleText={
@@ -84,17 +133,94 @@ const page = (props) => {
                         </>
                     }
                 />
-                <Article1_2
-                    articleTitle="Айдентика"
-                    articleText={
-                        <>
-                            Її ми також розробляли так, щоб нічого зайвого.
-                            М’який та впізнаванний шрифтовий логотип, фірмовий
-                            ніжно рожевий колір, проста, але гнучка дизайн
-                            система стали продовженням створенного нами месседжу
-                            Nothing Extra. <br />
-                        </>
-                    }
+            </div>
+            <Image
+                src="/assets/images/laser-image-3.jpg"
+                alt="Image"
+                width={1920}
+                height={1080}
+                className="w-full my-[64px] lg:my-[160px]"
+            />
+            <Article1_2
+                articleTitle="Айдентика"
+                articleText={
+                    <>
+                        Її ми також розробляли так, щоб нічого зайвого. М’який
+                        та впізнаванний шрифтовий логотип, фірмовий ніжно
+                        рожевий колір, проста, але гнучка дизайн система стали
+                        продовженням створенного нами месседжу Nothing Extra.{" "}
+                        <br />
+                    </>
+                }
+            />
+            <Image
+                src="/assets/images/Laser-Time-logo.svg"
+                alt="Image"
+                width={300}
+                height={50}
+                className="lg:w-[730px] lg:h-[119px] mx-auto mt-[96px] mb-[96px] lg:mt-[320px] lg:mb-[200px]"
+            />
+            <Grid
+                gridData={gridData1}
+                gridStyle="h-[fit-content] grid-rows-2 grid-cols-2"
+            />
+            <Image
+                src="/assets/images/laser-grid-3.png"
+                alt="Image"
+                width={1920}
+                height={1000}
+                className="w-full mt-[24px]"
+            />
+            <Image
+                src="/assets/images/laser-image-4.jpg"
+                alt="Image"
+                width={1736}
+                height={904}
+                className="w-full h-full my-[160px] px-[92px] hidden lg:block"
+            />
+            <div className="lg:hidden space-y-[32px] w-[fit-content] mx-auto my-[64px]">
+                <Image
+                    src="/assets/images/laser-image-4-1.jpg"
+                    alt="Image"
+                    width={1920}
+                    height={1080}
+                    className="w-[329px] h-[468px]"
+                    unoptimized
+                />
+                <Image
+                    src="/assets/images/laser-image-4-2.jpg"
+                    alt="Image"
+                    width={1920}
+                    height={1080}
+                    className="w-[329px] h-[634px]"
+                    unoptimized
+                />
+                <Image
+                    src="/assets/images/laser-image-4-3.jpg"
+                    alt="Image"
+                    width={1920}
+                    height={1080}
+                    className="w-[329px] h-[518px]"
+                    unoptimized
+                />
+            </div>
+
+            <div className="">
+                <Image
+                    src="/assets/images/laser-image-4-2.jpg"
+                    alt="Image"
+                    width={728}
+                    height={1000}
+                    className="w-[329px] h-[634px]"
+                    unoptimized
+                />
+                <Image
+                    src="/assets/images/laser-image-4-3.jpg"
+                    alt="Image"
+                    width={1920}
+                    height={1080}
+                    className="w-[329px] h-[518px]"
+                    unoptimized
                 />
             </div>
         </section>

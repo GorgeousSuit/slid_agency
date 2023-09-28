@@ -31,7 +31,7 @@ const Header = () => {
             </button>
             <div
                 className={`h-full flex flex-col justify-between ${
-                    open && "h-auto"
+                    open && "h-0"
                 }`}
             >
                 <Link href="/">
