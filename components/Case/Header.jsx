@@ -45,7 +45,8 @@ const Header = (props) => {
                             width={153}
                             height={91}
                             className={`sm:w-[140px] sm:h-[83px] ${
-                                open && "hidden"
+                                open &&
+                                "absolute left-[32px] lg:left-[92px] sm:w-[153px] lg:w-[25.63vw] lg:h-[15.16vw] top-[64px] min-w-[153px] min-h-[91px] max-w-[328px] max-h-[194px]"
                             }`}
                         />
                     </Link>
@@ -53,18 +54,7 @@ const Header = (props) => {
                         <section className="bg-black w-full lg:h-[73.8vh] 2xl:h-[64.8vh] text-white max-lg:h-[100svh]">
                             <div className="h-full flex flex-col lg:flex-row justify-between px-[32px] lg:px-[4.79vw]">
                                 <div className="space-y-[20px]">
-                                    <Link href="/">
-                                        <Image
-                                            src="/assets/images/logo-lg.svg"
-                                            alt="Logo-lg"
-                                            width={328}
-                                            height={194}
-                                            className={`max-lg:mt-[64px] lg:pt-[3.333vw] max-xl:w-[25.63vw] max-xl:h-[15.16vw] min-w-[153px] min-h-[91px] ${
-                                                open && ""
-                                            }`}
-                                        />
-                                    </Link>
-                                    <div className="flex lg:hidden justify-between  py-1 mb-[35px] lg:pr-[25px]">
+                                    <div className="flex lg:hidden justify-between mt-[187px] mb-[35px] lg:pr-[25px]">
                                         <div className="space-x-[16px]">
                                             <Link
                                                 className="text-[#545454] hover:underline"
@@ -74,17 +64,14 @@ const Header = (props) => {
                                             </Link>
                                             <Link href="/uk-UA">Ua</Link>
                                         </div>
-                                        <p className="font-normal">
-                                            вул. Січових Стрільців, 10, Київ
-                                        </p>
                                     </div>
                                 </div>
                                 <div className="lg:hidden">
                                     <Nav />
                                 </div>
                                 <div className={`pt-[47px] lg:pt-[64px]`}>
-                                    <div className="hidden lg:flex justify-between  py-1 mb-[35px] lg:pr-[25px]">
-                                        <div className="space-x-[16px]">
+                                    <div className="lg:flex justify-between  lg:py-1 lg:mb-[35px] lg:pr-[25px]">
+                                        <div className="space-x-[16px] max-lg:hidden">
                                             <Link
                                                 className="text-[#545454] hover:underline"
                                                 href="/en-US"
@@ -93,12 +80,12 @@ const Header = (props) => {
                                             </Link>
                                             <Link href="/uk-UA">Ua</Link>
                                         </div>
-                                        <p className="font-normal">
+                                        <p className="font-normal max-lg:mb-[24px]">
                                             вул. Січових Стрільців, 10, Київ
                                         </p>
                                     </div>
 
-                                    <div className="flex items-center mb-[20px] lg:mb-[32px] gap-[37px]">
+                                    <div className="flex items-center mb-[20px] lg:mb-[32px] gap-[37px] font-normal">
                                         <p
                                             className={`text-[20px] lg:text-[28px] lg:clamp24 leading-[22px] lg:leading-[30.8px]}`}
                                         >
@@ -109,14 +96,17 @@ const Header = (props) => {
                                         </button>
                                     </div>
                                     <p
-                                        className={`block text-[20px] lg:clamp24 leading-[22px] lg:leading-[27px] font-normal`}
+                                        className={`hidden lg:block text-[20px] lg:clamp24 leading-[22px] lg:leading-[27px] font-normal`}
                                     >
                                         Тільки сенси залишають слід в історії.
                                         <br className="hidden lg:block" /> Ми
                                         креативна агенція яка ці сенси створює.
                                     </p>
+                                    <p className="lg:hidden text-[24px] leading [26.4px]">
+                                        welcome@slid.agency
+                                    </p>
                                     <button
-                                        className={`border-white border-[1px] rounded-[100px] px-[24px] py-[12px] leading-[17.6px] btn lg:hidden mb-[64px] mt-[50px]`}
+                                        className={`border-white border-[1px] rounded-[100px] px-[24px] py-[12px] leading-[17.6px] btn lg:hidden mb-[40px] mt-[32px]`}
                                     >
                                         Зв'яжіться з нами
                                     </button>
