@@ -12,6 +12,7 @@ const page = (props) => {
     return (
         <section className="font-normal">
             <Header
+                bgPosition="left"
                 mainCover={"/assets/images/pur-cover.jpg"}
                 mainTitle={"PÜR"}
             />
@@ -66,13 +67,13 @@ const page = (props) => {
                 title="Сторінка товару"
                 text="Сторінку товару ми зробили з фотографією на весь екран, для можливості краще роздивлятись хутро з різних ракурсів."
             />
-            <div className="space-y-[64px] lg:space-y-[160px]">
-                <PurImage src="/assets/images/pur-image-5.jpg" />
-                <PurImage src="/assets/images/pur-image-6.jpg" />
-            </div>
+
+            <PurImage src="/assets/images/pur-image-5.jpg" />
+            <PurImage src="/assets/images/pur-image-6.jpg" />
+
             <TwoImage
-                src1="/assets/images/PuriPhone.jpg"
-                src1Style="w-[15.73vw] h-[32.19vw] lg:ml-[11.46vw]"
+                src1="/assets/images/PuriPhone-2.jpg"
+                src1Style="w-[20.83vw] h-[42.6vw] lg:ml-[11.46vw] min-w-[164px] min-h-[335px]"
                 src2="/assets/images/pur-image-7.jpg"
             />
             <TwoPurImage

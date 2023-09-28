@@ -2,7 +2,7 @@ import React from "react";
 
 const Article1_2 = (props) => {
     return (
-        <section className="flex flex-col lg:flex-row lg:px-[11.46vw] justify-between mb-[64px] lg:mb-[160px]">
+        <section className="flex flex-col lg:flex-row lg:px-[11.46vw] justify-between max-lg:mb-[64px]">
             <p className="text-[32px] lg:text-[40px] leading-[38.4px] lg:leading-[48px] ">
                 {props.articleTitle}
             </p>

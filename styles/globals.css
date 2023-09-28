@@ -19,6 +19,10 @@ input:focus::placeholder {
     color: transparent;
 }
 
+.bg-offset-left {
+    background-position: left 2rem left;
+}
+
 @media (max-height: 667px) {
     .iphone7 {
         margin-bottom: 20px;
