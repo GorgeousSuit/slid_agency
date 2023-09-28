@@ -68,13 +68,15 @@ const Header = () => {
                 </Link>
                 {open && (
                     <div className="h-full flex flex-col justify-between">
-                        <div className="flex gap-4 py-1 hover:[&>*]:underline mt-[3.7559vh] mb-[12.5587vh] iphone7">
+                        <div className="flex gap-4 hover:[&>*]:underline mt-[3.7559vh]">
                             <Link className="text-[#545454]" href="/EN">
                                 Eng
                             </Link>
                             <Link href="/UA">Ua</Link>
                         </div>
-                        <Nav />
+                        <div className="pb-[12.8vh]">
+                            <Nav />
+                        </div>
 
                         <div className="text-[24px] font-normal leading-[26.4px] space-y-[16px] mb-[40px]">
                             <p className="">+38 067 275 74 24</p>

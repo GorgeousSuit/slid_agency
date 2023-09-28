@@ -13,16 +13,24 @@ const Footer = () => {
                         method="post"
                         className="flex flex-col space-y-[48px] sm:space-y-[64px] 2xl:mr-[100px]"
                     >
-                        <input type="text" className="" placeholder="Ім'я" />
-                        <input type="tel" className="" placeholder="Телефон" />
+                        <input
+                            type="text"
+                            className="focus:border-[#ADADAD]"
+                            placeholder="Ім'я"
+                        />
+                        <input
+                            type="tel"
+                            className="focus:border-[#ADADAD]"
+                            placeholder="Телефон"
+                        />
                         <input
                             type="email"
-                            className=""
+                            className="focus:border-[#ADADAD]"
                             placeholder="Електронна пошта"
                         />
                         <input
                             type="text"
-                            className=""
+                            className="focus:border-[#ADADAD]"
                             placeholder="Коментар"
                         />
                         <button

@@ -5,7 +5,7 @@ import Article1_2 from "@components/Case/Article1_2";
 
 const page = (props) => {
     return (
-        <section>
+        <section className="font-normal">
             <Header
                 mainCover={"/assets/images/laser-time-cover.jpg"}
                 mainTitle={"Laser Time"}

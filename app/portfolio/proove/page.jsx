@@ -2,7 +2,7 @@ import Header from "@components/Case/Header";
 
 const page = (props) => {
     return (
-        <section>
+        <section className="font-normal">
             <Header
                 mainCover={"/assets/images/proove-cover.jpg"}
                 mainTitle={"Proove"}

@@ -10,12 +10,12 @@ import TwoPurImage from "../../../components/Case/TwoPurImage";
 
 const page = (props) => {
     return (
-        <section className="">
+        <section className="font-normal">
             <Header
                 mainCover={"/assets/images/pur-cover.jpg"}
                 mainTitle={"PÜR"}
             />
-            <div className="px-[32px] sm:px-[92px] font-normal">
+            <div className="px-[32px] sm:px-[92px]">
                 <KeyPoints
                     key1="PÜR"
                     key2="Розробка сайту"
