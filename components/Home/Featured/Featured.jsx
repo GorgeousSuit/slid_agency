@@ -3,10 +3,20 @@ import Image from "next/image";
 import Link from "next/link";
 
 const srcData = [
-    { src: "/assets/images/Case-lg-1.png", href: "/portfolio/proove" },
-    { src: "/assets/images/Case-lg-2.png", href: "/portfolio/laser-time" },
-    { src: "/assets/images/Case-lg-3.png", href: "/portfolio/pur" },
-    { src: "/assets/images/Case-lg-4.png", href: "/portfolio/rebel-bicycles" },
+    {
+        src: "/assets/images/featured-laser.webp",
+        href: "/portfolio/laser-time",
+        srcSet: "/assets/images/sm/featured-laser-sm.webp 393w, /assets/images/featured-laser.webp 1920w",
+        sizes: "(max-width: 393px) 393px, 1920px",
+    },
+    { src: "/assets/images/featured-proove.webp", href: "/portfolio/proove" },
+
+    { src: "/assets/images/featured-pur.webp", href: "/portfolio/pur" },
+    {
+        src: "/assets/images/rebel-cover.webp",
+        href: "/portfolio/rebel-bicycles",
+        style: "",
+    },
 ];
 
 const Featured = (props) => {
@@ -26,6 +36,7 @@ const Featured = (props) => {
                         key={srcData.href}
                         src={srcData.src}
                         href={srcData.href}
+                        style={srcData.style}
                     />
                 ))}
                 <Link href="/portfolio">

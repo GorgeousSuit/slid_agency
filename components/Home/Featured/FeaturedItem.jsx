@@ -10,7 +10,9 @@ const FeaturedItem = (props) => {
                     alt="Case"
                     width={1920}
                     height={800}
-                    className="w-full max-sm:h-full max-sm:object-cover overflow-x-hidden"
+                    srcSet={props.srcSet}
+                    sizes={props.sizes}
+                    className={`w-full max-sm:h-full max-sm:object-cover overflow-x-hidden overflow-y-hidden ${props.style}`}
                     unoptimized
                 />
             </Link>

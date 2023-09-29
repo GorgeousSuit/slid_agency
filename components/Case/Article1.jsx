@@ -13,6 +13,8 @@ const Article1 = (props) => {
                         alt="Image"
                         width={329}
                         height={480}
+                        placeholder="blur"
+                        blurDataURL={props.articleSrc}
                         className={`w-[83.72vw] h-[122.14vw] lg:w-[21.67vw] lg:h-[32.81vw] mt-[64px] lg:mt-[5vw] lg:ml-[11.46vw] max-lg:mb-[64px] ${props.imageStyle}`}
                         unoptimized
                     />

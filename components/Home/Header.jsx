@@ -10,6 +10,14 @@ import CrossButtonIcon from "/public/assets/images/cross.svg";
 const Header = () => {
     const [open, updateOpen] = useState(false);
 
+    const scrollToFooter = () => {
+        const footer = document.getElementById("footer");
+
+        if (footer) {
+            footer.scrollIntoView({ behavior: "smooth" });
+        }
+    };
+
     useEffect(() => {
         const disableScroll = (e) => {
             if (open) {
@@ -61,7 +69,7 @@ const Header = () => {
                         alt="Logo-lg"
                         width={328}
                         height={194}
-                        className={`mt-[64px] lg:mt-[3.333vw] max-xl:w-[25.63vw] max-xl:h-[15.16vw] min-w-[153px] min-h-[91px] ${
+                        className={`mt-[64px] lg:mt-[4.17vw] max-xl:w-[25.63vw] max-xl:h-[15.16vw] min-w-[153px] min-h-[91px] ${
                             open && ""
                         }`}
                     />
@@ -84,8 +92,8 @@ const Header = () => {
                         </div>
                     </div>
                 )}
-                <div className={`lg:pt-[40px] ${open ? "hidden" : ""}`}>
-                    <div className="hidden lg:flex justify-between mb-[35px]">
+                <div className={`lg:mt-[3.28vw] ${open ? "hidden" : ""}`}>
+                    <div className="hidden lg:flex justify-between mb-[1.67vw]">
                         <div className="flex space-x-[16px]">
                             <div className="text-[#545454]" href="/en-US">
                                 Eng
@@ -96,13 +104,16 @@ const Header = () => {
                             вул. Січових Стрільців, 10, Київ
                         </p>
                     </div>
-                    <div className="flex items-center mb-[20px] lg:mb-[32px] gap-[37px]">
+                    <div className="flex items-center mb-[20px] lg:mb-[1.67vw] gap-[37px]">
                         <p
                             className={`text-[20px] lg:text-[28px] lg:clamp24 leading-[22px] lg:leading-[30.8px]}`}
                         >
                             +38 067 275 74 24
                         </p>
-                        <button className="border-white border-[1px] rounded-[100px] px-[24px] pt-[12px] pb-[10px] leading-[22px] btn hidden lg:block">
+                        <button
+                            onClick={scrollToFooter}
+                            className="border-white border-[1px] rounded-[100px] px-[24px] pt-[12px] pb-[10px] leading-[22px] btn hidden lg:block"
+                        >
                             Зв'яжіться з нами
                         </button>
                     </div>

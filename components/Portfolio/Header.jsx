@@ -8,6 +8,14 @@ import BurgerButtonIcon from "/public/assets/images/burger.svg";
 import CrossButtonIcon from "/public/assets/images/cross.svg";
 
 const Header = () => {
+    const scrollToFooter = () => {
+        const footer = document.getElementById("footer");
+
+        if (footer) {
+            footer.scrollIntoView({ behavior: "smooth" });
+        }
+    };
+
     const [open, updateOpen] = useState(false);
 
     const openIcon = open ? (
@@ -110,6 +118,7 @@ const Header = () => {
                                 welcome@slid.agency
                             </p>
                             <button
+                                onClick={scrollToFooter}
                                 className={`border-white border-[1px] rounded-[100px] px-[24px] py-[12px] leading-[17.6px] btn lg:hidden mb-[40px] mt-[32px]`}
                             >
                                 Зв'яжіться з нами

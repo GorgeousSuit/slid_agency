@@ -8,6 +8,14 @@ import BurgerButtonIcon from "/public/assets/images/burger.svg";
 import CrossButtonIcon from "/public/assets/images/cross.svg";
 
 const Header = (props) => {
+    const scrollToFooter = () => {
+        const footer = document.getElementById("footer");
+
+        if (footer) {
+            footer.scrollIntoView({ behavior: "smooth" });
+        }
+    };
+
     const [open, updateOpen] = useState(false);
 
     const openIcon = open ? (
@@ -91,7 +99,10 @@ const Header = (props) => {
                                         >
                                             +38 067 275 74 24
                                         </p>
-                                        <button className="border-white border-[1px] rounded-[100px] px-[24px] pt-[12px] pb-[10px] leading-[22px] btn hidden lg:block">
+                                        <button
+                                            onClick={scrollToFooter}
+                                            className="border-white border-[1px] rounded-[100px] px-[24px] pt-[12px] pb-[10px] leading-[22px] btn hidden lg:block"
+                                        >
                                             Зв'яжіться з нами
                                         </button>
                                     </div>
