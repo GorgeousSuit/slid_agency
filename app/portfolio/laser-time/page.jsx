@@ -26,7 +26,7 @@ const page = (props) => {
     return (
         <section className="font-normal">
             <Header
-                mainCover={"/assets/images/laser-time-cover.jpg"}
+                mainCover={"/assets/images/laser-time-cover.webp"}
                 mainTitle={"Laser Time"}
                 bgPosition="bg-center"
             />
@@ -135,7 +135,6 @@ const page = (props) => {
                 height={50}
                 className="lg:w-[730px] lg:h-[119px] mx-auto mt-[96px] mb-[96px] lg:mt-[320px] lg:mb-[200px]"
             />
-
             {/* First grid */}
             <Grid
                 gridData={gridData1}
@@ -148,7 +147,6 @@ const page = (props) => {
                 height={1000}
                 className="w-full mt-[24px]"
             />
-
             {/* Blueprint */}
             <Image
                 src="/assets/images/laser-image-4.jpg"
@@ -183,7 +181,6 @@ const page = (props) => {
                     unoptimized
                 />
             </div>
-
             {/* The Last grid */}
             <div className="w-full max-lg:px-[32px] flex flex-col lg:flex-row max-lg:space-y-[32px] lg:space-x-[1.25vw] mb-[32px] lg:mb-[24px]">
                 <Image

@@ -44,7 +44,7 @@ const ServicesItem = (props) => {
                 </button>
                 {open && (
                     <div className="py-5">
-                        <p className="w-full font-primary text-16 font-medium leading-30 text-black">
+                        <p className="w-full font-normal leading-[22.4px] lg:leading-[28px] text-[#545454]">
                             {props.content}
                         </p>
                     </div>

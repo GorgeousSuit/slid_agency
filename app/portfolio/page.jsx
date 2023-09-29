@@ -26,25 +26,13 @@ const srcData = [
         hoverTitle: "PÜR",
         hoverText: "Identity + Branding",
     },
-    {
-        src: "/assets/images/portfolio-card-5.png",
-        href: "/portfolio",
-        hoverTitle: "Laser Time",
-        hoverText: "Identity + Branding",
-    },
-    {
-        src: "/assets/images/portfolio-card-6.png",
-        href: "/portfolio",
-        hoverTitle: "Laser Time",
-        hoverText: "Identity + Branding",
-    },
 ];
 
 const page = () => {
     return (
         <section>
             <Header />
-            <div className="mx-auto grid grid-cols-1 sm:grid-cols-2 2xl:grid-cols-3 grid-rows-3">
+            <div className="mx-auto grid grid-cols-1 sm:grid-cols-2 2xl:grid-cols-2 grid-rows-2">
                 {srcData.map((srcData) => (
                     <PortfolioItem
                         key={srcData}

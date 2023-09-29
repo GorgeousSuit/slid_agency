@@ -81,7 +81,7 @@ const page = (props) => {
             />
 
             {/* First grid */}
-            <div className="w-full max-lg:px-[32px] flex flex-col lg:flex-row max-lg:space-y-[32px] lg:space-x-[1.25vw] mb-[32px] lg:mb-[1.25vw]">
+            <div className="w-full max-lg:px-[32px] flex flex-col lg:flex-row max-lg:space-y-[32px] lg:space-x-[1.25vw] mb-[32px] lg:mb-[1.25vw] overflow-x-hidden">
                 <Image
                     src="/assets/images/rebel-grid-1.png"
                     alt="Image"
@@ -109,9 +109,9 @@ const page = (props) => {
                 alt="Image"
                 width={1920}
                 height={1000}
-                className="w-full mt-[1.25vw]"
+                className="w-full mt-[1.25vw] mb-[1.25vw]"
             />
-            <div className="w-full max-lg:px-[32px] flex flex-col lg:flex-row max-lg:space-y-[32px] lg:space-x-[1.25vw] mb-[32px] lg:mb-[1.25vw]">
+            <div className="w-full max-lg:px-[32px] flex flex-col lg:flex-row max-lg:space-y-[32px] lg:space-x-[1.25vw] mb-[32px] lg:mb-[1.25vw] overflow-x-hidden">
                 <Image
                     src="/assets/images/rebel-grid-5.png"
                     alt="Image"
@@ -127,7 +127,7 @@ const page = (props) => {
                     className="max-lg:w-full lg:w-[60.83vw] lg:h-[52.08vw]"
                 />
             </div>
-            <div className="w-full max-lg:px-[32px] flex flex-col lg:flex-row max-lg:space-y-[32px] lg:space-x-[1.25vw] mb-[32px] lg:mb-[1.25vw]">
+            <div className="w-full max-lg:px-[32px] flex flex-col lg:flex-row max-lg:space-y-[32px] lg:space-x-[1.25vw] mb-[32px] lg:mb-[1.25vw] overflow-x-hidden">
                 <Image
                     src="/assets/images/rebel-grid-7.png"
                     alt="Image"
@@ -148,9 +148,9 @@ const page = (props) => {
                 alt="Image"
                 width={1920}
                 height={1297}
-                className="w-full mt-[1.25vw]"
+                className="w-full mt-[1.25vw] mb-[1.25vw]"
             />
-            <div className="w-full max-lg:px-[32px] flex flex-col lg:flex-row max-lg:space-y-[32px] lg:space-x-[1.25vw] mb-[32px] lg:mb-[1.25vw]">
+            <div className="w-full max-lg:px-[32px] flex flex-col lg:flex-row max-lg:space-y-[32px] lg:space-x-[1.25vw] mb-[32px] lg:mb-[1.25vw] overflow-x-hidden">
                 <Image
                     src="/assets/images/rebel-grid-10.png"
                     alt="Image"

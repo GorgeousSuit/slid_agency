@@ -68,11 +68,11 @@ const Header = () => {
                 </Link>
                 {open && (
                     <div className="h-full flex flex-col justify-between">
-                        <div className="flex gap-4 hover:[&>*]:underline mt-[3.7559vh]">
-                            <Link className="text-[#545454]" href="/EN">
+                        <div className="flex gap-4 mt-[3.7559vh]">
+                            <div className="text-[#545454]" href="/EN">
                                 Eng
-                            </Link>
-                            <Link href="/UA">Ua</Link>
+                            </div>
+                            <div href="/UA">Ua</div>
                         </div>
                         <div className="pb-[12.8vh]">
                             <Nav />
@@ -85,15 +85,12 @@ const Header = () => {
                     </div>
                 )}
                 <div className={`lg:pt-[40px] ${open ? "hidden" : ""}`}>
-                    <div className="hidden lg:flex justify-between  py-1 mb-[35px]">
-                        <div className="space-x-[16px]">
-                            <Link
-                                className="text-[#545454] hover:underline"
-                                href="/en-US"
-                            >
+                    <div className="hidden lg:flex justify-between mb-[35px]">
+                        <div className="flex space-x-[16px]">
+                            <div className="text-[#545454]" href="/en-US">
                                 Eng
-                            </Link>
-                            <Link href="/uk-UA">Ua</Link>
+                            </div>
+                            <div href="/uk-UA">Ua</div>
                         </div>
                         <p className="hidden lg:block font-normal">
                             вул. Січових Стрільців, 10, Київ
@@ -105,7 +102,7 @@ const Header = () => {
                         >
                             +38 067 275 74 24
                         </p>
-                        <button className="border-white border-[1px] rounded-[100px] px-[24px] py-[12px] leading-[22px] btn hidden lg:block">
+                        <button className="border-white border-[1px] rounded-[100px] px-[24px] pt-[12px] pb-[10px] leading-[22px] btn hidden lg:block">
                             Зв'яжіться з нами
                         </button>
                     </div>
@@ -119,7 +116,7 @@ const Header = () => {
                         яка ці сенси створює.
                     </p>
                     <button
-                        className={`border-white border-[1px] rounded-[100px] px-[24px] py-[12px] leading-[17.6px] btn lg:hidden mb-[64px] mt-[72px] ${
+                        className={`border-white border-[1px] rounded-[100px] px-[24px] pt-[12px] pb-[8px] leading-[17.6px] btn lg:hidden mb-[64px] mt-[72px] ${
                             open ? "hidden" : ""
                         }`}
                     >

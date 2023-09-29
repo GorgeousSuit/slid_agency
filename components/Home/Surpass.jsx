@@ -10,7 +10,7 @@ const Surpass = () => {
                     <br className="hidden sm:block" /> перевершити
                     <br className="sm:hidden" /> сам себе
                 </h1>
-                <button className="btn rounded-[100px] border-[1px] border-[black] px-[24px] py-[12px] leading-[17.6px]">
+                <button className="btn rounded-[100px] border-[1px] border-[black] px-[24px] pt-[12px] pb-[12px] leading-[17.6px]">
                     Вийти за рамки
                 </button>
             </div>

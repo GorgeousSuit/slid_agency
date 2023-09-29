@@ -3,10 +3,10 @@ import Image from "next/image";
 import Link from "next/link";
 
 const srcData = [
-    "/assets/images/Case-lg-1.png",
-    "/assets/images/Case-lg-2.png",
-    "/assets/images/Case-lg-3.png",
-    "/assets/images/Case-lg-4.png",
+    { src: "/assets/images/Case-lg-1.png", href: "/portfolio/proove" },
+    { src: "/assets/images/Case-lg-2.png", href: "/portfolio/laser-time" },
+    { src: "/assets/images/Case-lg-3.png", href: "/portfolio/pur" },
+    { src: "/assets/images/Case-lg-4.png", href: "/portfolio/rebel-bicycles" },
 ];
 
 const Featured = (props) => {
@@ -22,7 +22,11 @@ const Featured = (props) => {
             </div>
             <div className="relative">
                 {srcData.map((srcData) => (
-                    <FeaturedItem key={srcData} src={srcData} />
+                    <FeaturedItem
+                        key={srcData.href}
+                        src={srcData.src}
+                        href={srcData.href}
+                    />
                 ))}
                 <Link href="/portfolio">
                     <Image

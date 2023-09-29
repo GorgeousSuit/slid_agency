@@ -91,7 +91,7 @@ const Header = (props) => {
                                         >
                                             +38 067 275 74 24
                                         </p>
-                                        <button className="border-white border-[1px] rounded-[100px] px-[24px] py-[12px] leading-[22px] btn hidden lg:block">
+                                        <button className="border-white border-[1px] rounded-[100px] px-[24px] pt-[12px] pb-[10px] leading-[22px] btn hidden lg:block">
                                             Зв'яжіться з нами
                                         </button>
                                     </div>

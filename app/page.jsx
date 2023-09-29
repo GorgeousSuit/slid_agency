@@ -15,7 +15,6 @@ const Home = () => {
     return (
         <section>
             <Header />
-            <Showreel />
             <Advantages />
             <Featured />
             <Surpass />

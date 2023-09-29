@@ -35,9 +35,9 @@ const Footer = () => {
                         />
                         <button
                             type="submit"
-                            className="w-[177px] py-[12px] px-[24px] font-normal leading-[17.6px] border border-white rounded-[100px] btn"
+                            className="w-[177px] pt-[12px] pb-[12px] px-[24px] font-normal leading-[17.6px] border border-white rounded-[100px] btn"
                         >
-                            Вийти за рамки
+                            Зв'язатись
                         </button>
                     </form>
                 </div>
@@ -66,7 +66,7 @@ const Footer = () => {
                             </p>
                         </div>
                     </div>
-                    <a href="/" className="underline hover:no-underline">
+                    <a href="/" className="hidden underline hover:no-underline">
                         Наша презентація
                     </a>
                 </div>
