@@ -10,6 +10,7 @@ const TwoPurImage = (props) => {
                     width={329}
                     height={220}
                     className="w-[83.72vw] lg:w-[38.96vw] mx-auto lg:m-[5.21vw] max-lg:p-[32px]"
+                    unoptimized
                 />
             </div>
             <div className="bg-[#E9E8E6]">
@@ -19,6 +20,7 @@ const TwoPurImage = (props) => {
                     width={329}
                     height={220}
                     className="w-[83.72vw] lg:w-[38.96vw] mx-auto lg:m-[5.21vw] max-lg:p-[32px]"
+                    unoptimized
                 />
             </div>
         </section>

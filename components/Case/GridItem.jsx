@@ -8,7 +8,7 @@ const GridItem = (props) => {
                 alt="Grid Image"
                 width={props.w}
                 height={props.h}
-                className={`w-full h-fit ${props.imgStyle}`}
+                className={`${props.imgStyle}`}
             />
         </section>
     );

@@ -5,7 +5,9 @@ const Grid = (props) => {
     const gridData = props.gridData;
 
     return (
-        <section className={`grid gap-[24px] ${props.gridStyle}`}>
+        <section
+            className={`grid gap-[24px] lg:gap-[1.25vw] ${props.gridStyle}`}
+        >
             {gridData.map((gridData) => (
                 <div className={`${gridData.style}`}>
                     <GridItem

@@ -18,7 +18,7 @@ const Header = (props) => {
 
     return (
         <section
-            className={`bg-cover bg-${props.bgPosition} `}
+            className={`bg-cover ${props.bgPosition}`}
             style={{
                 backgroundImage: `url(${props.mainCover})`,
             }}
