@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hover animation</title>
+  <style>
+    body {
+      margin: 0;
+      overflow: hidden;
+    }
+
+    button {
+      background-color: #FF4A1C;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      font-size: 16px;
+      border-radius: 5px;
+      transition: background-color 0.3s ease;
+      cursor: pointer;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    button:hover {
+      background-color: #005f84;
+    }
+  </style>
+</head>
+<body>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+
+  <div id="animationContainer" style="position: absolute;"></div>
+
+  <script>
+    const scene = new THREE.Scene();
+    const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
+    const renderer = new THREE.WebGLRenderer();
+    renderer.setSize(window.innerWidth, window.innerHeight);
+    document.getElementById('animationContainer').appendChild(renderer.domElement);
+
+    const balls = [];
+
+    const geometry = new THREE.SphereGeometry(0.1, 32, 32);
+
+    const button = document.createElement('button'); // Створюємо кнопку
+    button.textContent = 'Point to me';
+    document.body.appendChild(button); // Додаємо кнопку до body
+
+    button.addEventListener('mouseenter', function () {
+      for (let i = 0; i < 10; i++) {
+        const material = new THREE.MeshBasicMaterial({ color: getRandomColor() }); // Генерація випадкового кольору
+        const ball = new THREE.Mesh(geometry, material);
+        ball.position.x = 0;
+        ball.position.y = 0;
+        ball.position.z = -1;
+        ball.velocity = new THREE.Vector3(Math.random() - 0.5, Math.random() - 0.5, -Math.random());
+        balls.push(ball);
+        scene.add(ball);
+      }
+    });
+
+    camera.position.z = 5;
+
+    const animate = () => {
+      requestAnimationFrame(animate);
+
+      balls.forEach(ball => {
+        ball.position.x += ball.velocity.x;
+        ball.position.y += ball.velocity.y;
+        ball.position.z += ball.velocity.z;
+      });
+
+      renderer.render(scene, camera);
+    };
+
+    animate();
+
+    function getRandomColor() {
+      const letters = '0123456789ABCDEF';
+      let color = '#';
+      for (let i = 0; i < 6; i++) {
+        color += letters[Math.floor(Math.random() * 16)];
+      }
+      return color;
+    }
+  </script>
+</body>
+</html>
