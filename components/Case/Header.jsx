@@ -114,7 +114,7 @@ const Header = (props) => {
                                         креативна агенція яка ці сенси створює.
                                     </p>
                                     <p className="lg:hidden text-[24px] leading [26.4px]">
-                                        welcome@slid.agency
+                                        hi@slid.agency
                                     </p>
                                     <button
                                         className={`border-white border-[1px] rounded-[100px] px-[24px] py-[12px] leading-[17.6px] btn lg:hidden mb-[40px] mt-[32px]`}

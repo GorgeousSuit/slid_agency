@@ -88,7 +88,7 @@ const Header = () => {
 
                         <div className="text-[24px] font-normal leading-[26.4px] space-y-[16px] mb-[40px]">
                             <p className="">+38 067 275 74 24</p>
-                            <p className="">welcome@slid.agency</p>
+                            <p className="">hi@slid.agency</p>
                         </div>
                     </div>
                 )}

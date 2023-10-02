@@ -103,7 +103,10 @@ const Header = () => {
                                 >
                                     +38 067 275 74 24
                                 </p>
-                                <button className="border-white border-[1px] rounded-[100px] px-[24px] pt-[12px] pb-[10px] leading-[22px] btn hidden lg:block">
+                                <button
+                                    onClick={scrollToFooter}
+                                    className="border-white border-[1px] rounded-[100px] px-[24px] pt-[12px] pb-[10px] leading-[22px] btn hidden lg:block"
+                                >
                                     Зв'яжіться з нами
                                 </button>
                             </div>
@@ -115,10 +118,9 @@ const Header = () => {
                                 агенція яка ці сенси створює.
                             </p>
                             <p className="lg:hidden text-[24px] leading [26.4px]">
-                                welcome@slid.agency
+                                hi@slid.agency
                             </p>
                             <button
-                                onClick={scrollToFooter}
                                 className={`border-white border-[1px] rounded-[100px] px-[24px] py-[12px] leading-[17.6px] btn lg:hidden mb-[40px] mt-[32px]`}
                             >
                                 Зв'яжіться з нами
