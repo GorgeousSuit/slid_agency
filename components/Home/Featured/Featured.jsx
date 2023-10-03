@@ -45,11 +45,11 @@ const Featured = (props) => {
                         alt="Full-Portfolio"
                         width={150}
                         height={150}
-                        className="sm:w-[200px] sm:h-[200px] rounded-[100%] absolute bottom-[-75px] sm:bottom-[-100px] right-[32px] sm:right-[72px] 2xl:right-[312px] animate-spin-slow"
+                        className="sm:w-[200px] sm:h-[200px] rounded-[100%] absolute bottom-[-75px] sm:bottom-[-100px] right-[32px] sm:right-[72px] 2xl:right-[92px] animate-spin-slow"
                     />
                 </Link>
             </div>
-            <div className="gap-[48px] sm:gap-[64px] flex flex-col sm:flex-row ml-[32px] sm:ml-[3.75vw] mt-[99px] sm:mt-[128px]">
+            <div className="gap-[48px] sm:gap-[64px] flex flex-col sm:flex-row ml-[32px] sm:ml-[3.75vw] 2xl:ml-[92px] mt-[99px] sm:mt-[128px]">
                 <div className="space-y-[16px] sm:space-y-[24px]">
                     <h1 className="text-[32px] sm:text-[72px] font-normal leading-[38.4px] sm:leading-[86.4px]">
                         8 років

@@ -10,14 +10,6 @@ import CrossButtonIcon from "/public/assets/images/cross.svg";
 const Header = () => {
     const [open, updateOpen] = useState(false);
 
-    const scrollToFooter = () => {
-        const footer = document.getElementById("footer");
-
-        if (footer) {
-            footer.scrollIntoView({ behavior: "smooth" });
-        }
-    };
-
     useEffect(() => {
         const disableScroll = (e) => {
             if (open) {
@@ -44,8 +36,18 @@ const Header = () => {
         };
     }, [open]);
 
+    const scrollToFooter = () => {
+        const footer = document.getElementById("footer");
+
+        if (footer) {
+            footer.scrollIntoView({ behavior: "smooth" });
+            document.body.style.overflow = "auto";
+            document.removeEventListener("touchmove", disableScroll);
+        }
+    };
+
     const openIcon = open ? (
-        <CrossButtonIcon className="h-[30px] w-[30px]" />
+        <CrossButtonIcon className="h-[36px] w-[36px]" />
     ) : (
         <BurgerButtonIcon className="h-[10px] w-[40px]" />
     );
@@ -69,7 +71,7 @@ const Header = () => {
                         alt="Logo-lg"
                         width={328}
                         height={194}
-                        className={`mt-[64px] lg:mt-[4.17vw] max-xl:w-[25.63vw] max-xl:h-[15.16vw] min-w-[153px] min-h-[91px] ${
+                        className={`mt-[56px] lg:mt-[4.17vw] max-xl:w-[25.63vw] max-xl:h-[15.16vw] min-w-[153px] min-h-[91px] ${
                             open && ""
                         }`}
                     />
@@ -82,13 +84,25 @@ const Header = () => {
                             </div>
                             <div href="/UA">Ua</div>
                         </div>
-                        <div className="pb-[12.8vh]">
+                        <div className="">
                             <Nav />
                         </div>
 
-                        <div className="text-[24px] font-normal leading-[26.4px] space-y-[16px] mb-[40px]">
-                            <p className="">+38 067 275 74 24</p>
-                            <p className="">hi@slid.agency</p>
+                        <div className="">
+                            <div className="font-normal space-y-[16px]">
+                                <p className="">
+                                    вул. Січових Стрільців, 10, Київ
+                                </p>
+                                <p className="text-[24px] leading-[26.4px]">
+                                    +38 067 275 74 24
+                                </p>
+                            </div>
+                            <button
+                                onClick={scrollToFooter}
+                                className="border-white border-[1px] rounded-[100px] px-[24px] pt-[12px] pb-[10px] leading-[22px] btn lg:hidden w-fit mb-[16px] mt-[40px]"
+                            >
+                                Зв’язатись з нами
+                            </button>
                         </div>
                     </div>
                 )}
@@ -112,9 +126,9 @@ const Header = () => {
                         </p>
                         <button
                             onClick={scrollToFooter}
-                            className="border-white border-[1px] rounded-[100px] px-[24px] pt-[12px] pb-[10px] leading-[22px] btn hidden lg:block"
+                            className="border-white border-[1px] rounded-[100px] px-[24px] pt-[12px] pb-[12px] leading-[22px] btn hidden lg:block"
                         >
-                            Зв'яжіться з нами
+                            Зв’язатись з нами
                         </button>
                     </div>
                     <p
@@ -127,11 +141,12 @@ const Header = () => {
                         яка ці сенси створює.
                     </p>
                     <button
-                        className={`border-white border-[1px] rounded-[100px] px-[24px] pt-[12px] pb-[8px] leading-[17.6px] btn lg:hidden mb-[64px] mt-[72px] ${
+                        onClick={scrollToFooter}
+                        className={`border-white border-[1px] rounded-[100px] px-[24px] pt-[12px] pb-[12px] leading-[17.6px] btn lg:hidden mb-[64px] mt-[72px] ${
                             open ? "hidden" : ""
                         }`}
                     >
-                        Зв'яжіться з нами
+                        Зв’язатись з нами
                     </button>
                 </div>
             </div>

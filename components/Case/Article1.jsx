@@ -15,11 +15,13 @@ const Article1 = (props) => {
                         height={480}
                         placeholder="blur"
                         blurDataURL={props.articleSrc}
-                        className={`w-[83.72vw] h-[122.14vw] lg:w-[21.67vw] lg:h-[32.81vw] mt-[64px] lg:mt-[5vw] lg:ml-[11.46vw] max-lg:mb-[64px] ${props.imageStyle}`}
+                        className={`w-[83.72vw] h-[122.14vw] lg:w-[21.67vw] lg:h-[32.81vw] mt-[64px] lg:mt-[5vw] lg:ml-[11.46vw] ${props.imageStyle}`}
                         unoptimized
                     />
                 </div>
-                <p className="lg:w-[33.13vw]">{props.articleText}</p>
+                <p className="lg:w-[33.13vw] max-lg:mt-[64px]">
+                    {props.articleText}
+                </p>
             </div>
         </section>
     );

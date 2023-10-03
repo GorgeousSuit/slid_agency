@@ -19,7 +19,7 @@ const Header = () => {
     const [open, updateOpen] = useState(false);
 
     const openIcon = open ? (
-        <CrossButtonIcon className="h-[30px] w-[30px]" />
+        <CrossButtonIcon className="h-[36px] w-[36px]" />
     ) : (
         <BurgerButtonIcon className="h-[10px] w-[40px]" />
     );
@@ -33,13 +33,13 @@ const Header = () => {
         >
             <button
                 onClick={() => updateOpen(!open)}
-                className="pb-[70px] pl-[70px] absolute top-[47px] right-[32px]"
+                className="py-[32px] px-[32px] absolute top-[32px] right-0 sm:right-[40px]"
             >
                 {openIcon}
             </button>
             <div
                 className={`h-full flex flex-col justify-between ${
-                    open && "h-0"
+                    open && "h-[0px]"
                 }`}
             >
                 <Link href="/">
@@ -97,9 +97,9 @@ const Header = () => {
                                 </p>
                             </div>
 
-                            <div className="flex items-center mb-[20px] lg:mb-[32px] gap-[37px] font-normal">
+                            <div className="flex items-center lg:mb-[32px] gap-[37px] font-normal">
                                 <p
-                                    className={`text-[20px] lg:text-[28px] lg:clamp24 leading-[22px] lg:leading-[30.8px]}`}
+                                    className={`text-[24px] lg:text-[28px] lg:clamp24 leading-[22px] lg:leading-[30.8px]}`}
                                 >
                                     +38 067 275 74 24
                                 </p>
@@ -107,7 +107,7 @@ const Header = () => {
                                     onClick={scrollToFooter}
                                     className="border-white border-[1px] rounded-[100px] px-[24px] pt-[12px] pb-[10px] leading-[22px] btn hidden lg:block"
                                 >
-                                    Зв'яжіться з нами
+                                    Зв’язатись з нами
                                 </button>
                             </div>
                             <p
@@ -117,13 +117,10 @@ const Header = () => {
                                 <br className="hidden lg:block" /> Ми креативна
                                 агенція яка ці сенси створює.
                             </p>
-                            <p className="lg:hidden text-[24px] leading [26.4px]">
-                                hi@slid.agency
-                            </p>
                             <button
-                                className={`border-white border-[1px] rounded-[100px] px-[24px] py-[12px] leading-[17.6px] btn lg:hidden mb-[40px] mt-[32px]`}
+                                className={`border-white border-[1px] rounded-[100px] px-[24px] py-[12px] leading-[17.6px] btn lg:hidden mb-[16px] mt-[40px]`}
                             >
-                                Зв'яжіться з нами
+                                Зв’язатись з нами
                             </button>
                         </div>
                     </div>

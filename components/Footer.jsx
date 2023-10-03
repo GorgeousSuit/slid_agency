@@ -4,10 +4,10 @@ const Footer = () => {
     return (
         <footer
             id="footer"
-            className="bg-black text-white px-[32px] sm:px-[5vw] 2xl:px-[92px] pt-[64px] sm:pt-[26px] pb-[32px] sm:pb-[59px] max-sm:space-y-[64px]"
+            className="bg-black text-white px-[32px] sm:px-[5vw] 2xl:px-[92px] pt-[64px] sm:pt-[26px] pb-[32px] sm:pb-[59px] max-sm:space-y-[64px] mb-[-1px]"
         >
             <h1 className="text-[36px] sm:text-[72px] font-normal leading-[43.2px] sm:leading-[86.4px] ">
-                Зв'яжіться з нами
+                Зв’язатись з нами
             </h1>
             <div className="flex flex-col sm:flex-row-reverse justify-between sm:mt-[120px]">
                 <div className="sm:mr-[110px] w-full sm:w-[32.5vw] 2xl:w-[38.33vw] max-sm:mb-[64px]">
@@ -64,12 +64,10 @@ const Footer = () => {
                             <p className="leading-[17.6px]">
                                 +38 067 275 74 24
                             </p>
-                            <p className="leading-[17.6px]">
-                                welcome@slid.agency
-                            </p>
+                            <p className="leading-[17.6px]">hi@slid.agency</p>
                         </div>
                     </div>
-                    <a href="/" className="hidden underline hover:no-underline">
+                    <a href="/" className="underline hover:no-underline">
                         Наша презентація
                     </a>
                 </div>

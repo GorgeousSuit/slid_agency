@@ -1,4 +1,6 @@
-<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-<rect x="3" y="0.867676" width="40" height="3" transform="rotate(45 3 0.867676)" fill="#FEFEFE"/>
-<rect x="1" y="29.2842" width="40" height="3" transform="rotate(-45 1 29.2842)" fill="#FEFEFE"/>
+<svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Frame 22">
+<rect id="Rectangle 10" x="5.12134" y="3" width="40" height="3" transform="rotate(45 5.12134 3)" fill="#FEFEFE"/>
+<rect id="Rectangle 11" x="3.12134" y="31.4165" width="40" height="3" transform="rotate(-45 3.12134 31.4165)" fill="#FEFEFE"/>
+</g>
 </svg>

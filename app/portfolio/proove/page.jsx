@@ -1,4 +1,4 @@
-import Header from "@components/Case/Header";
+import Header from "@components/Case/CaseHeader";
 import KeyPoints from "@components/Case/KeyPoints";
 import Article1 from "@components/Case/Article1";
 import Article1_2 from "@components/Case/Article1_2";
@@ -25,7 +25,7 @@ const page = (props) => {
                         Розробили дизайн
                         <br /> сайту каталогу для
                         <br /> виробника гаджетів та
-                        <br /> аксесуарів
+                        <br className="hidden sm:block" /> аксесуарів
                     </>
                 }
                 articleText={

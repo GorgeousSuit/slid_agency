@@ -1,4 +1,4 @@
-import Header from "@components/Portfolio/Header";
+import Header from "@components/Portfolio/PortfolioHeader";
 import PortfolioItem from "@components/Portfolio/PortfolioItem";
 
 const srcData = [
@@ -6,25 +6,25 @@ const srcData = [
         src: "/assets/images/portfolio-card-1.png",
         href: "/portfolio/laser-time",
         hoverTitle: "Laser Time",
-        hoverText: "Identity + Branding",
+        hoverText: "Візуальна ідентичність + Комунікаційна стратегія",
     },
     {
         src: "/assets/images/portfolio-card-2.png",
         href: "/portfolio/rebel-bicycles",
         hoverTitle: "Rebel Bicycles",
-        hoverText: "Identity + Branding",
+        hoverText: "Візуальна ідентичність",
     },
     {
         src: "/assets/images/portfolio-card-3.png",
         href: "/portfolio/proove",
         hoverTitle: "Proove",
-        hoverText: "Identity + Branding",
+        hoverText: "Розробка дизайну сайту",
     },
     {
         src: "/assets/images/portfolio-card-4.png",
         href: "/portfolio/pur",
         hoverTitle: "PÜR",
-        hoverText: "Identity + Branding",
+        hoverText: "Розробка сайту",
     },
 ];
 
