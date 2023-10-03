@@ -8,14 +8,14 @@ import Grid from "@components/Case/Grid";
 const page = (props) => {
     const gridData1 = [
         {
-            src: "/assets/images/laser-grid-1.png",
+            src: "/assets/images/laser-grid-1.webp",
             w: "948",
             h: "948",
             style: "",
             imgStyle: "",
         },
         {
-            src: "/assets/images/laser-grid-2.png",
+            src: "/assets/images/laser-grid-2.webp",
             w: "948",
             h: "948",
             style: "",
@@ -56,7 +56,7 @@ const page = (props) => {
                         інших гравців.
                     </>
                 }
-                articleSrc="/assets/images/laser-image-1.jpg"
+                articleSrc="/assets/images/laser-image-1.webp"
             />
             <Article1_2
                 articleTitle="Дослідження"
@@ -87,7 +87,7 @@ const page = (props) => {
                 }
             />
             <Image
-                src="/assets/images/laser-image-2.jpg"
+                src="/assets/images/laser-image-2.webp"
                 alt="Image"
                 width={1920}
                 height={1080}
@@ -110,7 +110,7 @@ const page = (props) => {
                 }
             />
             <Image
-                src="/assets/images/laser-image-3.jpg"
+                src="/assets/images/laser-image-3.webp"
                 alt="Image"
                 width={1920}
                 height={1080}
@@ -141,7 +141,7 @@ const page = (props) => {
                 gridStyle="grid-rows-2 grid-cols-1 lg:grid-rows-1 lg:grid-cols-2 auto-cols-min auto-rows-[fit-content]"
             />
             <Image
-                src="/assets/images/laser-grid-3.png"
+                src="/assets/images/laser-grid-3.webp"
                 alt="Image"
                 width={1920}
                 height={1000}
@@ -149,7 +149,7 @@ const page = (props) => {
             />
             {/* Blueprint */}
             <Image
-                src="/assets/images/laser-image-4.jpg"
+                src="/assets/images/laser-image-4.webp"
                 alt="Image"
                 width={1736}
                 height={904}
@@ -157,65 +157,65 @@ const page = (props) => {
             />
             <div className="lg:hidden space-y-[32px] w-[fit-content] mx-auto my-[64px]">
                 <Image
-                    src="/assets/images/laser-image-4-1.jpg"
+                    src="/assets/images/laser-image-4-1.webp"
                     alt="Image"
                     width={1920}
                     height={1080}
                     className="w-[329px] h-[468px]"
-                    unoptimized
+                    
                 />
                 <Image
-                    src="/assets/images/laser-image-4-2.jpg"
+                    src="/assets/images/laser-image-4-2.webp"
                     alt="Image"
                     width={1920}
                     height={1080}
                     className="w-[329px] h-[634px]"
-                    unoptimized
+                    
                 />
                 <Image
-                    src="/assets/images/laser-image-4-3.jpg"
+                    src="/assets/images/laser-image-4-3.webp"
                     alt="Image"
                     width={1920}
                     height={1080}
                     className="w-[329px] h-[518px]"
-                    unoptimized
+                    
                 />
             </div>
             {/* The Last grid */}
-            <div className="w-full max-lg:px-[32px] flex flex-col lg:flex-row max-lg:space-y-[32px] lg:space-x-[1.25vw] mb-[32px] lg:mb-[24px]">
+            <div className="max-lg:px-[32px] flex flex-col lg:flex-row max-lg:space-y-[32px] lg:space-x-[1.25%] mb-[32px] lg:mb-[1.25vw]">
                 <Image
-                    src="/assets/images/laser-grid-4.png"
+                    src="/assets/images/laser-grid-4.webp"
                     alt="Image"
                     width={728}
                     height={1000}
-                    className="max-lg:w-full lg:w-[37.92vw] lg:h-[52.08vw]"
-                    unoptimized
+                    className="max-lg:w-full lg:w-[37.916%]"
+                    
                 />
                 <Image
                     src="/assets/images/laser-grid-5.png"
                     alt="Image"
                     width={1168}
                     height={1000}
-                    className="max-lg:w-full lg:w-[60.83vw] lg:h-[52.08vw]"
+                    className="max-lg:w-full lg:w-[60.83%]"
                     unoptimized
                 />
             </div>
-            <div className="w-full max-lg:px-[32px] flex flex-col lg:flex-row max-lg:space-y-[32px] lg:space-x-[1.25vw] mb-[32px] lg:mb-[24px]">
+            <div className="w-full max-lg:px-[32px] flex-col lg:flex-row max-lg:space-y-[32px] lg:space-x-[1.25%] mb-[32px] lg:mb-[1.25vw] flex">
                 <Image
-                    src="/assets/images/laser-grid-6.png"
+                    src="/assets/images/laser-grid-6.webp"
                     alt="Image"
                     width={1168}
                     height={1000}
-                    className="max-lg:w-full lg:w-[60.83vw] lg:h-[52.08vw]"
-                    unoptimized
+                    className="max-lg:w-full lg:w-[60.83%]"
+                    
                 />
                 <Image
-                    src="/assets/images/laser-grid-7.png"
+                    src="/assets/images/laser-grid-7.webp"
                     alt="Image"
                     width={728}
                     height={1000}
-                    className="max-lg:w-full lg:w-[37.92vw] lg:h-[52.08vw]"
-                    unoptimized
+                    className="max-lg:w-full lg:w-[37.916%]"
+                    
                 />
             </div>
         </section>

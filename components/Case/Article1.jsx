@@ -11,12 +11,12 @@ const Article1 = (props) => {
                     <Image
                         src={props.articleSrc}
                         alt="Image"
-                        width={329}
-                        height={480}
+                        width={1920}
+                        height={1080}
                         placeholder="blur"
                         blurDataURL={props.articleSrc}
                         className={`w-[83.72vw] h-[122.14vw] lg:w-[21.67vw] lg:h-[32.81vw] mt-[64px] lg:mt-[5vw] lg:ml-[11.46vw] ${props.imageStyle}`}
-                        unoptimized
+                        
                     />
                 </div>
                 <p className="lg:w-[33.13vw] max-lg:mt-[64px]">
