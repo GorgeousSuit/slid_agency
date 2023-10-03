@@ -65,6 +65,7 @@ const page = (props) => {
                 }
             />
             <Video
+                preload='metadata'
                 src="/assets/videos/Proove-1.mp4"
                 style="lg:mt-[160px] lg:mx-[92px]"
             />

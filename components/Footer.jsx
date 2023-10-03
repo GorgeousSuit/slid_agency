@@ -1,10 +1,21 @@
+"use client";
+
 import Image from "next/image";
+import { useState } from "react";
 
 const Footer = () => {
+    const [submit, handleSubmit] = useState();
+    const [name, setName] = useState("");
+    const [phone, setPhone] = useState("");
+    const [email, setEmail] = useState("");
+    const [comment, setComment] = useState("");
+
+
+    
     return (
         <footer
             id="footer"
-            className="bg-black text-white px-[32px] sm:px-[5vw] 2xl:px-[92px] pt-[64px] sm:pt-[26px] pb-[32px] sm:pb-[59px] max-sm:space-y-[64px] mb-[-1px]"
+            className="bg-black text-white px-[32px] sm:px-[5vw] 2xl:px-[92px] pt-[64px] sm:pt-[26px] pb-[32px] sm:pb-[59px] max-sm:space-y-[64px] border border-black"
         >
             <h1 className="text-[36px] sm:text-[72px] font-normal leading-[43.2px] sm:leading-[86.4px] ">
                 Зв’язатись з нами
@@ -12,32 +23,48 @@ const Footer = () => {
             <div className="flex flex-col sm:flex-row-reverse justify-between sm:mt-[120px]">
                 <div className="sm:mr-[110px] w-full sm:w-[32.5vw] 2xl:w-[38.33vw] max-sm:mb-[64px]">
                     <form
-                        action="#"
-                        method="post"
+                        onSubmit={handleSubmit}
                         className="flex flex-col space-y-[48px] sm:space-y-[64px] 2xl:mr-[100px]"
                     >
                         <input
                             type="text"
+                            value={name}
+                            onChange={(e) => {
+                                setName(e.target.value);
+                            }}
                             className="focus:border-[#ADADAD]"
                             placeholder="Ім'я"
                         />
                         <input
                             type="tel"
+                            value={phone}
+                            onChange={(e) => {
+                                setPhone(e.target.value);
+                            }}
                             className="focus:border-[#ADADAD]"
                             placeholder="Телефон"
                         />
                         <input
                             type="email"
+                            value={email}
+                            onChange={(e) => {
+                                setEmail(e.target.value);
+                            }}
                             className="focus:border-[#ADADAD]"
                             placeholder="Електронна пошта"
                         />
                         <input
                             type="text"
+                            value={comment}
+                            onChange={(e) => {
+                                setComment(e.target.value);
+                            }}
                             className="focus:border-[#ADADAD]"
                             placeholder="Коментар"
                         />
                         <button
                             type="submit"
+                            value="Send"
                             className="w-[177px] pt-[12px] pb-[12px] px-[24px] font-normal leading-[17.6px] border border-white rounded-[100px] btn"
                         >
                             Зв'язатись
@@ -84,6 +111,7 @@ const Footer = () => {
                 <p className="">Privacy policy</p>
                 <p className="">Copyright © 2023 All rights reserved.</p>
             </div>
+            
         </footer>
     );
 };

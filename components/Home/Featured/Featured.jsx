@@ -11,7 +11,11 @@ const srcData = [
     },
     { src: "/assets/images/featured-proove.webp", href: "/portfolio/proove" },
 
-    { src: "/assets/images/featured-pur.webp", href: "/portfolio/pur" },
+    {
+        src: "/assets/images/featured-pur.webp",
+        href: "/portfolio/pur",
+        style: "max-sm:object-[-50px_top]",
+    },
     {
         src: "/assets/images/rebel-cover.webp",
         href: "/portfolio/rebel-bicycles",

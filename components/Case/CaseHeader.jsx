@@ -34,13 +34,13 @@ const Header = (props) => {
             <div
                 className={`w-full h-[73vh] text-white relative px-[32px] sm:px-[92px] pt-[64px] sm:pt-[80px] pb-[32px] sm:pb-[4.43vw] ${
                     open &&
-                    "bg-black w-full lg:h-[73.8vh] 2xl:h-[64.8vh] text-white max-lg:h-[100svh]"
+                    ""
                 }`}
                 style={{ padding: open && "0px" }}
             >
                 <button
                     onClick={() => updateOpen(!open)}
-                    className="py-[32px] px-[32px] absolute top-[32px] right-[0px] lg:right-[60px] lg:top-[48px]"
+                    className={`py-[32px] px-[32px] ${open ? "fixed" : "absolute"} top-[32px] right-[0px] lg:right-[3.13vw] lg:top-[32px] z-20`}
                 >
                     {openIcon}
                 </button>
@@ -54,13 +54,13 @@ const Header = (props) => {
                             height={91}
                             className={`sm:w-[140px] sm:h-[83px] ${
                                 open &&
-                                "absolute left-[32px] lg:left-[92px] sm:w-[153px] lg:w-[25.63vw] lg:h-[15.16vw] top-[64px] min-w-[153px] min-h-[91px] max-w-[328px] max-h-[194px]"
+                                "z-20 fixed left-[32px] lg:left-[92px] sm:w-[153px] lg:w-[25.63vw] lg:h-[15.16vw] top-[64px] min-w-[153px] min-h-[91px] max-w-[328px] max-h-[194px]"
                             }`}
                         />
                     </Link>
                     {open && (
-                        <section className="bg-black w-full lg:h-[73.8vh] 2xl:h-[64.8vh] text-white max-lg:h-[100svh]">
-                            <div className="h-full flex flex-col lg:flex-row justify-between px-[32px] lg:px-[4.79vw]">
+                        <section className="fixed top-0 left-0 z-10 bg-black w-full lg:h-[73.8vh] 2xl:h-[64.8vh] text-white max-lg:h-[100svh]">
+                            <div className="h-full flex flex-col lg:flex-row justify-between px-[32px] lg:pl-[4.79vw] lg:pr-[148px]">
                                 <div className="space-y-[20px]">
                                     <div className="flex lg:hidden justify-between mt-[187px] mb-[35px] lg:pr-[25px]">
                                         <div className="space-x-[16px]">

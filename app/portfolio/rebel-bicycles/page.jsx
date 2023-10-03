@@ -42,6 +42,7 @@ const page = (props) => {
             <Header
                 mainCover={"/assets/images/rebel-bicycles-cover.jpg"}
                 mainTitle={"Rebel Bicycles"}
+                bgPosition="bg-right"
             />
             <KeyPoints
                 key1="Rebel Bicycles"

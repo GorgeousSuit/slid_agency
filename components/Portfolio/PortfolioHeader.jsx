@@ -27,19 +27,19 @@ const Header = () => {
     return (
         <header
             className={`bg-black relative h-[51.4vh] pt-[64px] px-[32px] sm:px-[72px] pb-[55px] text-white ${
-                open && "max-lg:h-[100svh] lg:h-[73.8vh] 2xl:h-[64.8vh]"
+                open && ""
             }`}
             style={{ padding: open && "0px" }}
         >
             <button
                 onClick={() => updateOpen(!open)}
-                className="py-[32px] px-[32px] absolute top-[32px] right-0 sm:right-[40px]"
+                className={`py-[32px] px-[32px] top-[32px] right-0 sm:right-[40px] z-20 ${open ? "fixed" : "absolute"}`}
             >
                 {openIcon}
             </button>
             <div
                 className={`h-full flex flex-col justify-between ${
-                    open && "h-[0px]"
+                    open && "h-auto"
                 }`}
             >
                 <Link href="/">
@@ -50,7 +50,7 @@ const Header = () => {
                         height={58}
                         className={`sm:w-[140px] sm:h-[83px] ${
                             open &&
-                            "block absolute left-[32px] lg:left-[92px] sm:w-[153px] lg:w-[25.63vw] lg:h-[15.16vw] top-[64px] min-w-[153px] min-h-[91px] max-w-[328px] max-h-[194px]"
+                            "z-20 block fixed left-[32px] lg:left-[92px] sm:w-[153px] lg:w-[25.63vw] lg:h-[15.16vw] top-[64px] min-w-[153px] min-h-[91px] max-w-[328px] max-h-[194px]"
                         }`}
                     />
                 </Link>
@@ -63,10 +63,10 @@ const Header = () => {
                 </p>
             </div>
             {open && (
-                <section className="bg-black w-full lg:h-[73.8vh] 2xl:h-[64.8vh] text-white max-lg:h-[100svh]">
-                    <div className="h-full flex flex-col lg:flex-row justify-between px-[32px] lg:px-[4.79vw]">
+                <section className="fixed top-0 left-0 z-10 bg-black w-full lg:h-[73.8vh] 2xl:h-[64.8vh] text-white max-lg:h-[100svh]">
+                    <div className="h-full flex flex-col lg:flex-row justify-between px-[32px] lg:pl-[4.79vw] lg:pr-[148px]">
                         <div className="space-y-[20px]">
-                            <div className="flex lg:hidden justify-between mt-[187px] mb-[35px] lg:pr-[25px]">
+                            <div className="flex lg:hidden justify-between mt-[187px] mb-[32px] lg:pr-[25px]">
                                 <div className="space-x-[16px]">
                                     <Link
                                         className="text-[#545454] hover:underline"
@@ -82,7 +82,7 @@ const Header = () => {
                             <Nav />
                         </div>
                         <div className={`pt-[47px] lg:pt-[64px]`}>
-                            <div className="lg:flex justify-between  lg:py-1 lg:mb-[35px] lg:pr-[25px]">
+                            <div className="lg:flex justify-between lg:mb-[32px] lg:pr-[25px]">
                                 <div className="space-x-[16px] max-lg:hidden">
                                     <Link
                                         className="text-[#545454] hover:underline"

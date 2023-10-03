@@ -13,7 +13,7 @@ const PortfolioItem = (props) => {
                     className="w-full hover:opacity-0"
                     unoptimized
                 />
-                <div className="absolute bg-black md:hover:opacity-100 flex flex-col justify-between w-full h-full p-[32px] z-10 opacity-0 top-0 left-0 text-white transition ease-out duration-300 font-normal">
+                <div className="absolute bg-black md:hover:opacity-100 flex flex-col justify-between w-full h-full p-[32px] z-[5] opacity-0 top-0 left-0 text-white transition ease-out duration-300 font-normal">
                     <p className="text-[24px]">{props.hoverText}</p>
                     <p className="text-[72px]">{props.hoverTitle}</p>
                 </div>
