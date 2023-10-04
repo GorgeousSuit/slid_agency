@@ -5,7 +5,7 @@ import Link from "next/link";
 const srcData = [
     {
         src: "/assets/images/featured-tsarsky.webp",
-        href: "/portfolio",
+        href: "/portfolio/tsarsky",
         style: "",
     },
     {

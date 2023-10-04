@@ -96,7 +96,7 @@ const Footer = () => {
                             <p className="leading-[17.6px]">hi@slid.agency</p>
                         </div>
                     </div>
-                    <a href="/" className="underline hover:no-underline">
+                    <a href="/" className="hidden underline hover:no-underline">
                         Наша презентація
                     </a>
                 </div>

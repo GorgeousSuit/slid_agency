@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const ImageText = (props) => {
     return (
-        <section className="max-lg:my-[96px] px-[32px] lg:px-[16.25vw] w-full h-full lg:h-[auto] flex flex-col lg:flex-row justify-between items-center">
+        <section className="max-lg:mt-[64px] max-lg:mb-[96px] px-[32px] lg:px-[16.25vw] w-full h-full lg:h-[auto] flex flex-col lg:flex-row justify-between items-center">
             <Image
                 src={props.src}
                 alt="Image"

@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const TwoPurImage = (props) => {
     return (
-        <section className={`max-lg:w-full max-lg:space-y-[24px] lg:space-x-[24px] flex flex-col lg:flex-row mb-[24px] lg:mb-[-136px]`}>
+        <section className={`max-lg:w-full max-lg:space-y-[24px] lg:space-x-[24px] flex flex-col lg:flex-row mb-[-40px] lg:mb-[-136px]`}>
             <div className="bg-[#E9E8E6]">
                 <Image
                     src={props.src1}

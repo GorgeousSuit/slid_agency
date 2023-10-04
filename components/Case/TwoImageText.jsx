@@ -2,8 +2,8 @@ import Image from "next/image";
 
 const TwoImageText = (props) => {
     return (
-        <section className="">
-            <div className="max-lg:space-y-[32px] lg:space-x-[24px] lg:mb-[160px] flex flex-col lg:flex-row justify-center items-center max-lg:mb-[96px]">
+        <section className="max-lg:mb-[64px]">
+            <div className="max-lg:mt-[96px] max-lg:space-y-[32px] lg:space-x-[24px] lg:mb-[160px] flex flex-col lg:flex-row justify-center items-center max-lg:mb-[96px]">
                 <Image
                     src={props.src1}
                     alt="Image"

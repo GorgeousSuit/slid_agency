@@ -68,11 +68,7 @@ const page = (props) => {
             />
             <div className="lg:mt-[160px] lg:mx-[92px] bg-[#D0E5F5]">
                 <Video
-                    loading="lazy"
-                    preload="metadata"
                     src="/assets/videos/Proove-1.mp4"
-                    style=""
-                    className=""
                 />
             </div>
             <div
@@ -187,7 +183,6 @@ const page = (props) => {
             <div className="lg:mt-[160px] lg:mx-[92px] bg-[#D0E5F5]">
                 <Video
                     src="/assets/videos/Proove-2.mp4"
-                    style=""
                 />
             </div>
             <OtherWorks

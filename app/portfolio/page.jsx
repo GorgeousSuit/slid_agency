@@ -7,7 +7,7 @@ import Link from "next/link";
 const srcData = [
     {
         src: "/assets/images/portfolio-card-5.webp",
-        href: "/portfolio",
+        href: "/portfolio/tsarsky",
         hoverTitle: "TSARSKY",
         hoverText: "Розробка сайту",
     },
@@ -29,7 +29,13 @@ const srcData = [
         hoverTitle: "Proove",
         hoverText: "Розробка дизайну сайту",
     },
-    
+    {
+        src: "/assets/images/portfolio-card-2.webp",
+        href: "/portfolio/rebel-bicycles",
+        hoverTitle: "Rebel Bicycles",
+        hoverText: "Розробка дизайну сайту",
+        style: "lg:hidden",
+    },
 ];
 
 const page = () => {
@@ -52,10 +58,11 @@ const page = () => {
                         href={srcData.href}
                         hoverTitle={srcData.hoverTitle}
                         hoverText={srcData.hoverText}
+                        style={srcData.style}
                     />
                 ))}
             </div>
-            <div className="relative">
+            <div className="relative max-lg:hidden">
                 <Link href="/portfolio/rebel-bicycles">
                     <Image
                         src="/assets/images/portfolio-card-lg-2.webp"

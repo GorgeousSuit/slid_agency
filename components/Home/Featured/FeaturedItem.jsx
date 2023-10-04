@@ -12,7 +12,7 @@ const FeaturedItem = (props) => {
                     height={800}
                     srcSet={props.srcSet}
                     sizes={props.sizes}
-                    className={`w-full max-sm:h-full max-sm:object-cover overflow-x-hidden overflow-y-hidden transition duration-500 hover:scale-105 ${props.style}`}
+                    className={`w-full max-sm:h-full max-sm:object-cover overflow-x-hidden overflow-y-hidden transition duration-500 lg:hover:scale-105 ${props.style}`}
                     unoptimized
                 />
             </Link>

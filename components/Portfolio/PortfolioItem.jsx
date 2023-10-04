@@ -3,7 +3,7 @@ import Link from "next/link";
 
 const PortfolioItem = (props) => {
     return (
-        <div className="relative">
+        <div className={`relative ${props.style}`}>
             <Link href={props.href}>
                 <Image
                     src={props.src}
