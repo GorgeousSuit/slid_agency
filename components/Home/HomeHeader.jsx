@@ -47,7 +47,7 @@ const Header = () => {
     };
 
     const openIcon = open ? (
-        <CrossButtonIcon className="h-[36px] w-[36px]" />
+        <CrossButtonIcon className="h-[36px] w-[36px] mt-[-18px]" />
     ) : (
         <BurgerButtonIcon className="h-[10px] w-[40px]" />
     );

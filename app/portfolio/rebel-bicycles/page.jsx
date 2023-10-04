@@ -4,32 +4,33 @@ import Article1 from "@components/Case/Article1";
 import Article1_2 from "@components/Case/Article1_2";
 import Image from "next/image";
 import Grid from "@components/Case/Grid";
+import OtherWorks from "@components/Case/OtherWorks";
 
 const page = (props) => {
     const gridData1 = [
         {
-            src: "/assets/images/rebel-grid-12.png",
+            src: "/assets/images/rebel-grid-12.webp",
             w: "948",
             h: "948",
             style: "",
             imgStyle: "",
         },
         {
-            src: "/assets/images/rebel-grid-13.png",
+            src: "/assets/images/rebel-grid-13.webp",
             w: "948",
             h: "948",
             style: "",
             imgStyle: "",
         },
         {
-            src: "/assets/images/rebel-grid-14.png",
+            src: "/assets/images/rebel-grid-14.webp",
             w: "948",
             h: "948",
             style: "",
             imgStyle: "",
         },
         {
-            src: "/assets/images/rebel-grid-15.png",
+            src: "/assets/images/rebel-grid-15.webp",
             w: "948",
             h: "948",
             style: "",
@@ -40,7 +41,7 @@ const page = (props) => {
     return (
         <section className="font-normal">
             <Header
-                mainCover={"/assets/images/rebel-bicycles-cover.jpg"}
+                mainCover={"/assets/images/rebel-cover.webp"}
                 mainTitle={"Rebel Bicycles"}
                 bgPosition="bg-right"
             />
@@ -74,7 +75,7 @@ const page = (props) => {
                 imageStyle="hidden"
             />
             <Image
-                src="/assets/images/rebel-1.jpg"
+                src="/assets/images/rebel-1.webp"
                 alt="Image"
                 width={1736}
                 height={460}
@@ -84,14 +85,14 @@ const page = (props) => {
             {/* First grid */}
             <div className="w-full max-lg:px-[32px] flex flex-col lg:flex-row max-lg:space-y-[24px] lg:space-x-[1.25vw] mb-[24px] lg:mb-[1.25vw] overflow-x-hidden">
                 <Image
-                    src="/assets/images/rebel-grid-1.png"
+                    src="/assets/images/rebel-grid-1.webp"
                     alt="Image"
                     width={1168}
                     height={1000}
                     className="max-lg:w-full lg:w-[60.83vw] lg:h-[52.08vw]"
                 />
                 <Image
-                    src="/assets/images/rebel-grid-2.png"
+                    src="/assets/images/rebel-grid-2.webp"
                     alt="Image"
                     width={728}
                     height={1000}
@@ -99,14 +100,14 @@ const page = (props) => {
                 />
             </div>
             <Image
-                src="/assets/images/rebel-grid-3.png"
+                src="/assets/images/rebel-grid-3.webp"
                 alt="Image"
                 width={1920}
                 height={1000}
                 className="w-full mt-[24px] lg:mt-[1.25vw]"
             />
             <Image
-                src="/assets/images/rebel-grid-4.png"
+                src="/assets/images/rebel-grid-4.webp"
                 alt="Image"
                 width={1920}
                 height={1000}
@@ -114,14 +115,14 @@ const page = (props) => {
             />
             <div className="w-full max-lg:px-[32px] flex flex-col lg:flex-row max-lg:space-y-[24px] lg:space-x-[1.25vw] mb-[24px] lg:mb-[1.25vw] overflow-x-hidden">
                 <Image
-                    src="/assets/images/rebel-grid-5.png"
+                    src="/assets/images/rebel-grid-5.webp"
                     alt="Image"
                     width={728}
                     height={1000}
                     className="max-lg:w-full lg:w-[37.92vw] lg:h-[52.08vw]"
                 />
                 <Image
-                    src="/assets/images/rebel-grid-6.png"
+                    src="/assets/images/rebel-grid-6.webp"
                     alt="Image"
                     width={1168}
                     height={1000}
@@ -130,14 +131,14 @@ const page = (props) => {
             </div>
             <div className="w-full max-lg:px-[32px] flex flex-col lg:flex-row max-lg:space-y-[24px] lg:space-x-[1.25vw] mb-[24px] lg:mb-[1.25vw] overflow-x-hidden">
                 <Image
-                    src="/assets/images/rebel-grid-7.png"
+                    src="/assets/images/rebel-grid-7.webp"
                     alt="Image"
                     width={1168}
                     height={1000}
                     className="max-lg:w-full lg:w-[60.83vw] lg:h-[52.08vw]"
                 />
                 <Image
-                    src="/assets/images/rebel-grid-8.png"
+                    src="/assets/images/rebel-grid-8.webp"
                     alt="Image"
                     width={728}
                     height={1000}
@@ -145,7 +146,7 @@ const page = (props) => {
                 />
             </div>
             <Image
-                src="/assets/images/rebel-grid-9.png"
+                src="/assets/images/rebel-grid-9.webp"
                 alt="Image"
                 width={1920}
                 height={1297}
@@ -153,14 +154,14 @@ const page = (props) => {
             />
             <div className="w-full max-lg:px-[32px] flex flex-col lg:flex-row max-lg:space-y-[24px] lg:space-x-[1.25vw] mb-[24px] lg:mb-[1.25vw] overflow-x-hidden">
                 <Image
-                    src="/assets/images/rebel-grid-10.png"
+                    src="/assets/images/rebel-grid-10.webp"
                     alt="Image"
                     width={728}
                     height={1000}
                     className="max-lg:w-full lg:w-[37.92vw] lg:h-[52.08vw]"
                 />
                 <Image
-                    src="/assets/images/rebel-grid-11.png"
+                    src="/assets/images/rebel-grid-11.webp"
                     alt="Image"
                     width={1168}
                     height={1000}
@@ -170,6 +171,12 @@ const page = (props) => {
             <Grid
                 gridData={gridData1}
                 gridStyle="grid-rows-4 grid-cols-1 lg:grid-rows-2 lg:grid-cols-2 max-lg:mx-[32px]"
+            />
+            <OtherWorks
+                src1="/assets/images/portfolio-card-5.webp"
+                href1="/portfolio"
+                src2="/assets/images/portfolio-card-3.webp"
+                href2="/portfolio/proove"
             />
         </section>
     );

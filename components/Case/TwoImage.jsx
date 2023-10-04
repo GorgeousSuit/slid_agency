@@ -2,8 +2,8 @@ import Image from "next/image";
 
 const TwoImage = (props) => {
     return (
-        <section className="py-[96px] lg:py-[160px] lg:px-[92px]">
-            <div className="max-lg:space-y-[96px] lg:space-x-[24px] lg:mb-[183px] flex flex-col lg:flex-row lg:justify-between items-center">
+        <section className="lg:mb-[160px] lg:px-[92px]">
+            <div className="max-lg:space-y-[96px] lg:space-x-[24px] flex flex-col lg:flex-row lg:justify-between items-center">
                 <Image
                     src={props.src1}
                     alt="Image"

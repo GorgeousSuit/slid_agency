@@ -19,7 +19,7 @@ const Header = () => {
     const [open, updateOpen] = useState(false);
 
     const openIcon = open ? (
-        <CrossButtonIcon className="h-[36px] w-[36px]" />
+        <CrossButtonIcon className="h-[36px] w-[36px] mt-[-18px]" />
     ) : (
         <BurgerButtonIcon className="h-[10px] w-[40px]" />
     );
@@ -33,7 +33,7 @@ const Header = () => {
         >
             <button
                 onClick={() => updateOpen(!open)}
-                className={`py-[32px] px-[32px] top-[32px] right-0 sm:right-[40px] z-20 ${open ? "fixed" : "absolute"}`}
+                className={`py-[32px] px-[32px] top-[32px] right-0 sm:right-[3.13vw] z-20 ${open ? "fixed" : "absolute"}`}
             >
                 {openIcon}
             </button>

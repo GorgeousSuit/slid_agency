@@ -15,7 +15,7 @@ const Footer = () => {
     return (
         <footer
             id="footer"
-            className="bg-black text-white px-[32px] sm:px-[5vw] 2xl:px-[92px] pt-[64px] sm:pt-[26px] pb-[32px] sm:pb-[59px] max-sm:space-y-[64px] border border-black"
+            className="bg-black text-white px-[32px] sm:px-[5vw] 2xl:px-[92px] pt-[64px] sm:pt-[96px] pb-[32px] sm:pb-[59px] max-sm:space-y-[64px] border border-black"
         >
             <h1 className="text-[36px] sm:text-[72px] font-normal leading-[43.2px] sm:leading-[86.4px] ">
                 Зв’язатись з нами
@@ -43,6 +43,7 @@ const Footer = () => {
                             }}
                             className="focus:border-[#ADADAD]"
                             placeholder="Телефон"
+                            required
                         />
                         <input
                             type="email"
@@ -52,6 +53,7 @@ const Footer = () => {
                             }}
                             className="focus:border-[#ADADAD]"
                             placeholder="Електронна пошта"
+                            required
                         />
                         <input
                             type="text"

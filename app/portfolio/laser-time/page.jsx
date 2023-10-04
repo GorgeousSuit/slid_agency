@@ -4,6 +4,7 @@ import KeyPoints from "@components/Case/KeyPoints";
 import Article1_2 from "@components/Case/Article1_2";
 import Image from "next/image";
 import Grid from "@components/Case/Grid";
+import OtherWorks from "@components/Case/OtherWorks";
 
 const page = (props) => {
     const gridData1 = [
@@ -57,6 +58,7 @@ const page = (props) => {
                     </>
                 }
                 articleSrc="/assets/images/laser-image-1.webp"
+                imageStyle="lg:w-[21.67vw] lg:h-[32.81vw]"
             />
             <Article1_2
                 articleTitle="Дослідження"
@@ -153,16 +155,16 @@ const page = (props) => {
                 alt="Image"
                 width={1736}
                 height={904}
-                className="w-full h-full my-[160px] px-[92px] hidden lg:block"
+                className="w-full h-full my-[32px] lg:my-[160px] lg:px-[92px]"
             />
-            <div className="lg:hidden space-y-[32px] w-[fit-content] mx-auto my-[64px]">
+            <div className="hidden space-y-[32px] w-[fit-content] mx-auto my-[64px]">
                 <Image
                     src="/assets/images/laser-image-4-1.webp"
                     alt="Image"
                     width={1920}
                     height={1080}
                     className="w-[329px] h-[468px]"
-                    
+                    unoptimized
                 />
                 <Image
                     src="/assets/images/laser-image-4-2.webp"
@@ -170,7 +172,7 @@ const page = (props) => {
                     width={1920}
                     height={1080}
                     className="w-[329px] h-[634px]"
-                    
+                    unoptimized
                 />
                 <Image
                     src="/assets/images/laser-image-4-3.webp"
@@ -178,7 +180,7 @@ const page = (props) => {
                     width={1920}
                     height={1080}
                     className="w-[329px] h-[518px]"
-                    
+                    unoptimized
                 />
             </div>
             {/* The Last grid */}
@@ -189,15 +191,13 @@ const page = (props) => {
                     width={728}
                     height={1000}
                     className="max-lg:w-full lg:w-[37.916%]"
-                    
                 />
                 <Image
-                    src="/assets/images/laser-grid-5.png"
+                    src="/assets/images/laser-grid-5.webp"
                     alt="Image"
                     width={1168}
                     height={1000}
                     className="max-lg:w-full lg:w-[60.83%]"
-                    unoptimized
                 />
             </div>
             <div className="w-full max-lg:px-[32px] flex-col lg:flex-row max-lg:space-y-[32px] lg:space-x-[1.25%] mb-[32px] lg:mb-[1.25vw] flex">
@@ -207,7 +207,6 @@ const page = (props) => {
                     width={1168}
                     height={1000}
                     className="max-lg:w-full lg:w-[60.83%]"
-                    
                 />
                 <Image
                     src="/assets/images/laser-grid-7.webp"
@@ -215,9 +214,14 @@ const page = (props) => {
                     width={728}
                     height={1000}
                     className="max-lg:w-full lg:w-[37.916%]"
-                    
                 />
             </div>
+            <OtherWorks
+                src1="/assets/images/portfolio-card-2.webp"
+                href1="/portfolio/rebel-bicycles"
+                src2="/assets/images/portfolio-card-5.webp"
+                href2="/portfolio"
+            />
         </section>
     );
 };

@@ -4,13 +4,16 @@ import Link from "next/link";
 
 const srcData = [
     {
+        src: "/assets/images/featured-tsarsky.webp",
+        href: "/portfolio",
+        style: "",
+    },
+    {
         src: "/assets/images/featured-laser.webp",
         href: "/portfolio/laser-time",
         srcSet: "/assets/images/sm/featured-laser-sm.webp 393w, /assets/images/featured-laser.webp 1920w",
         sizes: "(max-width: 393px) 393px, 1920px",
     },
-    { src: "/assets/images/featured-proove.webp", href: "/portfolio/proove" },
-
     {
         src: "/assets/images/featured-pur.webp",
         href: "/portfolio/pur",

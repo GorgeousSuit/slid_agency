@@ -4,12 +4,13 @@ import Article1 from "@components/Case/Article1";
 import Article1_2 from "@components/Case/Article1_2";
 import Image from "next/image";
 import Video from "@components/Case/Video";
+import OtherWorks from "@components/Case/OtherWorks";
 
 const page = (props) => {
     return (
         <section className="font-normal">
             <Header
-                mainCover={"/assets/images/proove-cover.jpg"}
+                mainCover={"/assets/images/proove-cover.webp"}
                 mainTitle={"Proove"}
                 bgPosition="bg-center"
             />
@@ -43,7 +44,8 @@ const page = (props) => {
                         можливості придбати товар безпосередньо на сайті.
                     </>
                 }
-                articleSrc="/assets/images/proove-1.jpg"
+                articleSrc="/assets/images/proove-1.webp"
+                imageStyle="lg:w-[26.98vw] lg:h-[33.54vw]"
             />
             <Article1_2
                 articleTitle="Завдання"
@@ -64,23 +66,27 @@ const page = (props) => {
                     </>
                 }
             />
-            <Video
-                preload='metadata'
-                src="/assets/videos/Proove-1.mp4"
-                style="lg:mt-[160px] lg:mx-[92px]"
-            />
+            <div className="lg:mt-[160px] lg:mx-[92px] bg-[#D0E5F5]">
+                <Video
+                    loading="lazy"
+                    preload="metadata"
+                    src="/assets/videos/Proove-1.mp4"
+                    style=""
+                    className=""
+                />
+            </div>
             <div
-                className={`bg-[#D0E5F5] max-lg:p-[32px] lg:py-[8.33vw] w-full lg:h-full my-[64px] lg:my-[160px]`}
+                className={`bg-[#D0E5F5] max-lg:p-[32px] lg:py-[8.33vw] w-full lg:h-full mt-[64px] mb-[96px] lg:my-[160px]`}
             >
                 <Image
-                    src="/assets/images/proove-2.jpg"
+                    src="/assets/images/proove-2.webp"
                     alt="Image"
                     width={1295}
                     height={2021}
                     className="w-full lg:w-[67.45vw] lg:h-[105.26vw] mx-auto"
                 />
                 <Image
-                    src="/assets/images/proove-3.jpg"
+                    src="/assets/images/proove-3.webp"
                     alt="Image"
                     width={1295}
                     height={2249}
@@ -103,45 +109,44 @@ const page = (props) => {
                 }
             />
             <div
-                className={`bg-[#D0E5F5] max-lg:p-[32px] lg:py-[8.33vw] w-full lg:h-full my-[64px] lg:my-[160px]`}
+                className={`bg-[#D0E5F5] max-lg:p-[32px] lg:py-[8.33vw] w-full lg:h-full my-[96px] lg:my-[160px]`}
             >
                 <Image
-                    src="/assets/images/proove-4.jpg"
+                    src="/assets/images/proove-4.webp"
                     alt="Image"
                     width={1295}
                     height={1366}
                     className="w-full lg:w-[67.45vw] lg:h-[71.15vw] mx-auto"
                 />
                 <Image
-                    src="/assets/images/proove-5.jpg"
+                    src="/assets/images/proove-5.webp"
                     alt="Image"
                     width={1295}
                     height={1164}
                     className="w-full lg:w-[67.45vw] lg:h-[60.63vw] mx-auto"
                 />
             </div>
-            <section className="flex flex-col lg:flex-row mx-[32px] lg:mx-[16.25vw] justify-between lg:mb-[160px] items-center max-lg:space-y-[64px] max-lg:mt-[32px] mb-[64px]">
+            <section className="flex flex-col-reverse lg:flex-row mx-[32px] lg:mx-[16.25vw] justify-between lg:mb-[160px] items-center mb-[96px]">
+                <Image
+                    src="/assets/images/proove-phone-1.webp"
+                    alt="Image"
+                    width={270}
+                    height={584}
+                    className="max-lg:w-[164px] max-lg:h-[332px]"
+                />
+
                 <div className="">
-                    <Image
-                        src="/assets/images/proove-phone-1.jpg"
-                        alt="Image"
-                        width={270}
-                        height={584}
-                        className=""
-                    />
-                </div>
-                <div className="max-lg:space-y-[64px]">
-                    <p className="lg:text-[20px] leading-[22.4px] lg:leading-[28px] text-[#545454] lg:w-[33.13vw]">
+                    <p className="lg:text-[20px] leading-[22.4px] lg:leading-[28px] text-[#545454] lg:w-[33.13vw] max-lg:mb-[70px]">
                         Поділ екрану на дві частини дозволив дуже зручно
                         адаптувати рішення під екран смартфона. Ми також додали
                         таку логіку для пошуку потрібної категорії в меню.
                     </p>
                     <Image
-                        src="/assets/images/proove-phone-2.jpg"
+                        src="/assets/images/proove-phone-2.webp"
                         alt="Image"
                         width={270}
                         height={584}
-                        className="lg:mt-[160px] max-lg:mx-auto"
+                        className="lg:mt-[160px] max-lg:mx-auto max-lg:hidden"
                     />
                 </div>
             </section>
@@ -157,10 +162,10 @@ const page = (props) => {
                     </>
                 }
             />
-            <div className="max-lg:w-full max-lg:space-y-[64px] lg:space-x-[24px] flex flex-col lg:flex-row mb-[64px] lg:mb-[160px] lg:mt-[160px]">
+            <div className="max-lg:w-full max-lg:space-y-[64px] lg:space-x-[24px] flex flex-col lg:flex-row mb-[64px] lg:mb-[160px] mt-[96px] lg:mt-[160px]">
                 <div className="bg-[#D0E5F5]">
                     <Image
-                        src="/assets/images/proove-6.jpg"
+                        src="/assets/images/proove-6.webp"
                         alt="Image"
                         width={329}
                         height={220}
@@ -170,7 +175,7 @@ const page = (props) => {
                 </div>
                 <div className="bg-[#D0E5F5]">
                     <Image
-                        src="/assets/images/proove-7.jpg"
+                        src="/assets/images/proove-7.webp"
                         alt="Image"
                         width={329}
                         height={220}
@@ -179,9 +184,17 @@ const page = (props) => {
                     />
                 </div>
             </div>
-            <Video
-                src="/assets/videos/Proove-2.mp4"
-                style="lg:mt-[160px] lg:mx-[92px]"
+            <div className="lg:mt-[160px] lg:mx-[92px] bg-[#D0E5F5]">
+                <Video
+                    src="/assets/videos/Proove-2.mp4"
+                    style=""
+                />
+            </div>
+            <OtherWorks
+                src1="/assets/images/portfolio-card-4.webp"
+                href1="/portfolio/pur"
+                src2="/assets/images/portfolio-card-5.webp"
+                href2="/portfolio"
             />
         </section>
     );
