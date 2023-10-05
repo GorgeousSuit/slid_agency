@@ -7,17 +7,19 @@ const Article1 = (props) => {
                 {props.articleTitle}
             </p>
             <div className="flex flex-col lg:flex-row text-[20px] leading-[28px] text-[#545454] lg:mt-[64px] justify-between">
-                <Image
-                    src={props.articleSrc}
-                    alt="Image"
-                    width={1920}
-                    height={1080}
-                    placeholder="blur"
-                    blurDataURL={props.articleSrc}
-                    className={`w-[83.72vw] mt-[64px] lg:mt-[5vw] lg:ml-[11.46vw] ${props.imageStyle}`}
-                />
+                <div className="">
+                    <Image
+                        src={props.articleSrc}
+                        alt="Image"
+                        width={1920}
+                        height={1080}
+                        placeholder="blur"
+                        blurDataURL={props.articleSrc}
+                        className={`w-[83.72vw] mt-[64px] lg:mt-[5vw] lg:ml-[11.46vw] ${props.imageStyle}`}
+                    />
+                </div>
 
-                <p className="lg:w-[33.13vw] max-lg:mt-[64px] justify-self-end">
+                <p className="lg:w-[33.13vw] max-lg:mt-[64px]">
                     {props.articleText}
                 </p>
             </div>

@@ -18,6 +18,11 @@ const Header = (props) => {
 
     const [open, updateOpen] = useState(false);
 
+    const handleFooterClick = () => {
+        scrollToFooter();
+        updateOpen(!open);
+      };
+
     const openIcon = open ? (
         <CrossButtonIcon className="h-[36px] w-[36px] mt-[-18px]" />
     ) : (
@@ -75,7 +80,7 @@ const Header = (props) => {
                                     </div>
                                 </div>
                                 <div className="lg:hidden">
-                                    <Nav />
+                                    <Nav setOpen={updateOpen}/>
                                 </div>
                                 <div className={`pt-[47px] lg:pt-[64px]`}>
                                     <div className="lg:flex justify-between lg:mb-[32px] lg:pr-[25px]">
@@ -100,7 +105,7 @@ const Header = (props) => {
                                             +38 067 275 74 24
                                         </p>
                                         <button
-                                            onClick={scrollToFooter}
+                                            onClick={handleFooterClick}
                                             className="border-white border-[1px] rounded-[100px] px-[24px] pt-[12px] pb-[10px] leading-[22px] btn hidden lg:block"
                                         >
                                             Зв’язатись з нами
@@ -121,7 +126,7 @@ const Header = (props) => {
                                 </div>
                             </div>
                             <div className="hidden lg:block w-full absolute bottom-[3.79vw]">
-                                <Nav />
+                                <Nav setOpen={updateOpen}/>
                             </div>
                         </section>
                     )}

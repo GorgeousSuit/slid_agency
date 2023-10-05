@@ -47,6 +47,11 @@ const Header = () => {
         }
       };
 
+      const handleFooterClick = () => {
+        scrollToFooter();
+        updateOpen(!open);
+      };
+
     const openIcon = open ? (
         <CrossButtonIcon className="h-[36px] w-[36px] mt-[-18px]" />
     ) : (
@@ -86,7 +91,7 @@ const Header = () => {
                             <div href="/UA">Ua</div>
                         </div>
                         <div className="">
-                            <Nav />
+                            <Nav setOpen={updateOpen}/>
                         </div>
 
                         <div className="">
@@ -99,7 +104,7 @@ const Header = () => {
                                 </p>
                             </div>
                             <button
-                                onClick={scrollToFooter}
+                                onClick={handleFooterClick}
                                 className="border-white border-[1px] rounded-[100px] px-[24px] pt-[12px] pb-[10px] leading-[22px] btn lg:hidden w-fit mb-[16px] mt-[40px]"
                             >
                                 Зв’язатись з нами
@@ -152,7 +157,7 @@ const Header = () => {
                 </div>
             </div>
             <div className="hidden lg:block w-full absolute bottom-[3.79vw]">
-                <Nav function={() => updateOpen(!open)}/>
+                <Nav />
             </div>
         </header>
     );
