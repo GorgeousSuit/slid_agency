@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import { useEffect } from "react";
+import Logo from "/public/assets/images/logo-lg.svg"
 
 const Loading = () => {
     const open = true;
@@ -34,13 +35,7 @@ const Loading = () => {
 
     return (
         <section className="bg-black w-full h-[100vh] flex-center">
-            <Image
-                src="/assets/images/logo-lg.svg"
-                alt="Logo-lg"
-                width={330}
-                height={195}
-                className="animate-pulse"
-            />
+            <Logo className="animate-pulse"/>
         </section>
     );
 };
