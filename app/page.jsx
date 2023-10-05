@@ -14,13 +14,13 @@ import { useEffect } from "react";
 
 const fixelFont = Fixel({ src: "../fonts/FixelDisplay-Medium.ttf" });
 
-const Home = (props) => {
+const Home = () => {
     return (
         <section>
             <Header />
             <Showreel
                 src="/assets/videos/Showreel.mp4"
-                poster="/assets/images/Cover.png"
+                poster="/assets/images/showreel-poster.webp"
             />
             <Advantages />
             <Featured />

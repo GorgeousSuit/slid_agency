@@ -19,24 +19,23 @@ const Showreel = (props) => {
   };
 
   useEffect(() => {
-    // Add a listener to detect when the video ends
     const handleVideoEnded = () => {
       setPlaying(false);
     };
-
-    // Attach the listener to the video element
-    videoRef.current.addEventListener("ended", handleVideoEnded);
-
-    // Remove the listener when the component unmounts
+    if (videoRef.current) {
+      videoRef.current.addEventListener("ended", handleVideoEnded);
+    }
     return () => {
-      videoRef.current.removeEventListener("ended", handleVideoEnded);
+      if (videoRef.current) {
+        videoRef.current.removeEventListener("ended", handleVideoEnded);
+      }
     };
   }, []);
 
   return (
     <section className={`${props.style} relative h-full mt-[-1px]`}>
       <div className="relative">
-        {(!playing || videoRef.current.ended) && (
+        {(!playing || (videoRef.current && videoRef.current.ended)) && (
           <Image
             src={props.poster}
             alt="End Image"
