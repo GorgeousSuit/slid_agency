@@ -10,31 +10,31 @@ import CrossButtonIcon from "/public/assets/images/cross.svg";
 const Header = () => {
     const [open, updateOpen] = useState(false);
 
-    // useEffect(() => {
-    //     const disableScroll = (e) => {
-    //         if (open) {
-    //             e.preventDefault();
-    //         }
-    //     };
+    useEffect(() => {
+        const disableScroll = (e) => {
+            if (open) {
+                e.preventDefault();
+            }
+        };
 
-    //     if (typeof window !== "undefined") {
-    //         if (open) {
-    //             document.body.style.overflow = "hidden";
-    //             document.addEventListener("touchmove", disableScroll, {
-    //                 passive: false,
-    //             });
-    //         } else {
-    //             document.body.style.overflow = "auto";
-    //             document.removeEventListener("touchmove", disableScroll);
-    //         }
-    //     }
-    //     return () => {
-    //         if (typeof window !== "undefined") {
-    //             document.body.style.overflow = "auto";
-    //             document.removeEventListener("touchmove", disableScroll);
-    //         }
-    //     };
-    // }, [open]);
+        if (typeof window !== "undefined") {
+            if (open) {
+                document.body.style.overflow = "hidden";
+                document.addEventListener("touchmove", disableScroll, {
+                    passive: false,
+                });
+            } else {
+                document.body.style.overflow = "auto";
+                document.removeEventListener("touchmove", disableScroll);
+            }
+        }
+        return () => {
+            if (typeof window !== "undefined") {
+                document.body.style.overflow = "auto";
+                document.removeEventListener("touchmove", disableScroll);
+            }
+        };
+    }, [open]);
 
     const scrollToFooter = () => {
       

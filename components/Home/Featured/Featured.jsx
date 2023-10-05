@@ -6,7 +6,7 @@ const srcData = [
     {
         src: "/assets/images/featured-tsarsky.webp",
         href: "/portfolio/tsarsky",
-        style: "",
+        style: "object-left",
     },
     {
         src: "/assets/images/featured-laser.webp",

@@ -38,7 +38,7 @@ const Footer = () => {
                         <input
                             type="hidden"
                             name="_next"
-                            value="http://localhost:3000/thank-you"
+                            value="https://slid.agency/thank-you"
                         ></input>
                         <input
                             name="Ім'я"

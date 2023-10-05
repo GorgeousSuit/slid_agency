@@ -17,7 +17,7 @@ const Article1 = (props) => {
                     className={`w-[83.72vw] mt-[64px] lg:mt-[5vw] lg:ml-[11.46vw] ${props.imageStyle}`}
                 />
 
-                <p className="lg:w-[33.13vw] max-lg:mt-[64px]">
+                <p className="lg:w-[33.13vw] max-lg:mt-[64px] justify-self-end">
                     {props.articleText}
                 </p>
             </div>

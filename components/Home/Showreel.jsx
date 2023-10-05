@@ -33,7 +33,7 @@ const Showreel = (props) => {
   }, []);
 
   return (
-    <section className={`${props.style} relative h-full mt-[-1px]`}>
+    <section className={`${props.style} relative h-full sm:mt-[-1px]`}>
       <div className="relative">
         {(!playing || (videoRef.current && videoRef.current.ended)) && (
           <Image
