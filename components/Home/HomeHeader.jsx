@@ -37,14 +37,15 @@ const Header = () => {
     // }, [open]);
 
     const scrollToFooter = () => {
+      
         const footer = document.getElementById("footer");
-
+      
         if (footer) {
-            footer.scrollIntoView({ behavior: "smooth" });
-            document.body.style.overflow = "auto";
-            document.removeEventListener("touchmove", scrollToFooter);
+          footer.scrollIntoView({ behavior: "smooth" });
+          document.body.style.overflow = "auto";
+          document.removeEventListener("touchmove", scrollToFooter);
         }
-    };
+      };
 
     const openIcon = open ? (
         <CrossButtonIcon className="h-[36px] w-[36px] mt-[-18px]" />
@@ -151,7 +152,7 @@ const Header = () => {
                 </div>
             </div>
             <div className="hidden lg:block w-full absolute bottom-[3.79vw]">
-                <Nav />
+                <Nav function={() => updateOpen(!open)}/>
             </div>
         </header>
     );

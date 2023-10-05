@@ -1,6 +1,13 @@
-import Link from "next/link";
+"use client"
 
-const Nav = () => {
+import Link from "next/link";
+import { useState } from "react";
+
+const Nav = ({setOpen}) => {
+    const handleOpenClick = () => {
+        setOpen(false);
+      };
+
     const scrollToFooter = () => {
         const footer = document.getElementById("footer");
 
@@ -39,6 +46,7 @@ const Nav = () => {
                     onClick={(e) => {
                         e.preventDefault();
                         scrollToFooter();
+                        handleOpenClick();
                     }}
                 >
                     Контакти

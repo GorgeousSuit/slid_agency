@@ -8,21 +8,26 @@ import BurgerButtonIcon from "/public/assets/images/burger.svg";
 import CrossButtonIcon from "/public/assets/images/cross.svg";
 
 const Header = () => {
+    const [open, updateOpen] = useState(false);
+
+    const setOpen = (newState) => {
+        updateOpen(newState);
+      };
+
     const scrollToFooter = () => {
         const footer = document.getElementById("footer");
 
         if (footer) {
             footer.scrollIntoView({ behavior: "smooth" });
         }
-    };
-
-    const [open, updateOpen] = useState(false);
+    };    
 
     const openIcon = open ? (
         <CrossButtonIcon className="h-[36px] w-[36px] mt-[-18px]" />
     ) : (
         <BurgerButtonIcon className="h-[10px] w-[40px]" />
     );
+    
 
     return (
         <header
@@ -125,7 +130,7 @@ const Header = () => {
                         </div>
                     </div>
                     <div className="hidden lg:block w-full absolute bottom-[3.79vw]">
-                        <Nav />
+                        <Nav setOpen={setOpen}/>
                     </div>
                 </section>
             )}

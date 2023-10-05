@@ -10,8 +10,6 @@ const Footer = () => {
     const [email, setEmail] = useState("");
     const [comment, setComment] = useState("");
 
-
-    
     return (
         <footer
             id="footer"
@@ -23,47 +21,57 @@ const Footer = () => {
             <div className="flex flex-col sm:flex-row-reverse justify-between sm:mt-[120px]">
                 <div className="sm:mr-[110px] w-full sm:w-[32.5vw] 2xl:w-[38.33vw] max-sm:mb-[64px]">
                     <form
-                        onSubmit={handleSubmit}
+                        action="https://formsubmit.co/hi@slid.agency"
+                        method="POST"
                         className="flex flex-col space-y-[48px] sm:space-y-[64px] 2xl:mr-[100px]"
                     >
                         <input
+                            type="hidden"
+                            name="_captcha"
+                            value="false"
+                        ></input>
+                        <input
+                            type="hidden"
+                            name="_subject"
+                            value="Нове замовлення"
+                        ></input>
+                        <input
+                            type="hidden"
+                            name="_next"
+                            value="http://localhost:3000/thank-you"
+                        ></input>
+                        <input
+                            name="Ім'я"
                             type="text"
-                            value={name}
-                            onChange={(e) => {
-                                setName(e.target.value);
-                            }}
                             className="focus:border-[#ADADAD]"
                             placeholder="Ім'я"
                         />
                         <input
+                            name="Телефон"
                             type="tel"
-                            value={phone}
-                            onChange={(e) => {
-                                setPhone(e.target.value);
-                            }}
                             className="focus:border-[#ADADAD]"
                             placeholder="Телефон"
                             required
                         />
                         <input
+                            name="Email"
                             type="email"
-                            value={email}
-                            onChange={(e) => {
-                                setEmail(e.target.value);
-                            }}
                             className="focus:border-[#ADADAD]"
                             placeholder="Електронна пошта"
                             required
                         />
-                        <input
+                        <textarea
+                            name="Коментар"
                             type="text"
-                            value={comment}
-                            onChange={(e) => {
-                                setComment(e.target.value);
-                            }}
-                            className="focus:border-[#ADADAD]"
+                            rows="10"
+                            className="focus:border-[#ADADAD] h-[25px]"
                             placeholder="Коментар"
                         />
+                        <input
+                            type="hidden"
+                            name="_template"
+                            value="table"
+                        ></input>
                         <button
                             type="submit"
                             value="Send"
@@ -113,7 +121,6 @@ const Footer = () => {
                 <p className="">Privacy policy</p>
                 <p className="">Copyright © 2023 All rights reserved.</p>
             </div>
-            
         </footer>
     );
 };

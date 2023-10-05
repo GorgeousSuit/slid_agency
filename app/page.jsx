@@ -14,16 +14,21 @@ import { useEffect } from "react";
 
 const fixelFont = Fixel({ src: "../fonts/FixelDisplay-Medium.ttf" });
 
-const Home = () => {
+const Home = (props) => {
     return (
         <section>
             <Header />
-            <Showreel />
+            <Showreel
+                src="/assets/videos/Showreel.mp4"
+                poster="/assets/images/Cover.png"
+            />
             <Advantages />
             <Featured />
             <Surpass />
             <Services />
-            <AnimationComponent />
+            <div className="sm:hidden">
+                <AnimationComponent />
+            </div>
         </section>
     );
 };

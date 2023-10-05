@@ -45,6 +45,20 @@ input::placeholder {
 input:focus::placeholder {
     color: transparent;
 }
+nput {
+    all: unset;
+}
+
+textarea {
+    background-color: rgba(0, 0, 0, 0);
+    border-bottom: 1px white solid;
+}
+textarea::placeholder {
+    color: white;
+}
+textarea:focus::placeholder {
+    color: transparent;
+}
 
 .bg-offset-left {
     background-position: left 2rem left;

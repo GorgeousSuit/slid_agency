@@ -28,8 +28,8 @@ const page = (props) => {
         <section className="font-normal">
             <Header
                 mainCover={"/assets/images/tsarsky-cover.webp"}
-                mainTitle={"Laser Time"}
-                bgPosition="bg-center"
+                mainTitle={"TSARSKY"}
+                bgPosition="bg-left"
             />
             <KeyPoints
                 key1="TSARSKY CITY RESORT"
@@ -140,19 +140,19 @@ const page = (props) => {
                 />
             </div>
             <div className="flex flex-col lg:flex-row mx-[32px] my-[96px] lg:my-[170px] max-lg:space-y-[64px] lg:space-x-[17.03vw] justify-center">
-            <Image
+                <Image
                     src="/assets/images/tsarsky-phone-1.webp"
                     alt="Image"
                     width={300}
                     height={612}
-                    className="w-full lg:w-[15.63vw] lg:mb-[122px]"
+                    className="w-[41.73vw] h-[84.99vw] lg:w-[15.63vw] lg:h-[31.98vw] lg:mb-[122px] self-end"
                 />
                 <Image
                     src="/assets/images/tsarsky-phone-2.webp"
                     alt="Image"
                     width={300}
                     height={614}
-                    className="w-full lg:w-[15.63vw] lg:mt-[120px]"
+                    className="w-[41.73vw] h-[84.99vw] lg:w-[15.63vw] lg:h-[31.98vw] lg:mt-[120px]"
                 />
             </div>
             <div
@@ -206,49 +206,52 @@ const page = (props) => {
                 articleTitle="Mobile"
                 articleText={
                     <>
-                        Більша частина користувачів передивляються сайт з мобільного пристрою в пошуках необхідної інформації. Тому на смартфонах ми прибрали анімації, віддавши перевагу змісту.
+                        Більша частина користувачів передивляються сайт з
+                        мобільного пристрою в пошуках необхідної інформації.
+                        Тому на смартфонах ми прибрали анімації, віддавши
+                        перевагу змісту.
                     </>
                 }
             />
             <section className="flex flex-col my-[96px] lg:my-[160px] max-lg:space-y-[64px] px-[32px] lg:px-[16.25vw]">
                 <div className="flex flex-col lg:flex-row lg:space-x-[16.25vw] max-lg:space-y-[64px]">
-                <Image
+                    <Image
                         src="/assets/images/tsarsky-phone-3.webp"
                         alt="Image"
                         width={300}
                         height={614}
-                        className="w-full lg:w-[15.63vw] lg:mt-[160px]"
+                        className="w-[41.73vw] h-[84.99vw] lg:w-[15.63vw] lg:h-[31.98vw] lg:mt-[160px] self-end"
                     />
                     <Image
                         src="/assets/images/tsarsky-phone-4.webp"
                         alt="Image"
                         width={300}
                         height={612}
-                        className="w-full lg:w-[15.63vw] lg:mb-[162px]"
+                        className="w-[41.73vw] h-[84.99vw] lg:w-[15.63vw] lg:h-[31.98vw] lg:mb-[162px]"
                     />
                 </div>
-                <div className="flex flex-col lg:flex-row lg:space-x-[16.25vw] justify-end max-lg:space-y-[64px]">
-                <Image
+                <div className="flex flex-col lg:flex-row lg:space-x-[16.25vw] justify-end max-lg:space-y-[64px] ">
+                    <Image
                         src="/assets/images/tsarsky-phone-5.webp"
                         alt="Image"
                         width={300}
                         height={614}
-                        className="w-full lg:w-[15.63vw] lg:mt-[160px]"
+                        className="w-[41.73vw] h-[84.99vw] lg:w-[15.63vw] lg:h-[31.98vw] lg:mt-[160px] self-end"
                     />
                     <Image
                         src="/assets/images/tsarsky-phone-6.webp"
                         alt="Image"
                         width={300}
                         height={614}
-                        className="w-full lg:w-[15.63vw] lg:mb-[160px]"
+                        className="w-[41.73vw] h-[84.99vw] lg:w-[15.63vw] lg:h-[31.98vw] lg:mb-[160px]"
                     />
                 </div>
             </section>
-            <OtherWorks 
-            src1="/assets/images/portfolio-card-4.webp"
-            href1="/portfolio/pur"
-            src2="/assets/images/portfolio-card-3.webp"
-            href2="/portfolio/proove"
+            <OtherWorks
+                src1="/assets/images/portfolio-card-4.webp"
+                href1="/portfolio/pur"
+                src2="/assets/images/portfolio-card-3.webp"
+                href2="/portfolio/proove"
             />
         </section>
     );
