@@ -19,6 +19,11 @@ const RootLayout = ({ children }) => {
                     name="viewport"
                     content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"
                 />
+                <meta
+                    name="slid | Креативна агенція"
+                    content="Креативна агенція"
+                />
+                <link rel="icon" href="app/icon.png" />
             </Head>
             <Script
                 id="google-tag-manager"
@@ -34,7 +39,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                         src="https://www.googletagmanager.com/ns.html?id=GTM-NWFTWVB3"
                         height="0"
                         width="0"
-                        style={{ display: 'none', visibility: 'hidden' }}
+                        style={{ display: "none", visibility: "hidden" }}
                     ></iframe>
                 </noscript>
                 <main>{children}</main>
