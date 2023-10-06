@@ -32,6 +32,7 @@ const page = () => {
             }
         };
     }, [open]);
+    
     return (
         <section className="relative text-white">
             <div className="font-normal text-center absolute z-10 top-[calc(50%-150px)] left-[calc(50%-208px)]">

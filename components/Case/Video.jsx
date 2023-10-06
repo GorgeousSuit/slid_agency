@@ -17,14 +17,10 @@ const Video = (props) => {
   };
 
   useEffect(() => {
-    // Check if the window object is defined (not during SSR).
     if (typeof window !== "undefined") {
-      // Use the window object to access navigator.userAgent.
       const userAgent = window.navigator.userAgent;
-      // Use a regular expression to identify mobile devices.
       const mobileDevicePattern = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i;
 
-      // Set the isMobile state based on the user agent.
       setIsMobile(mobileDevicePattern.test(userAgent));
 
       if (!isMobile) {
@@ -70,7 +66,7 @@ const Video = (props) => {
         ref={videoRef}
         preload="metadata"
         autoPlay={false}
-        poster
+        poster={props.poster}
         loop
         playsInline 
         onClick={handlePlayPause}

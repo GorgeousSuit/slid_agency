@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import Head from "next/head";
 import Header from "@components/Home/HomeHeader";
 import Fixel from "next/font/local";
 import Showreel from "@components/Home/Showreel";
@@ -17,6 +18,17 @@ const fixelFont = Fixel({ src: "../fonts/FixelDisplay-Medium.ttf" });
 const Home = () => {
     return (
         <section>
+            <Head>
+                <meta
+                    name="viewport"
+                    content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"
+                />
+                <meta
+                    name="slid | Креативна агенція"
+                    content="Креативна агенція"
+                />
+                <link rel="icon" href="app/favicon.ico" />
+            </Head>
             <Header />
             <Showreel
                 src="/assets/videos/Showreel.mp4"

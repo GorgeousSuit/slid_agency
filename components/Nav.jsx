@@ -1,12 +1,6 @@
-"use client"
-
 import Link from "next/link";
-import { useState } from "react";
 
 const Nav = ({setOpen}) => {
-    const handleOpenClick = () => {
-        setOpen(false);
-      };
 
     const scrollToFooter = () => {
         const footer = document.getElementById("footer");
@@ -33,7 +27,6 @@ const Nav = ({setOpen}) => {
                         e.preventDefault();
                         if (window.location.pathname === "/") {
                             setOpen(false);
-                            scrollToServices();
                         } else {
                             window.location.href = "/#services";
                         }
@@ -47,7 +40,6 @@ const Nav = ({setOpen}) => {
                     onClick={(e) => {
                         e.preventDefault();
                         scrollToFooter();
-                        setOpen(false);
                     }}
                 >
                     Контакти
