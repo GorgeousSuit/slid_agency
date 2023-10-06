@@ -19,11 +19,6 @@ const RootLayout = ({ children }) => {
                     name="viewport"
                     content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"
                 />
-                <meta
-                    name="slid | Креативна агенція"
-                    content="Креативна агенція"
-                />
-                <link rel="icon" href="app/icon.png" />
             </Head>
             <Script
                 id="google-tag-manager"
