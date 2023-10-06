@@ -67,6 +67,7 @@ const Video = (props) => {
         preload="metadata"
         autoPlay={false}
         poster={props.poster}
+        controls={isMobile}
         loop
         playsInline 
         onClick={handlePlayPause}
