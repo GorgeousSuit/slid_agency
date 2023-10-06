@@ -6,7 +6,6 @@ import Nav from "../Nav";
 import { useState, useEffect } from "react";
 import BurgerButtonIcon from "/public/assets/images/burger.svg";
 import CrossButtonIcon from "/public/assets/images/cross.svg";
-import Logo from "public/assets/images/logo-lg.svg"
 
 const Header = () => {
     const [open, updateOpen] = useState(false);
