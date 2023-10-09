@@ -220,7 +220,7 @@ const page = (props) => {
                 src1="/assets/images/portfolio-card-2.webp"
                 href1="/portfolio/rebel-bicycles"
                 src2="/assets/images/portfolio-card-5.webp"
-                href2="/portfolio"
+                href2="/portfolio/tsarsky"
             />
         </section>
     );

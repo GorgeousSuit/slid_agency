@@ -191,7 +191,7 @@ const page = (props) => {
                 src1="/assets/images/portfolio-card-4.webp"
                 href1="/portfolio/pur"
                 src2="/assets/images/portfolio-card-5.webp"
-                href2="/portfolio"
+                href2="/portfolio/tsarsky"
             />
         </section>
     );

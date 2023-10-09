@@ -26,6 +26,7 @@ const Nav = ({setOpen}) => {
                     onClick={(e) => {
                         e.preventDefault();
                         if (window.location.pathname === "/") {
+                            scrollToServices();
                             setOpen(false);
                         } else {
                             window.location.href = "/#services";
@@ -40,6 +41,7 @@ const Nav = ({setOpen}) => {
                     onClick={(e) => {
                         e.preventDefault();
                         scrollToFooter();
+                        setOpen(false);
                     }}
                 >
                     Контакти

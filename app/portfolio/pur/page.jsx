@@ -86,7 +86,7 @@ const page = (props) => {
             <PurImage src="/assets/images/pur-image-10.webp" />
             <OtherWorks
                 src1="/assets/images/portfolio-card-5.webp"
-                href1="/portfolio"
+                href1="/portfolio/tsarsky"
                 src2="/assets/images/portfolio-card-3.webp"
                 href2="/portfolio/proove"
             />

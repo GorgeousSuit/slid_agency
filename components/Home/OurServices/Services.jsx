@@ -30,11 +30,10 @@ const servicesData = [
 const Services = (props) => {
     return (
         <section
-            id="services"
             className="mx-[32px] lg:mx-[72px] 2xl:mx-[92px] mb-[96px] lg:mb-[128px] 2xl:mb-[241px]"
         >
             <div className="">
-                <h1 className="text-[36px] lg:text-[56px] leading-[43.2px] lg:leading-[67.2px] font-normal mb-[64px] lg:mb-[108px]">
+                <h1 id="services" className="text-[36px] lg:text-[56px] leading-[43.2px] lg:leading-[67.2px] font-normal mb-[64px] lg:mb-[108px]">
                     Наші послуги
                 </h1>
                 <div className="flex flex-col lg:items-end">
